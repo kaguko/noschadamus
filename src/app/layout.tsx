@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import { Footer } from '@/components/layout/footer';
 import { Header } from '@/components/layout/site-chrome';
 import { Starfield } from '@/components/layout/starfield';
@@ -28,7 +29,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        {/* Đặt theme trước khi vẽ để không nhấp nháy (docs/04 mục 1). */}
+        <Script id="theme-init" strategy="beforeInteractive">
+          {themeInitScript}
+        </Script>
       </head>
       <body className="flex min-h-dvh flex-col">
         <a

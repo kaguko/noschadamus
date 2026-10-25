@@ -54,3 +54,12 @@ test('analytics: gửi landing_view và draw_started', async ({ page }) => {
   await page.getByRole('link', { name: 'Rút bài ngay' }).first().click();
   await expect.poll(() => names).toContain('draw_started');
 });
+
+test('theme đã lưu được áp trước khi hydrate (không nhấp nháy)', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('nd:theme', 'light'));
+  await page.goto('/', { waitUntil: 'commit' });
+  await page.waitForSelector('body');
+  // Đọc ngay khi DOM có body: script beforeInteractive đã chạy.
+  const theme = await page.evaluate(() => document.documentElement.dataset.theme);
+  expect(theme).toBe('light');
+});
