@@ -126,7 +126,10 @@
       "reveal": "Lật bài",
       "loading1": "Đang xếp các vì sao…",
       "loading2": "Đang đọc bản đồ của bạn…",
-      "honesty": "Các lá được chọn ngẫu nhiên an toàn trên máy chủ; việc bạn chạm chỉ là nghi thức."
+      "honesty": "Các lá được chọn ngẫu nhiên an toàn trên máy chủ; việc bạn chạm chỉ là nghi thức.",
+      "slot_past": "Quá khứ",
+      "slot_present": "Hiện tại",
+      "slot_opening": "Hướng mở"
     },
     "error": {
       "rate": "Bạn đã rút nhiều lần trong thời gian ngắn. Hãy nghỉ một lát rồi quay lại nhé.",

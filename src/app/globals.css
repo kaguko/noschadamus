@@ -430,3 +430,128 @@ body::before {
     animation: none;
   }
 }
+
+/* Bước 3: xáo, dải/quạt 78 lá, ô chứa (docs/05 mục 2.3) */
+.nd-card-back {
+  border-radius: 6px;
+  background: url('/card-back.svg') center / 100% 100% no-repeat;
+  box-shadow: var(--shadow-card);
+}
+.nd-breathe {
+  animation: nd-breathe 4s ease-in-out infinite;
+}
+@keyframes nd-breathe {
+  50% {
+    transform: scale(1.02);
+  }
+}
+.nd-slot-wait {
+  animation: nd-slot-wait 2s ease-in-out infinite;
+}
+@keyframes nd-slot-wait {
+  50% {
+    border-color: var(--accent);
+  }
+}
+.nd-pulse {
+  animation: nd-pulse 1.2s ease-in-out infinite;
+}
+@keyframes nd-pulse {
+  50% {
+    transform: translateY(-6px);
+    box-shadow:
+      var(--shadow-card),
+      0 0 24px -2px color-mix(in oklab, var(--accent) 60%, transparent);
+  }
+}
+
+/* Di động: dải cuộn ngang, mỗi lá lộ 22px */
+.nd-fan {
+  display: flex;
+  overflow-x: auto;
+  padding: 32px 50vw 12px;
+  scrollbar-width: none;
+}
+.nd-fan::-webkit-scrollbar {
+  display: none;
+}
+.nd-fan-card {
+  flex: none;
+  width: 88px;
+  height: 151px;
+  cursor: pointer;
+  transition:
+    transform var(--dur-base) var(--ease-standard),
+    opacity var(--dur-base);
+}
+.nd-fan-card + .nd-fan-card {
+  margin-left: -66px;
+}
+.nd-fan-card:focus-visible {
+  outline-offset: 2px;
+  z-index: 1;
+}
+@media (hover: hover) {
+  .nd-fan-card:not(.is-picked):hover {
+    transform: translateY(-24px);
+  }
+}
+.nd-fan-card.is-picked {
+  opacity: 0.25;
+}
+.nd-fan-fade-l,
+.nd-fan-fade-r {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 24px;
+  pointer-events: none;
+}
+.nd-fan-fade-l {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-0), transparent);
+}
+.nd-fan-fade-r {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-0), transparent);
+}
+
+/* Desktop: quạt vòng cung */
+@media (min-width: 1024px) {
+  .nd-fan {
+    position: relative;
+    display: block;
+    height: 300px;
+    overflow: visible;
+    padding: 0;
+  }
+  .nd-fan-card {
+    position: absolute;
+    left: calc(50% - 48px);
+    /* Neo theo cạnh trên: lá rìa xoay quanh tâm phía dưới nên góc dưới hạ xuống ~60px. */
+    top: 36px;
+    width: 96px;
+    height: 165px;
+    transform-origin: 50% 160%;
+    transform: rotate(calc((var(--i) - 38.5) * 1.15deg));
+  }
+  .nd-fan-card + .nd-fan-card {
+    margin-left: 0;
+  }
+  .nd-fan-card:not(.is-picked):hover,
+  .nd-fan-card:focus-visible {
+    transform: rotate(calc((var(--i) - 38.5) * 1.15deg)) translateY(-24px);
+  }
+  .nd-fan-fade-l,
+  .nd-fan-fade-r {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nd-breathe,
+  .nd-slot-wait,
+  .nd-pulse {
+    animation: none;
+  }
+}

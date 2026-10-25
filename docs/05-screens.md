@@ -228,7 +228,7 @@ Trạng thái con: `shuffle` → `fan` → `confirm`.
 - Chú thích dưới dải (small, `--text-3`): "Các lá được chọn ngẫu nhiên an toàn trên máy chủ; việc bạn chạm chỉ là nghi thức." (`draw.s3.honesty`)
 
 **(c) confirm/submitting** (bấm "Lật bài")
-1. Gọi `POST /api/readings` với `{ spreadId, allowReversed, intention?, storeIntention, pickedSlots }`.
+1. Gọi `POST /api/readings` với `{ spreadId, allowReversed, pickedSlots }`, chỉ thêm `intention` và `storeIntention: true` khi người dùng bật lưu ý niệm (chốt ở T22: không lưu thì ý niệm không rời khỏi trình duyệt).
 2. Trong lúc chờ (tối thiểu **1400 ms**, để không giật): các lá trong slot nổi lên và phát sáng nhịp; dòng chữ giữa `h2` đổi theo chuỗi: "Đang xếp các vì sao…" (0 ms) → "Đang đọc bản đồ của bạn…" (900 ms).
 3. Thành công: lưu `sessionStorage['nd:reveal:{id}'] = '1'`, `router.push('/reading/{id}')`.
 4. Lỗi: quay về trạng thái fan (giữ các lá đã chọn), hiện Toast lỗi và nút "Thử lại". Lỗi `RATE_LIMITED`: "Bạn đã rút nhiều lần trong thời gian ngắn. Hãy nghỉ một lát rồi quay lại nhé." Lỗi chung: "Có điều gì đó trục trặc. Chưa có gì bị mất, bạn thử lại được không?"
