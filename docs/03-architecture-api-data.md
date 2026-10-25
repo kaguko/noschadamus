@@ -196,6 +196,8 @@ Mọi route trả JSON UTF-8 (trừ ảnh). Lỗi thống nhất:
 | 400 | `VALIDATION_FAILED` | Body sai schema |
 | 404 | `NOT_FOUND` | Không tồn tại **hoặc** không có quyền (không phân biệt) |
 | 413 | `PAYLOAD_TOO_LARGE` | Body > 4 KB |
+| 403 | `FORBIDDEN_ORIGIN` | Ghi đổi (POST/DELETE) mà `Origin` thiếu hoặc khác trang |
+| 415 | `UNSUPPORTED_MEDIA_TYPE` | POST không phải `application/json` |
 | 429 | `RATE_LIMITED` | Có header `Retry-After` (giây) |
 | 500 | `INTERNAL` | Không lộ chi tiết; ghi log có `requestId` |
 
@@ -317,6 +319,8 @@ Body: `{ "name": EventName, "props": {…} }` (danh sách tên và props cho ph�
 | `reading_abandoned` | `step: 'spread'|'intention'|'pick'` (khi rời `/draw` giữa chừng) |
 
 Server từ chối prop không có trong danh sách (loại bỏ khóa lạ).
+
+Đã chốt khi triển khai (T15): tên sự kiện lạ hoặc props sai kiểu → 400; `reading_created` chỉ server phát (client gửi → 400) và mang `visitorHash = "server"`; `/api/events` cũng yêu cầu `Origin` hợp lệ.
 
 Các chỉ số ở `plan.md` mục 1.3 được tính từ những sự kiện này (định nghĩa SQL mẫu đặt ở `docs/metrics.sql`, làm ở task T33).
 

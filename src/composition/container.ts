@@ -1,5 +1,12 @@
 /** Nơi DUY NHẤT nối port với adapter (docs/03 mục 4). Chỉ app/ được import file này (D6). */
 import axesText from '../../data/text/axes.vi.json';
+import {
+  PurgeEvents,
+  RecordEvent,
+  type EventStore,
+} from '@/contexts/analytics/application/record-event';
+import { PrismaEventStore } from '@/contexts/analytics/infrastructure/prisma-event-store';
+import { SERVER_VISITOR, visitorHash } from '@/contexts/analytics/infrastructure/visitor-hash';
 import type { AxisTexts } from '@/contexts/reading/domain';
 import {
   CreateReading,
@@ -41,6 +48,12 @@ export interface Container {
     readonly repository: PrismaReadingRepository;
   };
   readonly events: EventBus & { subscribe: InMemoryEventBus['subscribe'] };
+  readonly analytics: {
+    readonly recordEvent: RecordEvent;
+    readonly purgeEvents: PurgeEvents;
+    readonly store: EventStore;
+    readonly visitorHashOf: (ip: string, userAgent: string) => string;
+  };
   readonly infra: {
     readonly clock: Clock;
     readonly rateLimiter: RateLimiter & { purge(now: Date): Promise<number> };
@@ -69,6 +82,25 @@ function build(): Container {
     events,
     texts: axesText as unknown as AxisTexts,
   };
+
+  const eventStore = new PrismaEventStore(db);
+  const recordEvent = new RecordEvent({ store: eventStore, clock: systemClock });
+  // reading_created phát từ server qua sự kiện miền (docs/03 mục 9); lỗi analytics không làm hỏng việc tạo bản đọc.
+  events.subscribe(async (e) => {
+    if (e.type !== 'ReadingCreated') return;
+    try {
+      await recordEvent.execute({
+        name: 'reading_created',
+        props: { spreadId: e.spreadId, allowReversed: e.allowReversed, dominant: e.dominant },
+        visitorHash: SERVER_VISITOR,
+      });
+    } catch (err) {
+      console.error(
+        JSON.stringify({ level: 'error', msg: 'analytics_failed', error: String(err) }),
+      );
+    }
+  });
+
   return {
     env,
     db,
@@ -83,6 +115,12 @@ function build(): Container {
       repository,
     },
     events,
+    analytics: {
+      recordEvent,
+      purgeEvents: new PurgeEvents({ store: eventStore, clock: systemClock }),
+      store: eventStore,
+      visitorHashOf: (ip, ua) => visitorHash(env.ANALYTICS_SECRET, ip, ua, systemClock.now()),
+    },
     infra: {
       clock: systemClock,
       rateLimiter: new PrismaRateLimiter(db),
