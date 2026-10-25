@@ -215,7 +215,7 @@ Các lá dưới đây **đã viết xong**, chép nguyên văn. 73 lá còn l�
 ```
 chắc chắn sẽ, nhất định sẽ, định mệnh, số phận, vận mệnh, tai họa, tai ương, điềm xấu,
 điềm báo, xui xẻo, đen đủi, bạn phải, bạn bắt buộc, sẽ chết, bệnh tật, ung thư, ly hôn,
-phá sản, nghiệp, lời nguyền, kiếp trước, kiếp sau, trừ tà, bị ám
+phá sản, nghiệp chướng, quả báo, lời nguyền, kiếp trước, kiếp sau, trừ tà, bị ám
 ```
 
 Phạm vi kiểm: dữ liệu bài, bảng chữ theo trục, và mọi chuỗi do `composeInterpretation` sinh ra. **Không** áp cho chuỗi giao diện (ví dụ trang giới thiệu có thể nói "không đoán tương lai").
@@ -308,7 +308,7 @@ Câu mở đầu thêm cho trải một lá (`synthesis`): `Lá bài này gợi 
 | Vua | làm chủ bên ngoài, dẫn dắt, trách nhiệm |
 
 **Quy trình:** viết theo từng file JSON (`major.json` còn 17 lá, mỗi bộ phụ 14 lá, riêng `minor-cups.json` còn 13 vì `cups-ace` đã có). Sau mỗi file chạy `npm run cards:validate`.
-Mỗi lá: 3 từ khóa/hướng (ngắn, ≤ 3 từ mỗi từ khóa), `meaning` 2-3 câu (100-280 ký tự), 2 prompts/hướng. Văn bản phải **nguyên bản**, không chép từ sách hay trang khác.
+Mỗi lá: 3 từ khóa/hướng (ngắn, ≤ 5 âm tiết mỗi từ khóa), `meaning` 2-3 câu (100-280 ký tự), 2 prompts/hướng. Văn bản phải **nguyên bản**, không chép từ sách hay trang khác.
 
 ## 10. Hình ảnh lá bài
 

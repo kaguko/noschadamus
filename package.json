@@ -14,7 +14,9 @@
     "test:e2e": "playwright test",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint:arch": "depcruise src --config .dependency-cruiser.cjs"
+    "lint:arch": "depcruise src --config .dependency-cruiser.cjs",
+    "cards:validate": "tsx scripts/validate-cards.ts",
+    "cards:generate-minor": "tsx scripts/generate-minor-vectors.ts"
   },
   "dependencies": {
     "next": "16.4.3",

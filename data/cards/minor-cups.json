@@ -1,0 +1,632 @@
+[
+  {
+    "id": "cups-ace",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "ace",
+    "number": 1,
+    "name": {
+      "vi": "Át Cốc",
+      "en": "Ace of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "Cảm xúc mới",
+        "Cởi mở",
+        "Lòng biết ơn"
+      ],
+      "reversed": [
+        "Kìm nén",
+        "Cạn kiệt",
+        "Khép lòng"
+      ]
+    },
+    "meaning": {
+      "upright": "Một dòng cảm xúc mới đang đầy lên. Đó có thể là tình cảm, sự sáng tạo, hay chỉ là cảm giác được sống rõ hơn một chút.",
+      "reversed": "Cảm xúc có thể đang bị cất vào ngăn kéo. Đảo ngược mời bạn mở ra từng chút một, theo tốc độ của riêng bạn."
+    },
+    "prompts": {
+      "upright": [
+        "Điều gì gần đây làm tim bạn mềm ra?",
+        "Bạn muốn dành chỗ cho cảm xúc nào đang đến?"
+      ],
+      "reversed": [
+        "Cảm xúc nào bạn chưa cho mình ngồi lại cùng?",
+        "Bạn cần điều gì để thấy đủ an toàn khi mở lòng?"
+      ]
+    },
+    "vector": {
+      "energy": 0.37,
+      "emotion": 0.955,
+      "connection": 0.825,
+      "grounding": 0.435,
+      "mind": 0.24,
+      "change": 0.37
+    }
+  },
+  {
+    "id": "cups-2",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "2",
+    "number": 2,
+    "name": {
+      "vi": "Hai Cốc",
+      "en": "Two of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.42,
+      "emotion": 0.78,
+      "connection": 0.7,
+      "grounding": 0.46,
+      "mind": 0.34,
+      "change": 0.42
+    }
+  },
+  {
+    "id": "cups-3",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "3",
+    "number": 3,
+    "name": {
+      "vi": "Ba Cốc",
+      "en": "Three of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 0.85,
+      "connection": 0.75,
+      "grounding": 0.45,
+      "mind": 0.3,
+      "change": 0.4
+    }
+  },
+  {
+    "id": "cups-4",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "4",
+    "number": 4,
+    "name": {
+      "vi": "Bốn Cốc",
+      "en": "Four of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.41,
+      "emotion": 0.815,
+      "connection": 0.725,
+      "grounding": 0.455,
+      "mind": 0.32,
+      "change": 0.41
+    }
+  },
+  {
+    "id": "cups-5",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "5",
+    "number": 5,
+    "name": {
+      "vi": "Năm Cốc",
+      "en": "Five of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.36,
+      "emotion": 0.99,
+      "connection": 0.85,
+      "grounding": 0.43,
+      "mind": 0.22,
+      "change": 0.36
+    }
+  },
+  {
+    "id": "cups-6",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "6",
+    "number": 6,
+    "name": {
+      "vi": "Sáu Cốc",
+      "en": "Six of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.41,
+      "emotion": 0.815,
+      "connection": 0.725,
+      "grounding": 0.455,
+      "mind": 0.32,
+      "change": 0.41
+    }
+  },
+  {
+    "id": "cups-7",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "7",
+    "number": 7,
+    "name": {
+      "vi": "Bảy Cốc",
+      "en": "Seven of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.39,
+      "emotion": 0.885,
+      "connection": 0.775,
+      "grounding": 0.445,
+      "mind": 0.28,
+      "change": 0.39
+    }
+  },
+  {
+    "id": "cups-8",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "8",
+    "number": 8,
+    "name": {
+      "vi": "Tám Cốc",
+      "en": "Eight of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 0.85,
+      "connection": 0.75,
+      "grounding": 0.45,
+      "mind": 0.3,
+      "change": 0.4
+    }
+  },
+  {
+    "id": "cups-9",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "9",
+    "number": 9,
+    "name": {
+      "vi": "Chín Cốc",
+      "en": "Nine of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.38,
+      "emotion": 0.92,
+      "connection": 0.8,
+      "grounding": 0.44,
+      "mind": 0.26,
+      "change": 0.38
+    }
+  },
+  {
+    "id": "cups-10",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "10",
+    "number": 10,
+    "name": {
+      "vi": "Mười Cốc",
+      "en": "Ten of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.35,
+      "emotion": 1,
+      "connection": 0.875,
+      "grounding": 0.425,
+      "mind": 0.2,
+      "change": 0.35
+    }
+  },
+  {
+    "id": "cups-page",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "page",
+    "number": 11,
+    "name": {
+      "vi": "Thị Đồng Cốc",
+      "en": "Page of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 0.85,
+      "connection": 0.75,
+      "grounding": 0.45,
+      "mind": 0.35,
+      "change": 0.55
+    }
+  },
+  {
+    "id": "cups-knight",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "knight",
+    "number": 12,
+    "name": {
+      "vi": "Hiệp Sĩ Cốc",
+      "en": "Knight of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.6,
+      "emotion": 0.85,
+      "connection": 0.75,
+      "grounding": 0.45,
+      "mind": 0.3,
+      "change": 0.5
+    }
+  },
+  {
+    "id": "cups-queen",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "queen",
+    "number": 13,
+    "name": {
+      "vi": "Hoàng Hậu Cốc",
+      "en": "Queen of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 1,
+      "connection": 0.85,
+      "grounding": 0.45,
+      "mind": 0.3,
+      "change": 0.4
+    }
+  },
+  {
+    "id": "cups-king",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "king",
+    "number": 14,
+    "name": {
+      "vi": "Vua Cốc",
+      "en": "King of Cups"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 0.85,
+      "connection": 0.75,
+      "grounding": 0.55,
+      "mind": 0.45,
+      "change": 0.4
+    }
+  }
+]

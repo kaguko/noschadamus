@@ -1,0 +1,632 @@
+[
+  {
+    "id": "wands-ace",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "ace",
+    "number": 1,
+    "name": {
+      "vi": "Át Gậy",
+      "en": "Ace of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.955,
+      "emotion": 0.5,
+      "connection": 0.37,
+      "grounding": 0.24,
+      "mind": 0.435,
+      "change": 0.76
+    }
+  },
+  {
+    "id": "wands-2",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "2",
+    "number": 2,
+    "name": {
+      "vi": "Hai Gậy",
+      "en": "Two of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.78,
+      "emotion": 0.5,
+      "connection": 0.42,
+      "grounding": 0.34,
+      "mind": 0.46,
+      "change": 0.66
+    }
+  },
+  {
+    "id": "wands-3",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "3",
+    "number": 3,
+    "name": {
+      "vi": "Ba Gậy",
+      "en": "Three of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.85,
+      "emotion": 0.5,
+      "connection": 0.4,
+      "grounding": 0.3,
+      "mind": 0.45,
+      "change": 0.7
+    }
+  },
+  {
+    "id": "wands-4",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "4",
+    "number": 4,
+    "name": {
+      "vi": "Bốn Gậy",
+      "en": "Four of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.815,
+      "emotion": 0.5,
+      "connection": 0.41,
+      "grounding": 0.32,
+      "mind": 0.455,
+      "change": 0.68
+    }
+  },
+  {
+    "id": "wands-5",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "5",
+    "number": 5,
+    "name": {
+      "vi": "Năm Gậy",
+      "en": "Five of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.99,
+      "emotion": 0.5,
+      "connection": 0.36,
+      "grounding": 0.22,
+      "mind": 0.43,
+      "change": 0.78
+    }
+  },
+  {
+    "id": "wands-6",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "6",
+    "number": 6,
+    "name": {
+      "vi": "Sáu Gậy",
+      "en": "Six of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.815,
+      "emotion": 0.5,
+      "connection": 0.41,
+      "grounding": 0.32,
+      "mind": 0.455,
+      "change": 0.68
+    }
+  },
+  {
+    "id": "wands-7",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "7",
+    "number": 7,
+    "name": {
+      "vi": "Bảy Gậy",
+      "en": "Seven of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.885,
+      "emotion": 0.5,
+      "connection": 0.39,
+      "grounding": 0.28,
+      "mind": 0.445,
+      "change": 0.72
+    }
+  },
+  {
+    "id": "wands-8",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "8",
+    "number": 8,
+    "name": {
+      "vi": "Tám Gậy",
+      "en": "Eight of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.85,
+      "emotion": 0.5,
+      "connection": 0.4,
+      "grounding": 0.3,
+      "mind": 0.45,
+      "change": 0.7
+    }
+  },
+  {
+    "id": "wands-9",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "9",
+    "number": 9,
+    "name": {
+      "vi": "Chín Gậy",
+      "en": "Nine of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.92,
+      "emotion": 0.5,
+      "connection": 0.38,
+      "grounding": 0.26,
+      "mind": 0.44,
+      "change": 0.74
+    }
+  },
+  {
+    "id": "wands-10",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "10",
+    "number": 10,
+    "name": {
+      "vi": "Mười Gậy",
+      "en": "Ten of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 1,
+      "emotion": 0.5,
+      "connection": 0.35,
+      "grounding": 0.2,
+      "mind": 0.425,
+      "change": 0.8
+    }
+  },
+  {
+    "id": "wands-page",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "page",
+    "number": 11,
+    "name": {
+      "vi": "Thị Đồng Gậy",
+      "en": "Page of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.85,
+      "emotion": 0.5,
+      "connection": 0.4,
+      "grounding": 0.3,
+      "mind": 0.5,
+      "change": 0.85
+    }
+  },
+  {
+    "id": "wands-knight",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "knight",
+    "number": 12,
+    "name": {
+      "vi": "Hiệp Sĩ Gậy",
+      "en": "Knight of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 1,
+      "emotion": 0.5,
+      "connection": 0.4,
+      "grounding": 0.3,
+      "mind": 0.45,
+      "change": 0.8
+    }
+  },
+  {
+    "id": "wands-queen",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "queen",
+    "number": 13,
+    "name": {
+      "vi": "Hoàng Hậu Gậy",
+      "en": "Queen of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.85,
+      "emotion": 0.65,
+      "connection": 0.5,
+      "grounding": 0.3,
+      "mind": 0.45,
+      "change": 0.7
+    }
+  },
+  {
+    "id": "wands-king",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "king",
+    "number": 14,
+    "name": {
+      "vi": "Vua Gậy",
+      "en": "King of Wands"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.85,
+      "emotion": 0.5,
+      "connection": 0.4,
+      "grounding": 0.4,
+      "mind": 0.6,
+      "change": 0.7
+    }
+  }
+]

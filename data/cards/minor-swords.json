@@ -1,0 +1,632 @@
+[
+  {
+    "id": "swords-ace",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "ace",
+    "number": 1,
+    "name": {
+      "vi": "Át Kiếm",
+      "en": "Ace of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.565,
+      "emotion": 0.24,
+      "connection": 0.175,
+      "grounding": 0.24,
+      "mind": 0.955,
+      "change": 0.63
+    }
+  },
+  {
+    "id": "swords-2",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "2",
+    "number": 2,
+    "name": {
+      "vi": "Hai Kiếm",
+      "en": "Two of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.54,
+      "emotion": 0.34,
+      "connection": 0.3,
+      "grounding": 0.34,
+      "mind": 0.78,
+      "change": 0.58
+    }
+  },
+  {
+    "id": "swords-3",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "3",
+    "number": 3,
+    "name": {
+      "vi": "Ba Kiếm",
+      "en": "Three of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.55,
+      "emotion": 0.3,
+      "connection": 0.25,
+      "grounding": 0.3,
+      "mind": 0.85,
+      "change": 0.6
+    }
+  },
+  {
+    "id": "swords-4",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "4",
+    "number": 4,
+    "name": {
+      "vi": "Bốn Kiếm",
+      "en": "Four of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.545,
+      "emotion": 0.32,
+      "connection": 0.275,
+      "grounding": 0.32,
+      "mind": 0.815,
+      "change": 0.59
+    }
+  },
+  {
+    "id": "swords-5",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "5",
+    "number": 5,
+    "name": {
+      "vi": "Năm Kiếm",
+      "en": "Five of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.57,
+      "emotion": 0.22,
+      "connection": 0.15,
+      "grounding": 0.22,
+      "mind": 0.99,
+      "change": 0.64
+    }
+  },
+  {
+    "id": "swords-6",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "6",
+    "number": 6,
+    "name": {
+      "vi": "Sáu Kiếm",
+      "en": "Six of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.545,
+      "emotion": 0.32,
+      "connection": 0.275,
+      "grounding": 0.32,
+      "mind": 0.815,
+      "change": 0.59
+    }
+  },
+  {
+    "id": "swords-7",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "7",
+    "number": 7,
+    "name": {
+      "vi": "Bảy Kiếm",
+      "en": "Seven of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.555,
+      "emotion": 0.28,
+      "connection": 0.225,
+      "grounding": 0.28,
+      "mind": 0.885,
+      "change": 0.61
+    }
+  },
+  {
+    "id": "swords-8",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "8",
+    "number": 8,
+    "name": {
+      "vi": "Tám Kiếm",
+      "en": "Eight of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.55,
+      "emotion": 0.3,
+      "connection": 0.25,
+      "grounding": 0.3,
+      "mind": 0.85,
+      "change": 0.6
+    }
+  },
+  {
+    "id": "swords-9",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "9",
+    "number": 9,
+    "name": {
+      "vi": "Chín Kiếm",
+      "en": "Nine of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.56,
+      "emotion": 0.26,
+      "connection": 0.2,
+      "grounding": 0.26,
+      "mind": 0.92,
+      "change": 0.62
+    }
+  },
+  {
+    "id": "swords-10",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "10",
+    "number": 10,
+    "name": {
+      "vi": "Mười Kiếm",
+      "en": "Ten of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.575,
+      "emotion": 0.2,
+      "connection": 0.125,
+      "grounding": 0.2,
+      "mind": 1,
+      "change": 0.65
+    }
+  },
+  {
+    "id": "swords-page",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "page",
+    "number": 11,
+    "name": {
+      "vi": "Thị Đồng Kiếm",
+      "en": "Page of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.55,
+      "emotion": 0.3,
+      "connection": 0.25,
+      "grounding": 0.3,
+      "mind": 0.9,
+      "change": 0.75
+    }
+  },
+  {
+    "id": "swords-knight",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "knight",
+    "number": 12,
+    "name": {
+      "vi": "Hiệp Sĩ Kiếm",
+      "en": "Knight of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.75,
+      "emotion": 0.3,
+      "connection": 0.25,
+      "grounding": 0.3,
+      "mind": 0.85,
+      "change": 0.7
+    }
+  },
+  {
+    "id": "swords-queen",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "queen",
+    "number": 13,
+    "name": {
+      "vi": "Hoàng Hậu Kiếm",
+      "en": "Queen of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.55,
+      "emotion": 0.45,
+      "connection": 0.35,
+      "grounding": 0.3,
+      "mind": 0.85,
+      "change": 0.6
+    }
+  },
+  {
+    "id": "swords-king",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "king",
+    "number": 14,
+    "name": {
+      "vi": "Vua Kiếm",
+      "en": "King of Swords"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.55,
+      "emotion": 0.3,
+      "connection": 0.25,
+      "grounding": 0.4,
+      "mind": 1,
+      "change": 0.6
+    }
+  }
+]

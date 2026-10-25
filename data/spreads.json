@@ -1,0 +1,68 @@
+[
+  {
+    "id": "single",
+    "name": {
+      "vi": "Một lá"
+    },
+    "tagline": {
+      "vi": "Điều cần lắng nghe hôm nay"
+    },
+    "positions": [
+      {
+        "index": 0,
+        "key": "single",
+        "label": {
+          "vi": "Hôm nay"
+        },
+        "description": {
+          "vi": "Một hướng nhìn dành cho khoảnh khắc này."
+        },
+        "weight": 1.0
+      }
+    ]
+  },
+  {
+    "id": "three",
+    "name": {
+      "vi": "Ba lá"
+    },
+    "tagline": {
+      "vi": "Quá khứ · Hiện tại · Hướng mở"
+    },
+    "positions": [
+      {
+        "index": 0,
+        "key": "past",
+        "label": {
+          "vi": "Quá khứ"
+        },
+        "description": {
+          "vi": "Điều đã góp phần đưa bạn đến đây."
+        },
+        "weight": 0.8
+      },
+      {
+        "index": 1,
+        "key": "present",
+        "label": {
+          "vi": "Hiện tại"
+        },
+        "description": {
+          "vi": "Điều đang hiện diện rõ nhất lúc này."
+        },
+        "weight": 1.2
+      },
+      {
+        "index": 2,
+        "key": "opening",
+        "label": {
+          "vi": "Hướng mở"
+        },
+        "description": {
+          "vi": "Một khả năng bạn có thể chọn khám phá, không phải điều chắc sẽ đến."
+        },
+        "weight": 1.0
+      }
+    ]
+  }
+]

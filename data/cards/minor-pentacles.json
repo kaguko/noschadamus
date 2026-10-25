@@ -1,0 +1,632 @@
+[
+  {
+    "id": "pentacles-ace",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "ace",
+    "number": 1,
+    "name": {
+      "vi": "Át Tiền",
+      "en": "Ace of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.37,
+      "emotion": 0.37,
+      "connection": 0.565,
+      "grounding": 0.955,
+      "mind": 0.5,
+      "change": 0.11
+    }
+  },
+  {
+    "id": "pentacles-2",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "2",
+    "number": 2,
+    "name": {
+      "vi": "Hai Tiền",
+      "en": "Two of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.42,
+      "emotion": 0.42,
+      "connection": 0.54,
+      "grounding": 0.78,
+      "mind": 0.5,
+      "change": 0.26
+    }
+  },
+  {
+    "id": "pentacles-3",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "3",
+    "number": 3,
+    "name": {
+      "vi": "Ba Tiền",
+      "en": "Three of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 0.4,
+      "connection": 0.55,
+      "grounding": 0.85,
+      "mind": 0.5,
+      "change": 0.2
+    }
+  },
+  {
+    "id": "pentacles-4",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "4",
+    "number": 4,
+    "name": {
+      "vi": "Bốn Tiền",
+      "en": "Four of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.41,
+      "emotion": 0.41,
+      "connection": 0.545,
+      "grounding": 0.815,
+      "mind": 0.5,
+      "change": 0.23
+    }
+  },
+  {
+    "id": "pentacles-5",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "5",
+    "number": 5,
+    "name": {
+      "vi": "Năm Tiền",
+      "en": "Five of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.36,
+      "emotion": 0.36,
+      "connection": 0.57,
+      "grounding": 0.99,
+      "mind": 0.5,
+      "change": 0.08
+    }
+  },
+  {
+    "id": "pentacles-6",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "6",
+    "number": 6,
+    "name": {
+      "vi": "Sáu Tiền",
+      "en": "Six of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.41,
+      "emotion": 0.41,
+      "connection": 0.545,
+      "grounding": 0.815,
+      "mind": 0.5,
+      "change": 0.23
+    }
+  },
+  {
+    "id": "pentacles-7",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "7",
+    "number": 7,
+    "name": {
+      "vi": "Bảy Tiền",
+      "en": "Seven of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.39,
+      "emotion": 0.39,
+      "connection": 0.555,
+      "grounding": 0.885,
+      "mind": 0.5,
+      "change": 0.17
+    }
+  },
+  {
+    "id": "pentacles-8",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "8",
+    "number": 8,
+    "name": {
+      "vi": "Tám Tiền",
+      "en": "Eight of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 0.4,
+      "connection": 0.55,
+      "grounding": 0.85,
+      "mind": 0.5,
+      "change": 0.2
+    }
+  },
+  {
+    "id": "pentacles-9",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "9",
+    "number": 9,
+    "name": {
+      "vi": "Chín Tiền",
+      "en": "Nine of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.38,
+      "emotion": 0.38,
+      "connection": 0.56,
+      "grounding": 0.92,
+      "mind": 0.5,
+      "change": 0.14
+    }
+  },
+  {
+    "id": "pentacles-10",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "10",
+    "number": 10,
+    "name": {
+      "vi": "Mười Tiền",
+      "en": "Ten of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.35,
+      "emotion": 0.35,
+      "connection": 0.575,
+      "grounding": 1,
+      "mind": 0.5,
+      "change": 0.05
+    }
+  },
+  {
+    "id": "pentacles-page",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "page",
+    "number": 11,
+    "name": {
+      "vi": "Thị Đồng Tiền",
+      "en": "Page of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 0.4,
+      "connection": 0.55,
+      "grounding": 0.85,
+      "mind": 0.55,
+      "change": 0.35
+    }
+  },
+  {
+    "id": "pentacles-knight",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "knight",
+    "number": 12,
+    "name": {
+      "vi": "Hiệp Sĩ Tiền",
+      "en": "Knight of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.6,
+      "emotion": 0.4,
+      "connection": 0.55,
+      "grounding": 0.85,
+      "mind": 0.5,
+      "change": 0.3
+    }
+  },
+  {
+    "id": "pentacles-queen",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "queen",
+    "number": 13,
+    "name": {
+      "vi": "Hoàng Hậu Tiền",
+      "en": "Queen of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 0.55,
+      "connection": 0.65,
+      "grounding": 0.85,
+      "mind": 0.5,
+      "change": 0.2
+    }
+  },
+  {
+    "id": "pentacles-king",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "king",
+    "number": 14,
+    "name": {
+      "vi": "Vua Tiền",
+      "en": "King of Pentacles"
+    },
+    "keywords": {
+      "upright": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 0.4,
+      "connection": 0.55,
+      "grounding": 0.95,
+      "mind": 0.65,
+      "change": 0.2
+    }
+  }
+]

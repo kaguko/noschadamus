@@ -1,0 +1,30 @@
+{
+  "cups-ace": {
+    "keywords": {
+      "upright": [
+        "Cảm xúc mới",
+        "Cởi mở",
+        "Lòng biết ơn"
+      ],
+      "reversed": [
+        "Kìm nén",
+        "Cạn kiệt",
+        "Khép lòng"
+      ]
+    },
+    "meaning": {
+      "upright": "Một dòng cảm xúc mới đang đầy lên. Đó có thể là tình cảm, sự sáng tạo, hay chỉ là cảm giác được sống rõ hơn một chút.",
+      "reversed": "Cảm xúc có thể đang bị cất vào ngăn kéo. Đảo ngược mời bạn mở ra từng chút một, theo tốc độ của riêng bạn."
+    },
+    "prompts": {
+      "upright": [
+        "Điều gì gần đây làm tim bạn mềm ra?",
+        "Bạn muốn dành chỗ cho cảm xúc nào đang đến?"
+      ],
+      "reversed": [
+        "Cảm xúc nào bạn chưa cho mình ngồi lại cùng?",
+        "Bạn cần điều gì để thấy đủ an toàn khi mở lòng?"
+      ]
+    }
+  }
+}

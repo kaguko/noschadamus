@@ -1,0 +1,992 @@
+[
+  {
+    "id": "major-00",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 0,
+    "name": {
+      "vi": "Chàng Khờ",
+      "en": "The Fool"
+    },
+    "keywords": {
+      "upright": [
+        "Khởi đầu",
+        "Tự do",
+        "Tin tưởng"
+      ],
+      "reversed": [
+        "Liều lĩnh",
+        "Do dự",
+        "Chưa sẵn sàng"
+      ]
+    },
+    "meaning": {
+      "upright": "Một khoảng trống mới đang mở ra trước mặt bạn. Lá bài này không hứa hẹn điều gì sẽ xảy ra; nó chỉ nhắc rằng bước đầu tiên thường nhẹ hơn ta tưởng.",
+      "reversed": "Có thể bạn đang đứng sát mép một quyết định mà chưa kịp nhìn xuống chân. Đảo ngược không phải điềm gì xấu, chỉ là lời mời chậm lại một nhịp."
+    },
+    "prompts": {
+      "upright": [
+        "Nếu không sợ sai, bạn sẽ thử điều gì đầu tiên?",
+        "Điều gì bạn đang chờ được “sẵn sàng” mới bắt đầu?"
+      ],
+      "reversed": [
+        "Phần nào trong bạn muốn lao tới, và phần nào muốn dừng lại?",
+        "Một bước nhỏ nào giúp bạn nhìn rõ chân mình hơn?"
+      ]
+    },
+    "vector": {
+      "energy": 0.75,
+      "emotion": 0.55,
+      "connection": 0.45,
+      "grounding": 0.15,
+      "mind": 0.25,
+      "change": 0.9
+    }
+  },
+  {
+    "id": "major-01",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 1,
+    "name": {
+      "vi": "Nhà Ảo Thuật",
+      "en": "The Magician"
+    },
+    "keywords": {
+      "upright": [
+        "Chủ động",
+        "Khéo léo",
+        "Tập trung"
+      ],
+      "reversed": [
+        "Phân tán",
+        "Che giấu",
+        "Tự nghi ngờ"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.9,
+      "emotion": 0.4,
+      "connection": 0.45,
+      "grounding": 0.55,
+      "mind": 0.85,
+      "change": 0.7
+    }
+  },
+  {
+    "id": "major-02",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 2,
+    "name": {
+      "vi": "Nữ Tư Tế",
+      "en": "The High Priestess"
+    },
+    "keywords": {
+      "upright": [
+        "Trực giác",
+        "Lặng lẽ",
+        "Bí ẩn"
+      ],
+      "reversed": [
+        "Phớt lờ trực giác",
+        "Giấu kín",
+        "Mơ hồ"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.25,
+      "emotion": 0.75,
+      "connection": 0.35,
+      "grounding": 0.5,
+      "mind": 0.7,
+      "change": 0.3
+    }
+  },
+  {
+    "id": "major-03",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 3,
+    "name": {
+      "vi": "Hoàng Hậu",
+      "en": "The Empress"
+    },
+    "keywords": {
+      "upright": [
+        "Nuôi dưỡng",
+        "Dồi dào",
+        "Giác quan"
+      ],
+      "reversed": [
+        "Kiệt sức vì cho đi",
+        "Phụ thuộc",
+        "Trì trệ"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.6,
+      "emotion": 0.85,
+      "connection": 0.8,
+      "grounding": 0.85,
+      "mind": 0.35,
+      "change": 0.45
+    }
+  },
+  {
+    "id": "major-04",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 4,
+    "name": {
+      "vi": "Hoàng Đế",
+      "en": "The Emperor"
+    },
+    "keywords": {
+      "upright": [
+        "Cấu trúc",
+        "Kỷ luật",
+        "Bảo vệ"
+      ],
+      "reversed": [
+        "Cứng nhắc",
+        "Kiểm soát",
+        "Thiếu kỷ luật"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.7,
+      "emotion": 0.25,
+      "connection": 0.4,
+      "grounding": 0.9,
+      "mind": 0.85,
+      "change": 0.2
+    }
+  },
+  {
+    "id": "major-05",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 5,
+    "name": {
+      "vi": "Giáo Hoàng",
+      "en": "The Hierophant"
+    },
+    "keywords": {
+      "upright": [
+        "Truyền thống",
+        "Học hỏi",
+        "Thuộc về"
+      ],
+      "reversed": [
+        "Nổi loạn",
+        "Rập khuôn",
+        "Lối riêng"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 0.45,
+      "connection": 0.75,
+      "grounding": 0.8,
+      "mind": 0.7,
+      "change": 0.15
+    }
+  },
+  {
+    "id": "major-06",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 6,
+    "name": {
+      "vi": "Những Người Yêu Nhau",
+      "en": "The Lovers"
+    },
+    "keywords": {
+      "upright": [
+        "Lựa chọn",
+        "Hòa hợp",
+        "Giá trị"
+      ],
+      "reversed": [
+        "Bất hòa",
+        "Do dự",
+        "Lệch giá trị"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.6,
+      "emotion": 0.85,
+      "connection": 0.95,
+      "grounding": 0.4,
+      "mind": 0.5,
+      "change": 0.55
+    }
+  },
+  {
+    "id": "major-07",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 7,
+    "name": {
+      "vi": "Cỗ Xe",
+      "en": "The Chariot"
+    },
+    "keywords": {
+      "upright": [
+        "Quyết tâm",
+        "Hướng tới",
+        "Tự chủ"
+      ],
+      "reversed": [
+        "Lạc hướng",
+        "Hấp tấp",
+        "Mất kiểm soát"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.9,
+      "emotion": 0.35,
+      "connection": 0.3,
+      "grounding": 0.55,
+      "mind": 0.75,
+      "change": 0.75
+    }
+  },
+  {
+    "id": "major-08",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 8,
+    "name": {
+      "vi": "Sức Mạnh",
+      "en": "Strength"
+    },
+    "keywords": {
+      "upright": [
+        "Kiên nhẫn",
+        "Can đảm dịu",
+        "Tự tin nội tại"
+      ],
+      "reversed": [
+        "Tự ngờ vực",
+        "Cạn sức",
+        "Kìm nén"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.7,
+      "emotion": 0.8,
+      "connection": 0.65,
+      "grounding": 0.75,
+      "mind": 0.5,
+      "change": 0.35
+    }
+  },
+  {
+    "id": "major-09",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 9,
+    "name": {
+      "vi": "Ẩn Sĩ",
+      "en": "The Hermit"
+    },
+    "keywords": {
+      "upright": [
+        "Tự soi",
+        "Tĩnh lặng",
+        "Tìm ý nghĩa"
+      ],
+      "reversed": [
+        "Cô lập",
+        "Né tránh",
+        "Rút lui quá lâu"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.2,
+      "emotion": 0.45,
+      "connection": 0.15,
+      "grounding": 0.65,
+      "mind": 0.85,
+      "change": 0.3
+    }
+  },
+  {
+    "id": "major-10",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 10,
+    "name": {
+      "vi": "Bánh Xe Xoay Vần",
+      "en": "Wheel of Fortune"
+    },
+    "keywords": {
+      "upright": [
+        "Chu kỳ",
+        "Cơ hội",
+        "Chuyển mình"
+      ],
+      "reversed": [
+        "Cưỡng lại",
+        "Trì trệ",
+        "Thấy mất quyền"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.6,
+      "emotion": 0.45,
+      "connection": 0.5,
+      "grounding": 0.25,
+      "mind": 0.35,
+      "change": 0.95
+    }
+  },
+  {
+    "id": "major-11",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 11,
+    "name": {
+      "vi": "Công Lý",
+      "en": "Justice"
+    },
+    "keywords": {
+      "upright": [
+        "Công bằng",
+        "Sự thật",
+        "Trách nhiệm"
+      ],
+      "reversed": [
+        "Thiên lệch",
+        "Né trách nhiệm",
+        "Thiếu minh bạch"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.45,
+      "emotion": 0.25,
+      "connection": 0.55,
+      "grounding": 0.75,
+      "mind": 0.95,
+      "change": 0.35
+    }
+  },
+  {
+    "id": "major-12",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 12,
+    "name": {
+      "vi": "Người Treo Ngược",
+      "en": "The Hanged Man"
+    },
+    "keywords": {
+      "upright": [
+        "Đổi góc nhìn",
+        "Tạm dừng",
+        "Buông"
+      ],
+      "reversed": [
+        "Chần chừ",
+        "Hy sinh vô ích",
+        "Bế tắc"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.15,
+      "emotion": 0.55,
+      "connection": 0.35,
+      "grounding": 0.3,
+      "mind": 0.7,
+      "change": 0.65
+    }
+  },
+  {
+    "id": "major-13",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 13,
+    "name": {
+      "vi": "Cái Chết",
+      "en": "Death"
+    },
+    "keywords": {
+      "upright": [
+        "Kết thúc",
+        "Chuyển hóa",
+        "Buông"
+      ],
+      "reversed": [
+        "Níu giữ",
+        "Chậm lại",
+        "Sợ mất"
+      ]
+    },
+    "meaning": {
+      "upright": "Lá bài này hiếm khi nói về cái chết thật. Nó nói về một chương đang khép lại để chừa chỗ cho chương khác, và bạn được phép tiễn chương cũ thật tử tế.",
+      "reversed": "Có điều bạn biết đã đến lúc buông nhưng tay vẫn còn nắm. Không sao cả, buông cũng cần thời gian, và nắm thêm một chút không phải là yếu đuối."
+    },
+    "prompts": {
+      "upright": [
+        "Điều gì đã làm xong nhiệm vụ của nó trong đời bạn?",
+        "Bạn muốn mang theo điều gì sang chương sau?"
+      ],
+      "reversed": [
+        "Bạn sợ mất điều gì nếu buông tay?",
+        "Phần nào của điều cũ vẫn đáng được giữ lại?"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 0.5,
+      "connection": 0.2,
+      "grounding": 0.35,
+      "mind": 0.45,
+      "change": 1.0
+    }
+  },
+  {
+    "id": "major-14",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 14,
+    "name": {
+      "vi": "Sự Tiết Chế",
+      "en": "Temperance"
+    },
+    "keywords": {
+      "upright": [
+        "Cân bằng",
+        "Hòa trộn",
+        "Kiên nhẫn"
+      ],
+      "reversed": [
+        "Mất cân bằng",
+        "Thái quá",
+        "Vội vàng"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.45,
+      "emotion": 0.7,
+      "connection": 0.65,
+      "grounding": 0.8,
+      "mind": 0.6,
+      "change": 0.5
+    }
+  },
+  {
+    "id": "major-15",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 15,
+    "name": {
+      "vi": "Ác Quỷ",
+      "en": "The Devil"
+    },
+    "keywords": {
+      "upright": [
+        "Ràng buộc",
+        "Ham muốn",
+        "Thói quen"
+      ],
+      "reversed": [
+        "Giải thoát",
+        "Nhận ra xiềng xích",
+        "Bứt ra"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.7,
+      "emotion": 0.8,
+      "connection": 0.65,
+      "grounding": 0.4,
+      "mind": 0.25,
+      "change": 0.1
+    }
+  },
+  {
+    "id": "major-16",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 16,
+    "name": {
+      "vi": "Tòa Tháp",
+      "en": "The Tower"
+    },
+    "keywords": {
+      "upright": [
+        "Đổ vỡ",
+        "Thức tỉnh",
+        "Giải phóng"
+      ],
+      "reversed": [
+        "Chống cự",
+        "Sửa chữa",
+        "Trì hoãn"
+      ]
+    },
+    "meaning": {
+      "upright": "Một cấu trúc từng có vẻ chắc chắn đang lộ ra vết nứt. Sự rung chuyển này khó chịu, nhưng thường nó chỉ lấy đi những gì không còn đứng vững bằng sự thật.",
+      "reversed": "Bạn có thể đang gồng giữ một thứ đã lung lay từ lâu. Đảo ngược gợi ý rằng thay đổi vẫn đang chờ, và cách bạn đón nó là phần bạn chọn được."
+    },
+    "prompts": {
+      "upright": [
+        "Điều gì trong đời bạn đã thôi chắc chắn từ lâu?",
+        "Nếu nó sụp xuống, điều gì vẫn còn lại với bạn?"
+      ],
+      "reversed": [
+        "Bạn đang tốn sức giữ điều gì cho khỏi nghiêng?",
+        "Bạn có thể tháo gỡ nó từng chút một không?"
+      ]
+    },
+    "vector": {
+      "energy": 0.95,
+      "emotion": 0.7,
+      "connection": 0.2,
+      "grounding": 0.05,
+      "mind": 0.35,
+      "change": 0.95
+    }
+  },
+  {
+    "id": "major-17",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 17,
+    "name": {
+      "vi": "Ngôi Sao",
+      "en": "The Star"
+    },
+    "keywords": {
+      "upright": [
+        "Hy vọng",
+        "Chữa lành",
+        "Cởi mở"
+      ],
+      "reversed": [
+        "Mất phương hướng",
+        "Mệt mỏi",
+        "Ngờ vực"
+      ]
+    },
+    "meaning": {
+      "upright": "Sau một quãng khó, có một khoảng lặng dịu để thở. Lá bài gợi ý rằng bạn được phép hy vọng mà không cần chứng minh điều gì với ai.",
+      "reversed": "Ánh sáng vẫn ở đó, chỉ là hôm nay bạn khó nhìn thấy nó. Đảo ngược nhắc bạn nghỉ ngơi trước khi cố tìm thêm lý do để tin."
+    },
+    "prompts": {
+      "upright": [
+        "Điều gì gần đây khiến bạn thấy nhẹ lòng, dù chỉ một chút?",
+        "Bạn muốn nuôi dưỡng niềm hy vọng nào?"
+      ],
+      "reversed": [
+        "Bạn cần được nghỉ ở đâu trước khi đi tiếp?",
+        "Ai hoặc điều gì từng giúp bạn tin trở lại?"
+      ]
+    },
+    "vector": {
+      "energy": 0.4,
+      "emotion": 0.8,
+      "connection": 0.7,
+      "grounding": 0.5,
+      "mind": 0.55,
+      "change": 0.55
+    }
+  },
+  {
+    "id": "major-18",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 18,
+    "name": {
+      "vi": "Mặt Trăng",
+      "en": "The Moon"
+    },
+    "keywords": {
+      "upright": [
+        "Mơ hồ",
+        "Trực giác",
+        "Bóng tối trong lòng"
+      ],
+      "reversed": [
+        "Rõ dần",
+        "Nỗi sợ lộ diện",
+        "Thoát mê"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.3,
+      "emotion": 0.9,
+      "connection": 0.35,
+      "grounding": 0.2,
+      "mind": 0.3,
+      "change": 0.5
+    }
+  },
+  {
+    "id": "major-19",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 19,
+    "name": {
+      "vi": "Mặt Trời",
+      "en": "The Sun"
+    },
+    "keywords": {
+      "upright": [
+        "Niềm vui",
+        "Rõ ràng",
+        "Sức sống"
+      ],
+      "reversed": [
+        "Vui bị che",
+        "Lạc quan quá mức",
+        "Chậm nắng"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.95,
+      "emotion": 0.85,
+      "connection": 0.85,
+      "grounding": 0.7,
+      "mind": 0.5,
+      "change": 0.5
+    }
+  },
+  {
+    "id": "major-20",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 20,
+    "name": {
+      "vi": "Phán Xét",
+      "en": "Judgement"
+    },
+    "keywords": {
+      "upright": [
+        "Thức tỉnh",
+        "Nhìn lại",
+        "Tha thứ"
+      ],
+      "reversed": [
+        "Tự phán xét",
+        "Né nhìn lại",
+        "Do dự"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.7,
+      "emotion": 0.65,
+      "connection": 0.6,
+      "grounding": 0.45,
+      "mind": 0.7,
+      "change": 0.85
+    }
+  },
+  {
+    "id": "major-21",
+    "arcana": "major",
+    "suit": null,
+    "rank": null,
+    "number": 21,
+    "name": {
+      "vi": "Thế Giới",
+      "en": "The World"
+    },
+    "keywords": {
+      "upright": [
+        "Trọn vẹn",
+        "Hoàn thành",
+        "Thuộc về"
+      ],
+      "reversed": [
+        "Dang dở",
+        "Chậm khép",
+        "Thiếu một mảnh"
+      ]
+    },
+    "meaning": {
+      "upright": "[TODO]",
+      "reversed": "[TODO]"
+    },
+    "prompts": {
+      "upright": [
+        "[TODO]",
+        "[TODO]"
+      ],
+      "reversed": [
+        "[TODO]",
+        "[TODO]"
+      ]
+    },
+    "vector": {
+      "energy": 0.7,
+      "emotion": 0.7,
+      "connection": 0.75,
+      "grounding": 0.9,
+      "mind": 0.65,
+      "change": 0.55
+    }
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "nouns": {
+    "energy": "Ngọn Lửa",
+    "emotion": "Dòng Nước",
+    "connection": "Sợi Chỉ",
+    "grounding": "Rễ Cây",
+    "mind": "Ngọn Đèn",
+    "change": "Cơn Gió"
+  },
+  "modifiers": {
+    "energy": "Bừng Sáng",
+    "emotion": "Dịu Dàng",
+    "connection": "Gắn Kết",
+    "grounding": "Vững Vàng",
+    "mind": "Tỉnh Táo",
+    "change": "Dịch Chuyển"
+  },
+  "taglines": {
+    "energy": "Bạn đang mang nhiều lửa. Điều còn lại là chọn nơi đặt nó.",
+    "emotion": "Bạn đang cảm rất sâu, và đó cũng là một dạng trí tuệ.",
+    "connection": "Bạn đang hướng về người khác, như thể có nhiều sợi chỉ đang kéo.",
+    "grounding": "Bạn đang bám rễ. Vững để còn có thể lớn.",
+    "mind": "Bạn đang nghĩ rất nhiều. Đầu bạn là một căn phòng sáng đèn.",
+    "change": "Bạn đang đứng giữa cơn gió, mọi thứ chuyển động quanh bạn."
+  },
+  "insights": {
+    "energy": "Năng lượng là trục nổi bật nhất, có thể bạn đang có nhiều thôi thúc hành động hơn bình thường.",
+    "emotion": "Cảm xúc là trục nổi bật nhất, bạn có thể đang cảm nhận mọi thứ rõ và sâu hơn thường lệ.",
+    "connection": "Kết nối là trục nổi bật nhất, các mối quan hệ có thể đang chiếm nhiều chỗ trong tâm trí bạn.",
+    "grounding": "Nền tảng là trục nổi bật nhất, bạn có thể đang cần, hoặc đang có, một cảm giác ổn định.",
+    "mind": "Lý trí là trục nổi bật nhất, bạn có thể đang phân tích, cân nhắc và đi tìm sự rõ ràng.",
+    "change": "Thay đổi là trục nổi bật nhất, có điều gì đó đang dịch chuyển hoặc sắp dịch chuyển."
+  },
+  "invites": {
+    "energy": "Trục năng lượng khá thưa, có thể bạn đang tiết kiệm sức, và điều đó hoàn toàn hợp lý.",
+    "emotion": "Trục cảm xúc khá thưa, có lẽ đã đến lúc tự hỏi mình thực sự đang cảm thấy gì.",
+    "connection": "Trục kết nối khá thưa, bạn có thể đang cần không gian riêng, hoặc một cuộc trò chuyện chưa nói.",
+    "grounding": "Trục nền tảng khá thưa, một thói quen nhỏ và đều có thể cho bạn thêm điểm tựa.",
+    "mind": "Trục lý trí khá thưa, có lẽ bạn đang đi bằng cảm giác nhiều hơn bằng kế hoạch.",
+    "change": "Trục thay đổi khá thưa, mọi thứ có thể đang yên, hoặc đang chờ bạn khơi lên."
+  },
+  "dominantPrompts": {
+    "energy": [
+      "Bạn muốn dồn sức vào điều gì trước, và điều gì có thể chờ?",
+      "Nếu năng lượng này là ngọn lửa, bạn muốn nó sưởi ấm hay thắp sáng điều gì?"
+    ],
+    "emotion": [
+      "Cảm xúc nào đang nói to nhất, và nó muốn bạn biết điều gì?",
+      "Bạn có một chỗ an toàn để cảm xúc này được ngồi xuống không?"
+    ],
+    "connection": [
+      "Bạn đang nghĩ đến ai nhiều nhất, và vì sao?",
+      "Điều gì bạn muốn nói với một người mà chưa nói?"
+    ],
+    "grounding": [
+      "Điều gì đang giữ bạn vững lúc này, và bạn muốn giữ nó thế nào?",
+      "Thói quen nhỏ nào đang nâng đỡ bạn mà bạn chưa ghi nhận?"
+    ],
+    "mind": [
+      "Câu hỏi nào đang chạy trong đầu bạn nhiều nhất?",
+      "Nếu viết suy nghĩ xuống giấy rồi gạch bớt, điều gì còn lại?"
+    ],
+    "change": [
+      "Điều gì đang dịch chuyển, và bạn đang chào đón hay chống lại nó?",
+      "Bạn cần buông điều gì để bước tiếp nhẹ hơn?"
+    ]
+  },
+  "quietPrompts": {
+    "energy": [
+      "Bạn đang tiết kiệm sức cho điều gì?",
+      "Một việc nhỏ nào sẽ giúp bạn nạp lại sức hôm nay?"
+    ],
+    "emotion": [
+      "Nếu tự hỏi “mình đang cảm thấy gì”, câu trả lời đầu tiên là gì?",
+      "Lần gần nhất bạn dành thời gian chỉ để cảm nhận là khi nào?"
+    ],
+    "connection": [
+      "Bạn đang cần ở một mình, hay đang chờ ai đó bắt chuyện?",
+      "Ai là người bạn thấy nhẹ nhõm khi ở gần?"
+    ],
+    "grounding": [
+      "Điều gì trong ngày của bạn có thể đều đặn hơn một chút?",
+      "Bạn đang thiếu điểm tựa nào: thời gian, nơi chốn, hay con người?"
+    ],
+    "mind": [
+      "Có quyết định nào bạn đang để cảm giác dẫn đường mà muốn kiểm tra lại không?",
+      "Nếu viết ra ba lựa chọn của mình, bạn thấy điều gì?"
+    ],
+    "change": [
+      "Điều gì bạn giữ nguyên vì quen, không phải vì đúng?",
+      "Thay đổi nhỏ nào bạn tò mò muốn thử?"
+    ]
+  },
+  "singleSpreadPrefix": "Lá bài này gợi một hướng nhìn duy nhất cho hôm nay."
+}
