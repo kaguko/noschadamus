@@ -142,9 +142,10 @@ export interface TarotCardView {            // DTO, không phải entity
 }
 export interface SpreadView { id: 'single'|'three'; nameVi: string; positions: readonly {key:string; labelVi:string; descriptionVi:string; weight:number}[]; }
 
+// effectiveVector: tarot tự áp quy tắc lá ngược (mục 2.2) để reading không phải import tarot.
 export interface TarotPublicApi {
   getSpread(id: 'single'|'three'): Promise<Result<SpreadView, 'SPREAD_NOT_FOUND'>>;
-  drawForSpread(id: 'single'|'three', opts: { allowReversed: boolean }): Promise<Result<{ spread: SpreadView; cards: readonly (TarotCardView & { orientation: Orientation })[] }, 'SPREAD_NOT_FOUND'|'DECK_INCOMPLETE'>>;
+  drawForSpread(id: 'single'|'three', opts: { allowReversed: boolean }): Promise<Result<{ spread: SpreadView; cards: readonly (TarotCardView & { orientation: Orientation; effectiveVector: AxisVector })[] }, 'SPREAD_NOT_FOUND'|'DECK_INCOMPLETE'>>;
 }
 ```
 
