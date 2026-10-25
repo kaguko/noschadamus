@@ -14,7 +14,7 @@ Phiên bản thực tế lúc khởi tạo (T00):
 | zod | 4.6.7 |
 | vitest | 5.0.5 |
 | @playwright/test | 1.64.1 |
-| dependency-cruiser |  |
+| dependency-cruiser | 18.7.0 |
 
 Ghi chú:
 - Khung dựng bằng `create-next-app` bản mới nhất; mặc định bật `cacheComponents` và `partialPrefetching` trong `next.config.ts`. Giữ nguyên; các trang đọc cookie phải bọc trong `<Suspense>` theo hướng dẫn của Next 16 (xem `node_modules/next/dist/docs/`).
