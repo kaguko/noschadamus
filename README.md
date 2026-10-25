@@ -27,4 +27,5 @@ Các tầng: Presentation (Next.js/React) → Application (use cases) → Domain
 
 ## Tài liệu
 
-Xem chi tiết định hướng, kiến trúc, cấu trúc thư mục và lộ trình trong [plan.md](plan.md).
+- Chiến lược, chỉ số, lộ trình, rủi ro: [plan.md](plan.md)
+- Đặc tả triển khai chi tiết (miền, dữ liệu, kiến trúc, giao diện, task): [docs/README.md](docs/README.md)

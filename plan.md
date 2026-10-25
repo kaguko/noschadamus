@@ -1,263 +1,287 @@
-Dưới đây là bản kế hoạch xây dựng trang web bói toán theo hướng "đọc lạ" mà bạn muốn, tích hợp đầy đủ kiến trúc Clean Architecture + DDD (Domain-Driven Design). Tôi sẽ trình bày rõ ràng từ định hướng sản phẩm, kiến trúc hệ thống, cấu trúc thư mục, đến lộ trình triển khai.
+# Kế hoạch xây dựng noschadamus
+
+Nền tảng tarot/bói toán theo hướng "đọc lạ": biến lá bài thành trải nghiệm trực quan, dễ chia sẻ, không phán đoán cát/hung.
+
+Tài liệu đi theo thứ tự: **Sản phẩm → Nghiệp vụ → Kiến trúc → Chất lượng phi chức năng → Lộ trình → Rủi ro**. Mỗi phần phụ thuộc vào phần trước nó, không nhảy cóc.
 
 ---
 
-## 1. Định hướng sản phẩm (nhắc lại để thống nhất)
+## 1. Sản phẩm
 
-**Sản phẩm**: Trang web bói toán/tarot theo hướng "đọc lạ", tập trung vào trải nghiệm trực quan và khả năng chia sẻ xã hội, thay vì đưa ra lời tiên đoán.
+### 1.1. Vấn đề và giá trị
 
-**Điểm khác biệt cốt lõi** (chọn một để bắt đầu):
-- **Bản đồ trực quan hóa**: Người dùng rút bài → hệ thống vẽ biểu đồ radar cảm xúc hoặc "bản đồ linh hồn" dạng hình ảnh, dễ chia sẻ lên mạng xã hội.
-- **Đối chiếu chéo đa hệ thống**: Kết hợp Tarot + Cung hoàng đạo + Thần số học, tìm điểm "cộng hưởng" thay vì phán đoán đơn lẻ.
-- **Công cụ suy ngẫm**: Không đưa ra cát/hung, chỉ đặt câu hỏi gợi mở để người dùng tự chiêm nghiệm.
+| | |
+|---|---|
+| Người dùng | Người trẻ (18-30) tò mò về tâm linh, không muốn bị phán xét, hay đăng nội dung lên Instagram/TikTok |
+| Vấn đề | Các trang tarot hiện có hoặc quá "định mệnh" (dự đoán), hoặc giao diện cũ, kết quả là một khối chữ khó chia sẻ |
+| Giá trị cốt lõi | Một lượt rút bài trả về **một hình ảnh đẹp, có tính cá nhân, đáng đăng** và một vài câu hỏi gợi mở để suy ngẫm |
+| Không làm | Dự đoán tương lai, tư vấn y tế/tài chính/pháp lý, nội dung gây sợ hãi |
 
-**Đối tượng người dùng**: Người trẻ tò mò về tâm linh nhưng không muốn bị phán xét, thích chia sẻ hình ảnh đẹp lên Instagram/TikTok.
+### 1.2. Định vị: chọn một hướng cho MVP
+
+Ba hướng trong bản nháp trước **không loại trừ nhau nhưng không nên làm cùng lúc**. Quyết định:
+
+| Hướng | Vai trò |
+|---|---|
+| **Bản đồ linh hồn** (trực quan hóa) | **MVP**: là thứ tạo ra hình ảnh để chia sẻ, kéo người dùng mới |
+| **Công cụ suy ngẫm** (câu hỏi gợi mở) | **MVP**: là nội dung văn bản của kết quả, đồng thời là lớp bảo vệ đạo đức (xem 1.4) |
+| Đối chiếu chéo đa hệ thống | **Sau MVP**: chỉ làm khi MVP chứng minh được người dùng quay lại |
+
+### 1.3. Chỉ số thành công
+
+Đặt chỉ số trước khi viết code để mỗi giai đoạn có tiêu chí dừng/tiếp tục.
+
+| Chỉ số | Ý nghĩa | Mục tiêu MVP (đề xuất, chỉnh theo thực tế) |
+|---|---|---|
+| Tỷ lệ hoàn tất lượt rút (vào `/draw` → thấy kết quả) | Trải nghiệm không bị đứt | ≥ 70% |
+| Tỷ lệ chia sẻ (lượt có bấm chia sẻ/tải ảnh ÷ lượt hoàn tất) | Giả thuyết cốt lõi: hình ảnh đáng chia sẻ | ≥ 15% |
+| Tỷ lệ truy cập từ link chia sẻ | Vòng lặp lan truyền hoạt động | theo dõi, chưa đặt ngưỡng |
+| Quay lại trong 7 ngày | Có giá trị lâu dài hay chỉ tò mò một lần | ≥ 20% |
+| Thời gian tải kết quả (p75) | Trải nghiệm di động | < 2,5 s |
+
+### 1.4. Nguyên tắc nội dung và đạo đức
+
+- Mọi văn bản kết quả dùng giọng **gợi mở** ("Điều gì trong bạn đang…?"), không dùng giọng khẳng định về tương lai.
+- Có dòng tuyên bố rõ: nội dung mang tính giải trí và suy ngẫm, không thay thế tư vấn chuyên môn.
+- Không thu thập dữ liệu nhạy cảm (sức khỏe, tình trạng tâm lý) dù người dùng gõ vào câu hỏi: câu hỏi người dùng nhập là **tùy chọn, không lưu mặc định**.
+- Bản quyền nội dung: ảnh bài Rider-Waite-Smith (1909) thuộc phạm vi công cộng ở nhiều nơi, nhưng **văn bản ý nghĩa lá bài lấy từ repo mở phải kiểm tra giấy phép từng nguồn**. Cách an toàn nhất là tự biên soạn hoặc dùng nguồn có license rõ ràng, ghi nguồn trong repo.
 
 ---
 
-## 2. Kiến trúc hệ thống: Clean Architecture + DDD
+## 2. Nghiệp vụ (domain)
 
-### 2.1. Tại sao kết hợp cả hai?
+### 2.1. Ngôn ngữ chung (ubiquitous language)
 
-Clean Architecture đảm bảo **quy tắc phụ thuộc** (dependency rule): các tầng bên trong không biết gì về tầng bên ngoài, business logic thuần khiết, dễ test . DDD giúp **phân vùng nghiệp vụ** (bounded contexts) khi hệ thống có nhiều domain khác nhau, tránh việc một entity bị dùng chung khắp nơi rồi phình to không kiểm soát .
+Thống nhất thuật ngữ để code, tài liệu và trao đổi dùng cùng một từ.
 
-Với trang bói toán, các domain có thể tách biệt:
-- **Tarot Context**: quản lý bộ bài, ý nghĩa lá bài, logic rút bài.
-- **Astrology Context**: cung hoàng đạo, thần số học (nếu làm đa hệ thống).
-- **Reading Context**: lịch sử bói toán, kết quả, chia sẻ.
-- **User Context**: tài khoản (nếu cần), hoặc ẩn danh hoàn toàn.
+| Thuật ngữ | Định nghĩa |
+|---|---|
+| **Card** (lá bài) | Một trong 78 lá của bộ tarot; có tên, nhóm (Major/Minor), chất, ý nghĩa xuôi/ngược |
+| **Spread** (trải bài) | Cấu hình rút bài: số lá và ý nghĩa từng vị trí (vd. 1 lá, 3 lá Quá khứ-Hiện tại-Hướng đi) |
+| **Draw** (lượt rút) | Hành động rút ngẫu nhiên các lá cho một Spread, mỗi lá có Orientation (xuôi/ngược) |
+| **Reading** (bản đọc) | Kết quả hoàn chỉnh của một Draw: lá bài, diễn giải, câu hỏi suy ngẫm, bản đồ linh hồn. **Bất biến sau khi tạo** |
+| **Soul Map** (bản đồ linh hồn) | Biểu diễn trực quan của Reading (radar các trục cảm xúc) |
+| **Share Link** | Đường dẫn công khai, chỉ đọc, trỏ tới một Reading |
+| **Reflection Prompt** | Câu hỏi gợi mở gắn với một lá/vị trí |
 
-### 2.2. Sơ đồ tầng (Clean Architecture)
+### 2.2. Bounded context và quan hệ
+
+Chỉ **hai context ở MVP**; context thứ ba chỉ thêm khi có nhu cầu thật.
+
+| Context | Trách nhiệm | Giai đoạn |
+|---|---|---|
+| **Tarot** | Danh mục bài, Spread, quy tắc rút bài | MVP |
+| **Reading** | Tạo, lưu, chia sẻ Reading; sinh Soul Map | MVP |
+| **Astrology** (cung hoàng đạo, thần số học) | Danh mục và quy tắc hệ thống thứ hai | Sau MVP |
+| **Identity** (tài khoản, lịch sử cá nhân) | Đăng nhập, gắn Reading với người dùng | Sau MVP (MVP là ẩn danh) |
+| **Analytics** | Đo chỉ số ở 1.3 | MVP, dạng tối giản, lắng nghe event |
+
+Hướng phụ thuộc giữa các context (một chiều, không vòng):
 
 ```
-┌─────────────────────────────────────────────┐
-│           Presentation Layer                 │
-│   (Next.js / React, Controllers, Views)      │
-│   Chỉ chứa logic hiển thị, không business    │
-└─────────────────────┬───────────────────────┘
-                      │ phụ thuộc vào
-┌─────────────────────▼───────────────────────┐
-│           Application Layer                  │
-│   (Use Cases: DrawCards, GenerateReading,    │
-│    ShareReading, ...)                        │
-│   Điều phối, không chứa business rules       │
-└─────────────────────┬───────────────────────┘
-                      │ phụ thuộc vào
-┌─────────────────────▼───────────────────────┐
-│              Domain Layer                    │
-│   (Entities: Card, Reading, Spread;          │
-│    Value Objects: CardMeaning, CardPosition; │
-│    Repository Interfaces)                    │
-│   Thuần khiết, không import framework        │
-└─────────────────────▲───────────────────────┘
-                      │ implements
-┌─────────────────────┴───────────────────────┐
-│          Infrastructure Layer                │
-│   (Database, API adapters, Image renderer)   │
-│   Triển khai các interface từ Domain/App     │
-└─────────────────────────────────────────────┘
+Tarot  ◄── Reading ──► (phát event) ──► Analytics
+                          ▲
+Astrology (sau MVP) ──────┘ (Reading đọc qua cổng ACL, không import trực tiếp)
 ```
 
-**Quy tắc vàng**: Mũi tên chỉ hướng phụ thuộc. Domain không biết Infrastructure tồn tại. Infrastructure "cắm" vào Domain thông qua dependency injection .
+- **Reading phụ thuộc Tarot** (downstream). Tarot không biết Reading tồn tại.
+- Reading **không import entity của Tarot**. Nó gọi qua một *port* (`TarotGateway`) và nhận về DTO/snapshot của riêng mình (anti-corruption layer). Nhờ đó đổi mô hình Tarot không làm vỡ Reading.
+- Giao tiếp ngược chiều và sang Analytics dùng **domain event** (`ReadingCreated`, `ReadingShared`), không gọi trực tiếp.
 
-### 2.3. Cấu trúc thư mục (kết hợp DDD Bounded Contexts)
+### 2.3. Mô hình miền chính
 
-Dựa trên mô hình hybrid đã được kiểm chứng: **vertical slices theo domain, horizontal layers trong mỗi domain** .
+**Tarot context**
+- `Card` (entity): id, tên, nhóm, chất, ý nghĩa xuôi/ngược, từ khóa cảm xúc.
+- `Spread` (entity): id, danh sách `Position` (tên vị trí, ý nghĩa vị trí).
+- `Deck` (domain service): xáo bài và rút bài theo `Spread`.
+- Value object: `CardId`, `Orientation`, `Suit`, `Arcana`.
+
+**Reading context**
+- `Reading` (**aggregate root**): id, thời điểm tạo, danh sách `DrawnCard` (lưu **snapshot** tên, ý nghĩa, hướng của lá tại thời điểm rút), `Interpretation`, `SoulMap`, `Visibility`.
+- Value object: `ReadingId`, `DrawnCard`, `SoulMapAxis` (trục và giá trị 0-1), `ShareToken`.
+- Event: `ReadingCreated`, `ReadingShared`.
+
+**Quy tắc nghiệp vụ (invariants)**
+1. Số lá trong Draw phải bằng số vị trí của Spread; không lá nào lặp lại trong cùng một Draw.
+2. Reading **bất biến**: sau khi tạo không sửa nội dung. Sửa nội dung bài trong danh mục không làm thay đổi Reading cũ (nhờ snapshot).
+3. Việc rút bài dùng **nguồn ngẫu nhiên an toàn (CSPRNG)** và chạy **phía server**, để kết quả không bị can thiệp và Reading có thể kiểm chứng.
+4. Giá trị mỗi trục Soul Map nằm trong [0, 1]; được tính **tất định** từ từ khóa cảm xúc của các lá (cùng đầu vào cho cùng đầu ra, dễ test).
+5. Share Link dùng token không đoán được; người dùng có thể thu hồi (đổi `Visibility` về riêng tư).
+6. Câu hỏi người dùng nhập (nếu có) không được lưu trừ khi người dùng đồng ý rõ ràng.
+
+### 2.4. Các luồng nghiệp vụ chính
+
+**Luồng A: Tạo Reading** (`CreateReading`, một use case duy nhất điều phối)
+1. Người dùng chọn Spread (1 lá hoặc 3 lá), tùy chọn nhập câu hỏi.
+2. Server rút bài (`Deck.draw(spread)`), nhận các lá kèm hướng.
+3. Reading context dựng `DrawnCard` snapshot, sinh `Interpretation` (ý nghĩa + Reflection Prompt) và `SoulMap`.
+4. Lưu `Reading`, phát `ReadingCreated`.
+5. Trả về `readingId`; client điều hướng tới `/reading/{id}`.
+
+**Luồng B: Xem và chia sẻ**
+1. `/reading/{id}` hiển thị kết quả và Soul Map.
+2. Bấm "Chia sẻ" → server cấp `ShareToken`, đặt `Visibility = Shared`, phát `ReadingShared`.
+3. Link chia sẻ có **ảnh xem trước (Open Graph)** do server render, nên dán lên mạng xã hội vẫn hiện hình đẹp.
+4. Người dùng có thể tải ảnh PNG hoặc dùng Web Share API (có fallback tải về).
+
+**Luồng C: Người nhận link** → xem Reading chỉ đọc → lời mời "Rút bài của riêng bạn" (vòng lặp lan truyền).
+
+---
+
+## 3. Kiến trúc
+
+### 3.1. Nguyên tắc
+
+- **Clean Architecture** trong từng context: phụ thuộc chỉ hướng vào trong (UI/Infra → Application → Domain).
+- **DDD chiến thuật** ở chỗ có logic nghiệp vụ thật (aggregate, invariant, domain service). Phần CRUD đơn giản không cần bọc nhiều tầng.
+- **Không over-engineer**: bắt đầu bằng một codebase (modular monolith), tách context bằng thư mục và quy tắc import, chưa tách service.
+
+### 3.2. Các tầng
+
+```
+Presentation  (Next.js: trang, route handler, component)
+      │  gọi
+Application   (use case, port, DTO; điều phối, không chứa quy tắc nghiệp vụ)
+      │  gọi
+Domain        (entity, value object, domain service, event; TypeScript thuần)
+      ▲  implements
+Infrastructure (Prisma/Postgres, đọc dữ liệu bài, render ảnh, event bus)
+```
+
+Quy tắc: Domain không import framework, ORM hay thư viện UI. Application định nghĩa **port** (interface), Infrastructure **implement**. Hạ tầng được nối ở một **composition root** duy nhất.
+
+### 3.3. Cấu trúc thư mục
 
 ```
 src/
-├── app/                          # Bootstrap (Next.js App Router)
-│   ├── layout.tsx
-│   ├── page.tsx                  # Landing page
-│   ├── (reading)/                # Route group cho flow bói toán
-│   │   ├── draw/page.tsx
-│   │   └── result/[id]/page.tsx
-│   └── api/                      # API routes (nếu cần BFF)
+├── app/                          # Next.js App Router (chỉ là lớp Presentation)
+│   ├── (marketing)/page.tsx      # Landing
+│   ├── draw/page.tsx
+│   ├── reading/[id]/page.tsx
+│   ├── reading/[id]/opengraph-image.tsx   # ảnh xem trước khi chia sẻ
+│   └── api/                      # Route handler gọi use case
 │
-├── shared/                       # Shared Kernel
-│   ├── domain/                   # Value objects dùng chung: Result, Id, DateRange
-│   ├── infrastructure/           # Base adapters: HTTP client, storage wrapper
-│   └── ui/                       # Components tái sử dụng: Button, Card, Modal
+├── contexts/
+│   ├── tarot/
+│   │   ├── domain/               # Card, Spread, Deck, value objects
+│   │   ├── application/          # use case: GetSpread, DrawForSpread; port
+│   │   └── infrastructure/       # repo đọc dữ liệu 78 lá (JSON → DB sau)
+│   ├── reading/
+│   │   ├── domain/               # Reading (aggregate), DrawnCard, SoulMap, event
+│   │   ├── application/          # use case: CreateReading, GetReading, ShareReading,
+│   │   │                         #   RevokeShare; port: ReadingRepository, TarotGateway
+│   │   └── infrastructure/       # Prisma repo, TarotGateway adapter, image renderer
+│   └── analytics/                # lắng nghe event, ghi số liệu
 │
-├── contexts/                     # BOUNDED CONTEXTS
-│   ├── tarot/                    # Tarot Domain
-│   │   ├── domain/
-│   │   │   ├── entities/         # Card.ts, Spread.ts
-│   │   │   ├── value-objects/    # CardName.ts, Suit.ts, Orientation.ts
-│   │   │   └── repositories/     # ICardRepository.ts, ISpreadRepository.ts
-│   │   ├── application/
-│   │   │   └── use-cases/        # DrawCards.ts, GetCardMeaning.ts
-│   │   ├── infrastructure/
-│   │   │   ├── persistence/      # JsonCardRepository.ts, DbCardRepository.ts
-│   │   │   └── di/               # tarot.container.ts
-│   │   └── ui/                   # TarotCard.tsx, SpreadBoard.tsx
-│   │
-│   ├── reading/                  # Reading Domain (kết quả bói)
-│   │   ├── domain/
-│   │   │   ├── entities/         # Reading.ts, ReadingResult.ts
-│   │   │   ├── value-objects/    # ReadingId.ts, ResonanceScore.ts
-│   │   │   └── repositories/     # IReadingRepository.ts
-│   │   ├── application/
-│   │   │   └── use-cases/        # GenerateReading.ts, ShareReading.ts
-│   │   ├── infrastructure/
-│   │   │   ├── persistence/      # ReadingDbRepository.ts
-│   │   │   ├── visualization/    # SoulMapRenderer.ts (vẽ biểu đồ)
-│   │   │   └── di/
-│   │   └── ui/                   # ReadingResultView.tsx, ShareButton.tsx
-│   │
-│   └── user/                     # User Domain (nếu cần, có thể ẩn danh)
-│       └── ... (cấu trúc tương tự)
+├── shared/
+│   ├── kernel/                   # chỉ những thứ thật sự phổ quát: Result, Clock, IdGenerator
+│   └── ui/                       # Button, Card, Modal
 │
-└── config/                       # Composition Root
-    └── di.ts                     # Nơi duy nhất wire tất cả dependencies
+└── composition/
+    └── container.ts              # nơi DUY NHẤT nối port với adapter
 ```
 
-**Điểm quan trọng**: Mỗi context có `domain/` riêng, không dùng chung entity. Ví dụ `Card` trong tarot context hoàn toàn khác `Reading` trong reading context. Giao tiếp giữa các context thông qua **application services** hoặc **domain events** .
+Khác bản nháp cũ:
+- Bỏ thư mục `ui/` trong từng context; UI nằm ở `app/` và `shared/ui` để tránh domain lẫn component.
+- `Reading` **không** dùng chung entity với `Tarot` (xem anti-corruption layer ở 2.2).
+- Thêm `opengraph-image` cho việc chia sẻ, đây là yêu cầu nghiệp vụ, không phải chi tiết phụ.
 
-### 2.4. Stack công nghệ đề xuất
+### 3.4. Quyết định công nghệ
 
-| Thành phần | Lựa chọn | Lý do |
+| Hạng mục | Lựa chọn | Lý do |
 |---|---|---|
-| Frontend | **Next.js 14+ (App Router)** | SSR tốt cho SEO, routing linh hoạt, dễ tách route group |
-| Ngôn ngữ | **TypeScript** | Bắt buộc để mô hình hóa domain chính xác |
-| State/DI | **TSyringe** hoặc custom DI container | Nhẹ, không phụ thuộc framework, wire ở `config/di.ts` |
-| Database | **PostgreSQL** + **Prisma** | Prisma chỉ dùng ở Infrastructure layer, không leak vào Domain |
-| Visualization | **D3.js** hoặc **Chart.js** | Vẽ biểu đồ radar, bản đồ linh hồn |
-| Image Export | **html-to-image** hoặc **Satori** | Chuyển component React thành ảnh PNG để share |
-| Testing | **Vitest** cho domain/application | Domain layer test cực nhanh vì không có dependency ngoài  |
+| Framework | Next.js (App Router, bản ổn định mới nhất) + TypeScript | SSR/SEO, render ảnh OG phía server, route linh hoạt |
+| DI | **Tự nối bằng tay ở composition root** (constructor injection) | Không cần decorator/thư viện, không làm "rò" framework vào domain; đủ cho quy mô này |
+| CSDL | PostgreSQL + Prisma, chỉ dùng ở Infrastructure | Reading cần lưu bền để link chia sẻ còn sống |
+| Dữ liệu bài | JSON trong repo ở MVP, chuyển DB khi cần chỉnh sửa nội dung | Đơn giản trước, đổi sau nhờ port `CardRepository` |
+| Trực quan hóa | SVG (D3 hoặc tự vẽ) cho Soul Map | SVG render được cả server lẫn client, dùng lại cho ảnh OG |
+| Xuất ảnh | **Satori / `ImageResponse` phía server** là đường chính; `html-to-image` chỉ là phương án phụ | Ảnh nhất quán giữa thiết bị, dùng được cho xem trước link |
+| Ngẫu nhiên | `crypto.getRandomValues` (CSPRNG) | Tránh `Math.random` cho rút bài |
+| Test | Vitest (domain, application), Playwright (luồng chính) | Domain test nhanh; E2E bảo vệ luồng A-B-C |
 
 ---
 
-## 3. Chi tiết từng tầng (ví dụ với Tarot Context)
+## 4. Yêu cầu phi chức năng
 
-### 3.1. Domain Layer — trái tim của hệ thống
-
-```typescript
-// contexts/tarot/domain/entities/Card.ts
-export class Card {
-  private constructor(
-    public readonly id: string,
-    public readonly name: CardName,
-    public readonly suit: Suit,
-    public readonly uprightMeaning: string,
-    public readonly reversedMeaning: string
-  ) {}
-
-  static create(props: CardProps): Card {
-    // validation: name không rỗng, id format hợp lệ
-    return new Card(/* ... */);
-  }
-
-  getMeaning(orientation: Orientation): string {
-    return orientation.isReversed
-      ? this.reversedMeaning
-      : this.uprightMeaning;
-  }
-}
-```
-
-```typescript
-// contexts/tarot/domain/repositories/ICardRepository.ts
-export interface ICardRepository {
-  findAll(): Promise<Card[]>;
-  findById(id: string): Promise<Card | null>;
-}
-```
-
-**Lưu ý**: Không import Prisma, không import Next.js. Đây là code thuần TypeScript, có thể chạy trong Node.js, browser, hay bất kỳ đâu .
-
-### 3.2. Application Layer — Use Cases
-
-```typescript
-// contexts/tarot/application/use-cases/DrawCards.ts
-export class DrawCards {
-  constructor(private cardRepo: ICardRepository) {}
-
-  async execute(count: number): Promise<Card[]> {
-    const allCards = await this.cardRepo.findAll();
-    // Fisher-Yates shuffle
-    const shuffled = this.shuffle([...allCards]);
-    return shuffled.slice(0, count);
-  }
-}
-```
-
-Use case này **không biết** card đến từ database hay JSON file. Nó chỉ biết interface `ICardRepository`.
-
-### 3.3. Infrastructure Layer — Adapters
-
-```typescript
-// contexts/tarot/infrastructure/persistence/JsonCardRepository.ts
-export class JsonCardRepository implements ICardRepository {
-  async findAll(): Promise<Card[]> {
-    const raw = await import('./cards-data.json');
-    return raw.cards.map(c => Card.create(c));
-  }
-}
-```
-
-Khi cần chuyển sang database, chỉ cần tạo `PrismaCardRepository` mới, không đụng đến Domain hay Application .
-
-### 3.4. Presentation Layer — Next.js
-
-```typescript
-// app/(reading)/draw/page.tsx
-export default function DrawPage() {
-  // Chỉ gọi use case, không chứa logic bói toán
-  const drawCards = useDrawCards(); // hook gọi API/use case
-  
-  return <SpreadBoard onDraw={drawCards} />;
-}
-```
+| Nhóm | Yêu cầu |
+|---|---|
+| **Hiệu năng** | LCP p75 < 2,5 s trên di động; Soul Map render tĩnh (SVG), không tải thư viện nặng nếu không cần |
+| **Quyền riêng tư** | Mặc định ẩn danh; không lưu câu hỏi nếu chưa đồng ý; Share Link thu hồi được; có trang Chính sách riêng tư; cookie/analytics tuân thủ quy định địa phương (GDPR/PDPD nếu có người dùng liên quan) |
+| **Bảo mật** | Rate limit endpoint tạo Reading (chống spam), kiểm tra đầu vào, token chia sẻ ngẫu nhiên đủ dài, header bảo mật chuẩn |
+| **Khả dụng** | Cho phép lưu Reading thất bại một cách nhẹ nhàng; ảnh OG có ảnh dự phòng khi render lỗi |
+| **Truy cập (a11y)** | Tương phản màu đạt WCAG AA, điều hướng bàn phím, mô tả văn bản thay thế cho Soul Map (bảng số liệu ẩn cho trình đọc màn hình) |
+| **Quan sát được** | Log có cấu trúc, theo dõi lỗi (vd. Sentry), đo các chỉ số ở 1.3 qua event |
+| **Đa ngôn ngữ** | Văn bản tách khỏi code ngay từ đầu (tiếng Việt trước, sẵn sàng thêm tiếng Anh) |
+| **Vận hành** | CI chạy lint, type-check, test; deploy tự động ra môi trường preview cho mỗi PR |
 
 ---
 
-## 4. Luồng hoạt động của tính năng "Bản đồ linh hồn"
+## 5. Lộ trình
 
-1. Người dùng vào `/draw`, chọn kiểu bói (1 lá / 3 lá).
-2. Frontend gọi use case `DrawCards` → nhận về danh sách `Card` với `Orientation`.
-3. Frontend gọi use case `GenerateReading` (thuộc Reading Context) → nhận về `ReadingResult` bao gồm:
-   - Tổng hợp ý nghĩa (từ Tarot Context)
-   - Điểm cộng hưởng (nếu kết hợp đa hệ thống)
-   - Dữ liệu để vẽ biểu đồ radar
-4. Component `SoulMapChart` (dùng D3.js) render biểu đồ từ `ReadingResult`.
-5. Người dùng bấm "Chia sẻ" → `html-to-image` chụp component thành PNG → tải xuống hoặc chia sẻ qua Web Share API.
+Mỗi giai đoạn có **đầu ra kiểm chứng được** và **tiêu chí qua cửa** trước khi sang giai đoạn kế.
 
-**Domain Events** (nếu cần): Khi `Reading` được tạo, phát event `ReadingCreated`. Một listener trong `user` context có thể log lại (nếu có user), hoặc trong `analytics` context đếm số lượt. Các context không gọi trực tiếp nhau .
+### Giai đoạn 0: Nền tảng (3-5 ngày)
+- Khởi tạo repo Next.js + TypeScript, lint, format, Vitest, CI.
+- Viết ADR ngắn cho các quyết định ở 3.4; chốt nguồn dữ liệu bài và giấy phép.
+- **Qua cửa**: CI xanh trên nhánh chính, có preview deploy.
+
+### Giai đoạn 1: Lõi nghiệp vụ (1-2 tuần)
+- Tarot: `Card`, `Spread`, `Deck` (xáo/rút bằng CSPRNG), dữ liệu 78 lá.
+- Reading: `Reading` aggregate, snapshot `DrawnCard`, tính `SoulMap` tất định, `Interpretation` + Reflection Prompt.
+- Use case `CreateReading` với repository in-memory.
+- **Qua cửa**: unit test phủ các invariant ở 2.3 (không trùng lá, bất biến, trục trong [0,1], tất định); chạy được bằng script không cần UI/DB.
+
+### Giai đoạn 2: Luồng người dùng hoàn chỉnh (1-2 tuần)
+- Prisma repository, port `TarotGateway`, composition root.
+- Trang `/draw` và `/reading/[id]`; hiển thị Soul Map bằng SVG.
+- Tạo/xem Reading chạy thật trên Postgres.
+- **Qua cửa**: E2E (Playwright) cho luồng A; trang kết quả đạt ngưỡng hiệu năng ở mục 4.
+
+### Giai đoạn 3: Chia sẻ và lan truyền (1 tuần)
+- `ShareReading`/`RevokeShare`, `ShareToken`, trang xem công khai chỉ đọc.
+- Ảnh OG phía server, tải PNG, Web Share API + fallback.
+- Event `ReadingCreated`/`ReadingShared` → Analytics tối giản.
+- **Qua cửa**: dán link lên Facebook/Zalo/Messenger hiện đúng ảnh; đo được tỷ lệ chia sẻ.
+
+### Giai đoạn 4: Ra mắt thử và đo lường (2 tuần)
+- Landing, trang Chính sách riêng tư và tuyên bố nội dung, rate limit, theo dõi lỗi.
+- Mời nhóm người dùng thử nhỏ, thu thập số liệu theo mục 1.3.
+- **Quyết định dừng/tiếp**: nếu tỷ lệ chia sẻ và quay lại đạt ngưỡng → sang giai đoạn 5; nếu không → chỉnh nội dung/hình ảnh trước khi mở rộng tính năng.
+
+### Giai đoạn 5: Mở rộng (chỉ khi giai đoạn 4 đạt)
+- Context Astrology, use case đối chiếu chéo (`GenerateCrossSystemReading`) đọc qua cổng ACL.
+- Context Identity (đăng nhập, lịch sử cá nhân).
+- Mô hình doanh thu (xem mục 6) nếu có.
 
 ---
 
-## 5. Lộ trình triển khai (4 giai đoạn)
+## 6. Mô hình doanh thu (để quyết định sau giai đoạn 4)
 
-### Giai đoạn 1: Domain & Application thuần (1-2 tuần)
-- Định nghĩa entities, value objects, repository interfaces cho Tarot và Reading.
-- Viết use cases: `DrawCards`, `GenerateReading`.
-- Viết unit test cho domain (không cần database, không cần UI). Mục tiêu: 80% coverage cho domain layer.
-- **Chưa cần giao diện đẹp**, chỉ cần logic chạy đúng.
+Không triển khai trước khi có người dùng quay lại. Các hướng cân nhắc:
+- Bộ giao diện/hình minh họa Soul Map cao cấp (mua một lần hoặc gói).
+- Trải bài nâng cao (nhiều lá, nhiều hệ thống) cho thành viên.
+- Quà tặng/in ấn bản đồ linh hồn (poster, thiệp).
 
-### Giai đoạn 2: Infrastructure & Presentation tối thiểu (1-2 tuần)
-- Implement `JsonCardRepository` với dữ liệu 78 lá bài (có thể lấy từ nguồn mở).
-- Dựng Next.js với 2 trang: `/draw` và `/result`.
-- Hiển thị kết quả dạng text đơn giản trước, chưa cần biểu đồ.
-
-### Giai đoạn 3: Visualization & Sharing (1 tuần)
-- Thêm D3.js vẽ biểu đồ radar từ `ReadingResult`.
-- Tích hợp `html-to-image` để export PNG.
-- Thêm nút Share (Web Share API + fallback download).
-
-### Giai đoạn 4: Đa hệ thống & tinh chỉnh (nếu muốn mở rộng)
-- Thêm Astrology Context (cung hoàng đạo, thần số học).
-- Viết use case `GenerateCrossSystemReading` kết hợp kết quả từ nhiều context.
-- Tối ưu SEO, performance, analytics.
+Tránh quảng cáo gây khó chịu hoặc bán "dự đoán", vì mâu thuẫn với định vị ở mục 1.
 
 ---
 
-## 6. Lưu ý thực tế
+## 7. Rủi ro và cách giảm
 
-**Đừng over-engineer ngay từ đầu.** Với một trang bói toán cá nhân, bạn có thể bắt đầu với **chỉ Tarot Context + Reading Context**, chưa cần User Context. Clean Architecture + DDD có chi phí: nhiều file hơn, cần kỷ luật hơn . Nhưng lợi ích là: khi bạn muốn thêm cung hoàng đạo, bạn tạo context mới mà không sợ làm hỏng logic tarot hiện có.
+| Rủi ro | Mức | Giảm thiểu |
+|---|---|---|
+| Hình ảnh không đủ hấp dẫn để chia sẻ (giả thuyết cốt lõi sai) | Cao | Thử nghiệm sớm ở giai đoạn 3-4 với số liệu thật; đầu tư thiết kế Soul Map trước khi thêm tính năng |
+| Vấn đề bản quyền nội dung/hình ảnh bài | Cao | Chốt nguồn và giấy phép ở giai đoạn 0; tự biên soạn ý nghĩa nếu cần |
+| Nội dung bị coi là tư vấn/dự đoán gây hại | Trung bình | Giọng gợi mở, tuyên bố rõ, không xử lý chủ đề nhạy cảm (mục 1.4) |
+| Over-engineering làm chậm ra mắt | Trung bình | Chỉ 2 context ở MVP; modular monolith; áp DDD sâu chỉ ở Reading/Tarot |
+| Lạm dụng/spam tạo Reading, lộ dữ liệu | Trung bình | Rate limit, không lưu câu hỏi mặc định, token chia sẻ ngẫu nhiên |
+| Ảnh OG render chậm hoặc lỗi làm hỏng link chia sẻ | Trung bình | Cache ảnh, ảnh dự phòng, kiểm thử với các nền tảng mạng xã hội chính |
 
-**Dữ liệu 78 lá bài**: Bạn có thể tìm bộ dữ liệu JSON mã nguồn mở (Rider-Waite) trên GitHub, không cần tự viết ý nghĩa từ đầu. Chỉ cần đảm bảo format khớp với `Card.create()`.
+---
 
-**Nếu bạn không quen TypeScript/Next.js**: Có thể dùng JavaScript thuần cho domain layer (vẫn giữ được kiến trúc), nhưng TypeScript giúp mô hình hóa domain tốt hơn rất nhiều, đặc biệt khi có nhiều value objects.
+## 8. Việc cần chốt ngay
 
-Bạn muốn tôi đi sâu vào phần nào tiếp theo — ví dụ viết chi tiết code cho Domain layer của Tarot, hay thiết kế schema dữ liệu 78 lá bài?
+1. Nguồn dữ liệu 78 lá và giấy phép đi kèm (chặn giai đoạn 1).
+2. Danh sách **trục của Soul Map** (vd. năng lượng, cảm xúc, lý trí, kết nối, thay đổi) và cách ánh xạ từ khóa lá bài → giá trị trục.
+3. Spread nào có ở MVP (đề xuất: 1 lá và 3 lá).
+4. Nơi triển khai và ngân sách hạ tầng (đề xuất Vercel + Postgres được quản lý).
