@@ -1,0 +1,222 @@
+{
+  "common": {
+    "brand": "noschadamus",
+    "close": "Đóng",
+    "back": "Quay lại",
+    "retry": "Thử lại",
+    "home": "Về trang chủ",
+    "draw_cta": "Rút bài",
+    "toast_region": "Thông báo",
+    "offline": "Có vẻ bạn đang ngoại tuyến.",
+    "date_format_hint": "dd.MM.yyyy",
+    "skip_to_content": "Bỏ qua đến nội dung chính"
+  },
+  "header": {
+    "home_label": "noschadamus, về trang chủ",
+    "nav_label": "Điều hướng chính",
+    "about": "Cách hoạt động",
+    "history": "Lịch sử",
+    "history_label": "Lịch sử bản đọc",
+    "theme_to_light": "Chuyển sang giao diện sáng",
+    "theme_to_dark": "Chuyển sang giao diện tối"
+  },
+  "footer": {
+    "about": "Cách hoạt động",
+    "privacy": "Quyền riêng tư",
+    "terms": "Điều khoản",
+    "disclaimer": "noschadamus dành cho giải trí và suy ngẫm. Nội dung không phải dự đoán, cũng không thay thế lời khuyên y tế, tài chính hay pháp lý.",
+    "art_credit": "Hình ảnh lá bài: Pamela Colman Smith, bộ Rider-Waite-Smith (1909), phạm vi công cộng.",
+    "copyright": "© {year} noschadamus",
+    "cookie_note": "Chúng tôi dùng một cookie chức năng để nhớ các bản đọc của bạn."
+  },
+  "landing": {
+    "meta_title": "noschadamus · Rút tarot, nhận bản đồ linh hồn",
+    "meta_description": "Rút 1 hoặc 3 lá tarot và nhận một bản đồ linh hồn đẹp để chia sẻ, cùng những câu hỏi gợi mở. Không dự đoán, không phán xét.",
+    "eyebrow": "BẢN ĐỒ LINH HỒN",
+    "title_line1": "Không đoán tương lai.",
+    "title_line2": "Chỉ soi lại hôm nay.",
+    "subtitle": "Rút 1 hoặc 3 lá tarot, nhận một bản đồ linh hồn đẹp để giữ lại, cùng vài câu hỏi để tự ngẫm. Không phán xét.",
+    "cta": "Rút bài ngay",
+    "how_link": "Cách hoạt động",
+    "how": {
+      "eyebrow": "CÁCH HOẠT ĐỘNG",
+      "title": "Ba bước, chưa đến hai phút",
+      "s1_title": "Chọn trải bài",
+      "s1_body": "Một lá cho khoảnh khắc này, hoặc ba lá cho quá khứ, hiện tại và hướng mở.",
+      "s2_title": "Hít thở, chạm để rút",
+      "s2_body": "Xáo bài, chọn những lá khiến bạn dừng lại. Bạn có thể viết một ý niệm nếu muốn.",
+      "s3_title": "Nhận bản đồ và ảnh để chia sẻ",
+      "s3_body": "Bản đồ linh hồn, vài dòng diễn giải và những câu hỏi gợi mở. Muốn thì lưu thành ảnh."
+    },
+    "map": {
+      "eyebrow": "MỘT BẢN ĐỒ, SÁU TRỤC",
+      "title": "Mỗi lá kéo bản đồ về một phía",
+      "body": "Năng lượng, cảm xúc, kết nối, nền tảng, lý trí, thay đổi. Hình dạng của bản đồ cho bạn thấy điều gì đang nổi lên và điều gì đang thưa."
+    },
+    "share": {
+      "eyebrow": "ẢNH ĐÁNG ĐĂNG",
+      "title": "Một hình ảnh thuộc về riêng bạn",
+      "body": "Xuất ảnh cho story, bài đăng hay xem trước liên kết. Ảnh không bao giờ chứa điều bạn viết riêng.",
+      "story": "Story",
+      "post": "Bài đăng",
+      "link": "Xem trước liên kết"
+    },
+    "faq": {
+      "eyebrow": "CÂU HỎI THƯỜNG GẶP",
+      "q1": "Có đoán đúng tương lai không?",
+      "a1": "Không, và chúng tôi không cố làm vậy. Mỗi lá bài là một gương soi để bạn nhìn lại hôm nay. Nội dung chỉ mang tính giải trí và suy ngẫm.",
+      "q2": "Việc rút bài có thật sự ngẫu nhiên?",
+      "a2": "Có. Các lá được chọn ngẫu nhiên an toàn trên máy chủ. Việc bạn chạm chọn bài là một nghi thức, không làm thay đổi kết quả.",
+      "q3": "Bạn lưu gì về tôi?",
+      "a3": "Không cần tài khoản. Bản đọc được lưu để bạn mở lại trên thiết bị này. Điều bạn viết ở phần ý niệm không được lưu trừ khi bạn bật lên. Bạn có thể thu hồi liên kết chia sẻ bất cứ lúc nào.",
+      "q4": "Có mất phí không?",
+      "a4": "Hiện tại hoàn toàn miễn phí.",
+      "q5": "Hình ảnh lá bài lấy từ đâu?",
+      "a5": "Từ bộ Rider-Waite-Smith (1909) của họa sĩ Pamela Colman Smith, thuộc phạm vi công cộng."
+    },
+    "final": {
+      "title": "Sẵn sàng chưa?",
+      "body": "Chỉ cần một hơi thở và một cái chạm."
+    }
+  },
+  "draw": {
+    "meta_title": "Rút bài",
+    "step_label": "BƯỚC {current}/{total}",
+    "next": "Tiếp tục",
+    "back": "Quay lại",
+    "s1": {
+      "title": "Hôm nay bạn muốn nhìn thế nào?",
+      "subtitle": "Chọn một cách rút bài.",
+      "group_label": "Chọn trải bài",
+      "single_name": "Một lá",
+      "single_tagline": "Điều cần lắng nghe hôm nay",
+      "single_time": "Khoảng 1 phút",
+      "three_name": "Ba lá",
+      "three_tagline": "Quá khứ · Hiện tại · Hướng mở",
+      "three_time": "Khoảng 2 phút"
+    },
+    "s2": {
+      "title": "Bạn đang mang theo điều gì?",
+      "subtitle": "Viết ra nếu muốn. Bạn cũng có thể bỏ qua.",
+      "field_label": "Ý niệm",
+      "placeholder": "Ví dụ: Mình đang phân vân về một lựa chọn…",
+      "store_label": "Lưu ý niệm này cùng bản đọc",
+      "store_help": "Chỉ bạn xem được trên thiết bị này. Ảnh chia sẻ không chứa nó.",
+      "reversed_label": "Bao gồm bài ngược",
+      "reversed_help": "Một số lá có thể xuất hiện ngược, hướng vào trong.",
+      "skip": "Bỏ qua",
+      "truncated_toast": "Đã cắt bớt cho vừa 280 ký tự.",
+      "care": "Nếu bạn đang thấy rất nặng nề, hãy cân nhắc nói chuyện với một người bạn tin tưởng hoặc đường dây hỗ trợ tại nơi bạn sống. Bạn không phải đi qua điều này một mình."
+    },
+    "s3": {
+      "title_shuffle": "Hít một hơi. Chạm để xáo.",
+      "shuffle": "Xáo bài",
+      "deck_label": "Chồng bài, chạm để xáo",
+      "skip_shuffle": "Bỏ qua xáo",
+      "title_pick": "Chọn {count} lá khiến bạn dừng lại.",
+      "title_pick_one": "Chọn một lá khiến bạn dừng lại.",
+      "picked": "Đã chọn {k}/{n}",
+      "picked_live": "Đã chọn {k}/{n} lá",
+      "hint_scroll": "Vuốt để xem thêm",
+      "fan_label": "78 lá bài úp",
+      "card_label": "Lá bài thứ {n}",
+      "slot_empty": "Vị trí trống: {label}",
+      "need_more": "Chọn thêm {r} lá",
+      "reveal": "Lật bài",
+      "loading1": "Đang xếp các vì sao…",
+      "loading2": "Đang đọc bản đồ của bạn…",
+      "honesty": "Các lá được chọn ngẫu nhiên an toàn trên máy chủ; việc bạn chạm chỉ là nghi thức."
+    },
+    "error": {
+      "rate": "Bạn đã rút nhiều lần trong thời gian ngắn. Hãy nghỉ một lát rồi quay lại nhé.",
+      "generic": "Có điều gì đó trục trặc. Chưa có gì bị mất, bạn thử lại được không?"
+    }
+  },
+  "reading": {
+    "date_label": "BẢN ĐỌC NGÀY {date}",
+    "intention_label": "Ý NIỆM CỦA BẠN",
+    "position_single": "HÔM NAY",
+    "orientation_upright": "Xuôi",
+    "orientation_reversed": "Ngược",
+    "reversed_alt_suffix": ", ngược",
+    "map": {
+      "eyebrow": "BẢN ĐỒ LINH HỒN",
+      "title": "Bản đồ linh hồn",
+      "alt": "Bản đồ linh hồn dạng radar sáu trục. Trục nổi bật nhất: {dominant}. Trục thưa nhất: {quiet}.",
+      "table_caption": "Giá trị các trục (0-100)",
+      "info_label": "Bản đồ linh hồn là gì?",
+      "info": "Mỗi lá kéo bản đồ về những trục khác nhau. Hình dạng cho thấy điều gì nổi lên và điều gì thưa. Đây là công cụ suy ngẫm, không phải phép đo.",
+      "badge_dominant": "Nổi bật",
+      "badge_quiet": "Thưa",
+      "badge_dominant_soft": "Hơi nổi",
+      "badge_quiet_soft": "Hơi thưa",
+      "layers_toggle": "Xem các lớp từng lá"
+    },
+    "cards": {
+      "eyebrow": "TỪNG LÁ BÀI NÓI GÌ",
+      "zoom_label": "Phóng to lá {name}"
+    },
+    "synthesis": {
+      "eyebrow": "ĐIỀU ĐÁNG NGẪM"
+    },
+    "share": "Chia sẻ",
+    "redraw": "Rút lại",
+    "menu": {
+      "label": "Tùy chọn khác",
+      "copy": "Sao chép liên kết",
+      "revoke": "Thu hồi liên kết chia sẻ"
+    },
+    "revoke": {
+      "confirm_title": "Thu hồi liên kết?",
+      "confirm_body": "Những người đang giữ liên kết sẽ không xem được nữa. Bạn vẫn xem lại bản đọc này trên thiết bị của mình.",
+      "confirm_action": "Thu hồi",
+      "done": "Đã thu hồi liên kết."
+    },
+    "copied": "Đã sao chép liên kết.",
+    "live_flipped": "Đã lật lá thứ {n}: {name}",
+    "live_ready": "Bản đồ linh hồn đã sẵn sàng"
+  },
+  "share": {
+    "title": "Chia sẻ bản đồ của bạn",
+    "tabs_label": "Định dạng chia sẻ",
+    "tab_story": "Story",
+    "tab_post": "Bài đăng",
+    "tab_link": "Liên kết",
+    "privacy_note": "Ảnh không chứa điều bạn đã viết.",
+    "native": "Chia sẻ ảnh",
+    "download": "Tải ảnh xuống",
+    "preview_alt": "Xem trước ảnh chia sẻ ({format})",
+    "link_explain": "Bất kỳ ai có liên kết đều xem được bản đồ và diễn giải này, nhưng không thấy ý niệm của bạn. Bạn có thể thu hồi bất cứ lúc nào.",
+    "link_create": "Tạo liên kết",
+    "link_field": "Liên kết chia sẻ",
+    "link_copy": "Sao chép",
+    "link_send": "Gửi liên kết",
+    "link_revoke": "Thu hồi liên kết",
+    "error_image": "Chưa tạo được ảnh. Bạn thử lại nhé.",
+    "share_text": "Bản đồ linh hồn của mình hôm nay: {title}"
+  },
+  "shared": {
+    "banner": "Bản đọc được chia sẻ bởi một người dùng noschadamus.",
+    "cta_title": "Bản đồ của bạn trông thế nào?",
+    "cta_body": "Rút một lá hoặc ba lá, chưa đến hai phút.",
+    "cta_action": "Rút bài của riêng bạn"
+  },
+  "history": {
+    "meta_title": "Lịch sử",
+    "title": "Lịch sử trên thiết bị này",
+    "note": "Chỉ xuất hiện ở trình duyệt này. Xóa cookie sẽ làm mất danh sách.",
+    "item_meta": "{date} · {spread}",
+    "shared_label": "Đã chia sẻ",
+    "empty_title": "Chưa có bản đọc nào",
+    "empty_body": "Khi bạn rút bài, các bản đọc sẽ nằm ở đây.",
+    "empty_action": "Rút bài"
+  },
+  "errors": {
+    "not_found_title": "Lá bài này đã lạc đường",
+    "not_found_body": "Trang bạn tìm không tồn tại, hoặc không thuộc về thiết bị này.",
+    "link_gone_title": "Liên kết này không còn",
+    "link_gone_body": "Người chia sẻ có thể đã thu hồi nó.",
+    "error_title": "Có trục trặc nhỏ",
+    "error_body": "Chưa có gì bị mất. Thử tải lại trang nhé."
+  }
+}

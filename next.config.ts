@@ -37,6 +37,8 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   poweredByHeader: false,
+  // Năm cho dòng bản quyền, chốt lúc build (tránh new Date() khi prerender).
+  env: { NEXT_PUBLIC_BUILD_YEAR: String(new Date().getFullYear()) },
   turbopack: {
     rules: {
       '*.css': {

@@ -1,6 +1,9 @@
 'use client';
 
+import { Moon, Sun } from 'lucide-react';
 import { useSyncExternalStore } from 'react';
+import { IconButton } from '@/components/ui/icon-button';
+import { t } from '@/shared/i18n';
 import { THEME_STORAGE_KEY, type Theme } from './theme';
 
 function readTheme(): Theme {
@@ -27,13 +30,12 @@ export function ThemeToggle({ className }: { className?: string }) {
   }
 
   return (
-    <button
-      type="button"
+    <IconButton
       onClick={toggle}
       className={className}
-      aria-label={next === 'light' ? 'Chuyển sang giao diện sáng' : 'Chuyển sang giao diện tối'}
+      aria-label={next === 'light' ? t('header.theme_to_light') : t('header.theme_to_dark')}
     >
-      {theme === 'dark' ? '☀' : '☾'}
-    </button>
+      {theme === 'dark' ? <Sun /> : <Moon />}
+    </IconButton>
   );
 }
