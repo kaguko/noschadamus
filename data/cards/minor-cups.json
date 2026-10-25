@@ -56,28 +56,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Kết đôi",
+        "Thấu hiểu",
+        "Hòa hợp"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Lệch nhịp",
+        "Hiểu lầm",
+        "Mất cân bằng"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Lá bài nói về sự gặp gỡ giữa hai người, nơi cả hai cùng cho và cùng nhận. Đó có thể là tình yêu, tình bạn, hay một sự hợp tác ấm áp.",
+      "reversed": "Có thể một mối quan hệ đang lệch nhịp, khi một bên cho nhiều hơn bên kia. Đảo ngược mời bạn nói ra điều mình cần một cách nhẹ nhàng."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Mối quan hệ nào khiến bạn thấy được thấu hiểu?",
+        "Bạn muốn trao điều gì cho người thân thiết nhất?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Ở đâu bạn đang cho nhiều hơn mình nhận?",
+        "Hiểu lầm nào cần được nói ra?"
       ]
     },
     "vector": {
@@ -101,28 +101,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Bạn bè",
+        "Niềm vui chung",
+        "Ăn mừng"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Xa nhóm",
+        "Quá đà",
+        "Thấy lạc lõng"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Đây là lá bài của tình bạn và những niềm vui được chia sẻ. Nó nhắc bạn rằng cười cùng nhau cũng là một cách chăm sóc tâm hồn.",
+      "reversed": "Có thể bạn đang thấy lạc lõng trong nhóm, hoặc những cuộc vui không còn làm bạn đầy lên. Đảo ngược mời bạn tìm lại kết nối thật sự nuôi dưỡng mình."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Ai là người bạn muốn cùng ăn mừng?",
+        "Niềm vui nhỏ nào bạn muốn chia sẻ tuần này?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Nhóm nào khiến bạn thấy mình thuộc về, và nhóm nào không?",
+        "Kết nối nào đang thật sự nuôi dưỡng bạn?"
       ]
     },
     "vector": {
@@ -146,28 +146,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Thờ ơ",
+        "Suy ngẫm",
+        "Bỏ lỡ"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Tỉnh lại",
+        "Đón nhận",
+        "Mở mắt"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Có thể bạn đang thu mình lại, chán những gì đang có mà chưa để ý điều mới được trao. Lá bài mời bạn ngẩng lên nhìn quanh một chút.",
+      "reversed": "Sự uể oải có thể đang dần tan. Đảo ngược gợi ý bạn đã sẵn sàng đón nhận một lời mời hay một cơ hội mà trước đây mình bỏ qua."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì gần đây khiến bạn thấy nhạt?",
+        "Có lời mời nào bạn đang lờ đi không?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì đang khiến bạn tỉnh lại?",
+        "Bạn muốn nói có với điều gì mới?"
       ]
     },
     "vector": {
@@ -191,28 +191,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Tiếc nuối",
+        "Mất mát",
+        "Nỗi buồn"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Chấp nhận",
+        "Hồi phục",
+        "Thấy điều còn lại"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Lá bài thừa nhận nỗi buồn và sự tiếc nuối của bạn. Nó không vội bảo bạn vui lên, chỉ nhắc rằng phía sau bạn vẫn còn những điều chưa mất.",
+      "reversed": "Bạn có thể đang bắt đầu quay lại nhìn những gì vẫn còn đứng đó. Đảo ngược gợi ý rằng chấp nhận mất mát cũng là một bước hồi phục."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn đang tiếc nuối điều gì?",
+        "Điều gì vẫn còn lại với bạn sau mất mát này?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn đã học được gì từ điều đã mất?",
+        "Bước nhỏ nào giúp bạn đi tiếp?"
       ]
     },
     "vector": {
@@ -236,28 +236,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Hoài niệm",
+        "Ngây thơ",
+        "Ký ức đẹp"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Kẹt trong quá khứ",
+        "Lý tưởng hóa",
+        "Lớn lên"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Một ký ức ngọt ngào hoặc một người cũ có thể đang quay lại trong tâm trí. Lá bài mời bạn đón lấy sự dịu dàng ấy như một món quà nhỏ.",
+      "reversed": "Có thể bạn đang nhìn quá khứ đẹp hơn thực tế, đến mức hiện tại trông nhạt nhòa. Đảo ngược mời bạn mang điều tốt của ngày xưa vào hôm nay."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Ký ức nào gần đây làm bạn mỉm cười?",
+        "Điều gì từ tuổi thơ bạn muốn giữ lại?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn đang so hiện tại với quá khứ theo cách nào?",
+        "Điều tốt đẹp nào của ngày xưa có thể sống lại hôm nay?"
       ]
     },
     "vector": {
@@ -281,28 +281,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Nhiều lựa chọn",
+        "Mơ mộng",
+        "Ảo ảnh"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Rõ ràng",
+        "Chọn một",
+        "Tỉnh mộng"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Trước mặt bạn có thể là nhiều lựa chọn, cái nào cũng lấp lánh. Hãy mơ thoải mái, nhưng nhớ phân biệt điều mình thật sự muốn với điều chỉ đẹp từ xa.",
+      "reversed": "Màn sương lựa chọn có thể đang tan, giúp bạn thấy rõ hơn điều mình cần. Đảo ngược mời bạn chọn một hướng và cho nó một cơ hội thật sự."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Trong các lựa chọn hiện tại, cái nào chạm đến bạn thật sự?",
+        "Giấc mơ nào cần thêm một bước thực tế?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì giờ đã rõ hơn với bạn?",
+        "Bạn sẵn sàng chọn điều gì và để những điều khác qua đi?"
       ]
     },
     "vector": {
@@ -326,28 +326,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Rời đi",
+        "Tìm ý nghĩa",
+        "Buông"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Lưỡng lự",
+        "Sợ trống rỗng",
+        "Ở lại"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Có thể bạn đang nhận ra điều gì đó không còn làm mình đầy nữa, dù bề ngoài vẫn ổn. Rời đi để tìm điều sâu hơn là một lựa chọn can đảm.",
+      "reversed": "Bạn có thể đang lưỡng lự giữa ở lại và rời đi. Đảo ngược mời bạn hỏi xem nỗi sợ khoảng trống có đang quyết định thay bạn không."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì không còn làm bạn thấy đủ đầy?",
+        "Bạn đang tìm kiếm ý nghĩa ở đâu?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn ở lại vì muốn, hay vì sợ khoảng trống?",
+        "Nếu rời đi, điều gì bạn muốn mang theo?"
       ]
     },
     "vector": {
@@ -371,28 +371,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Mãn nguyện",
+        "Biết đủ",
+        "Niềm vui"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Thỏa mãn hời hợt",
+        "Đòi thêm",
+        "Trống trải"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Đây là lá bài của sự mãn nguyện, khi bạn nhìn quanh và thấy mình đã có khá nhiều điều tốt. Nó mời bạn tận hưởng cảm giác đủ đầy ấy.",
+      "reversed": "Có thể bạn đã có điều mình muốn mà vẫn thấy chưa đủ. Đảo ngược gợi ý bạn tìm xem niềm vui thật sự, bền lâu của mình nằm ở đâu."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì khiến bạn thấy đủ đầy lúc này?",
+        "Bạn muốn biết ơn điều gì hôm nay?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn đang mong thêm điều gì, và vì sao?",
+        "Điều gì thật sự làm bạn hài lòng lâu dài?"
       ]
     },
     "vector": {
@@ -416,28 +416,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Hòa thuận",
+        "Thuộc về",
+        "Viên mãn"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Rạn nứt",
+        "Kỳ vọng hoàn hảo",
+        "Xa cách"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Lá bài vẽ nên một bức tranh ấm áp của sự hòa thuận và cảm giác thuộc về. Đó có thể là gia đình ruột thịt hoặc gia đình bạn tự chọn.",
+      "reversed": "Có thể bức tranh gia đình không như bạn mong, hoặc bạn đang kỳ vọng nó phải hoàn hảo. Đảo ngược mời bạn trân trọng những kết nối thật, dù chưa trọn."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Ai là gia đình mà bạn tự chọn?",
+        "Khoảnh khắc nào gần đây khiến bạn thấy được yêu thương?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Kỳ vọng nào về gia đình đang làm bạn nặng lòng?",
+        "Kết nối nào cần được hàn gắn một chút?"
       ]
     },
     "vector": {
@@ -461,28 +461,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Rung động",
+        "Sáng tạo",
+        "Lời nhắn dịu dàng"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Quá nhạy cảm",
+        "Mơ mộng",
+        "Ngại bộc lộ"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Một cảm xúc mới mẻ hoặc một ý tưởng sáng tạo đang gõ cửa. Lá bài mời bạn đón nó bằng sự tò mò, như một đứa trẻ nhìn thế giới lần đầu.",
+      "reversed": "Có thể bạn đang ngại bộc lộ cảm xúc vì sợ bị cho là trẻ con. Đảo ngược nhắc rằng sự nhạy cảm của bạn cũng là một món quà."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Cảm xúc mới nào đang chớm nở trong bạn?",
+        "Bạn muốn thể hiện điều gì một cách sáng tạo?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Cảm xúc nào bạn đang giấu vì sợ bị đánh giá?",
+        "Bạn có thể bộc lộ một chút ở đâu thấy an toàn?"
       ]
     },
     "vector": {
@@ -506,28 +506,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Lãng mạn",
+        "Theo đuổi ước mơ",
+        "Lời mời"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Viển vông",
+        "Thất thường",
+        "Hứa nhiều"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Đây là năng lượng của người đi theo tiếng gọi trái tim. Lá bài mời bạn theo đuổi điều mình yêu, mang theo cả sự lãng mạn lẫn chân thành.",
+      "reversed": "Có thể bạn đang mơ nhiều hơn làm, hoặc cảm xúc thay đổi theo từng ngày. Đảo ngược mời bạn đưa giấc mơ xuống mặt đất thêm một chút."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Trái tim bạn đang muốn theo đuổi điều gì?",
+        "Bạn muốn gửi đi lời mời chân thành nào?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Giấc mơ nào cần một kế hoạch cụ thể hơn?",
+        "Lời hứa nào bạn cần giữ với chính mình?"
       ]
     },
     "vector": {
@@ -551,28 +551,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Thấu cảm",
+        "Dịu dàng",
+        "Trực giác"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Quá tải cảm xúc",
+        "Thiếu ranh giới",
+        "Mất mình"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Lá bài nói về một người lắng nghe sâu sắc và thấu cảm. Bạn có thể đang là chỗ dựa cho người khác, và trực giác của bạn đang rất nhạy.",
+      "reversed": "Bạn có thể đang ôm cảm xúc của người khác đến mức quên cảm xúc của mình. Đảo ngược mời bạn đặt ranh giới để giữ lòng mình trong lành."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Ai đang cần sự lắng nghe của bạn?",
+        "Trực giác của bạn đang nói gì về người bên cạnh?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Cảm xúc nào trong bạn thật ra là của người khác?",
+        "Ranh giới nào giúp bạn vẫn thương mà không kiệt sức?"
       ]
     },
     "vector": {
@@ -596,28 +596,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Điềm tĩnh",
+        "Bao dung",
+        "Cân bằng cảm xúc"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Kìm nén",
+        "Lạnh lùng",
+        "Thất thường"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Đây là năng lượng của người cảm nhận sâu mà vẫn giữ được sự điềm tĩnh. Lá bài mời bạn đứng vững giữa sóng cảm xúc mà không phải chối bỏ chúng.",
+      "reversed": "Có thể bạn đang giữ vẻ bình thản bên ngoài trong khi bên trong rất xao động. Đảo ngược gợi ý rằng thừa nhận cảm xúc không làm bạn yếu đi."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì giúp bạn bình tĩnh khi mọi thứ dậy sóng?",
+        "Bạn muốn bao dung hơn với ai, kể cả chính mình?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Cảm xúc nào bạn đang cố tỏ ra không có?",
+        "Ai là người bạn có thể thành thật về cảm xúc của mình?"
       ]
     },
     "vector": {

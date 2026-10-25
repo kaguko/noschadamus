@@ -11,28 +11,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Cảm hứng",
+        "Khởi động",
+        "Đam mê mới"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Chần chừ",
+        "Hụt hứng",
+        "Lửa nhỏ"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Một tia lửa cảm hứng vừa lóe lên. Có thể đó là một ý tưởng, một dự án hay một mong muốn mới, và nó đang chờ bạn cho nó chút không khí để cháy.",
+      "reversed": "Ngọn lửa có vẻ nhỏ hơn bạn mong đợi, hoặc bạn chưa biết đặt nó vào đâu. Đảo ngược mời bạn giữ ấm ý tưởng thay vì ép nó bùng lên ngay."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Ý tưởng nào đang khiến bạn háo hức nhất?",
+        "Bước nhỏ đầu tiên để thử nó là gì?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì đang làm cảm hứng của bạn nguội đi?",
+        "Bạn cần gì để ngọn lửa này cháy lại?"
       ]
     },
     "vector": {
@@ -56,28 +56,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Lập kế hoạch",
+        "Tầm nhìn",
+        "Cân nhắc"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Ngại rời vùng quen",
+        "Do dự",
+        "Nghĩ mãi"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Bạn đang đứng giữa điều quen thuộc và một chân trời rộng hơn. Lá bài gợi ý đây là lúc phác thảo kế hoạch, nhìn xa một chút trước khi bước.",
+      "reversed": "Có thể bạn đã lên kế hoạch khá lâu mà chưa dám đi bước nào. Đảo ngược mời bạn hỏi xem điều gì đang giữ mình ở lại vùng quen."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Nếu nhìn xa hơn một năm, bạn muốn mình đang ở đâu?",
+        "Kế hoạch nào bạn đang ấp ủ cần thêm một nét phác?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì khiến bạn cứ cân nhắc mãi mà chưa quyết?",
+        "Rời vùng quen, bạn sợ mất điều gì nhất?"
       ]
     },
     "vector": {
@@ -101,28 +101,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Mở rộng",
+        "Chờ kết quả",
+        "Tầm xa"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Chậm trễ",
+        "Thất vọng nhỏ",
+        "Thu hẹp"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Những gì bạn gieo đang bắt đầu lan ra xa hơn. Lá bài mời bạn ngẩng lên nhìn chân trời, vì có thể cơ hội đang đến từ một hướng bạn chưa để ý.",
+      "reversed": "Mọi thứ có thể đang chậm hơn bạn mong, và sự chờ đợi bắt đầu khiến bạn nản. Đảo ngược gợi ý bạn điều chỉnh kỳ vọng thay vì bỏ cả hành trình."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Điều bạn khởi động gần đây đang lớn lên thế nào?",
+        "Bạn muốn mở rộng tầm nhìn của mình về phía nào?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Kỳ vọng nào của bạn có thể cần được điều chỉnh?",
+        "Điều gì giúp bạn kiên nhẫn trong lúc chờ?"
       ]
     },
     "vector": {
@@ -146,28 +146,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Ăn mừng",
+        "Mái nhà",
+        "Cột mốc"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Chưa thấy yên",
+        "Bất ổn nhỏ",
+        "Thiếu gắn bó"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Đây là khoảnh khắc để ăn mừng một cột mốc, dù nhỏ. Lá bài nhắc rằng niềm vui chung với những người thân thuộc cũng là một nền móng vững vàng.",
+      "reversed": "Có thể bạn chưa thật sự thấy yên ở nơi mình đang sống hoặc làm việc. Đảo ngược mời bạn nhìn xem điều gì khiến nơi ấy chưa thành mái nhà."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Cột mốc nào gần đây bạn muốn ăn mừng?",
+        "Ai là những người khiến bạn thấy như ở nhà?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì khiến bạn chưa thấy thuộc về nơi này?",
+        "Bạn có thể làm gì để không gian của mình ấm hơn?"
       ]
     },
     "vector": {
@@ -191,28 +191,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Va chạm",
+        "Cạnh tranh",
+        "Nhiều ý kiến"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Né xung đột",
+        "Mệt vì tranh luận",
+        "Dịu xuống"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Nhiều luồng ý kiến và mong muốn đang va vào nhau quanh bạn. Sự lộn xộn này có thể là nơi ý tưởng tốt được mài giũa, nếu không ai cố thắng bằng mọi giá.",
+      "reversed": "Có thể bạn đã mệt vì những cuộc tranh luận không hồi kết, hoặc đang né một xung đột cần nói ra. Đảo ngược mời bạn tìm cách nói thẳng mà vẫn mềm."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Cuộc va chạm nào gần đây khiến bạn học được điều gì?",
+        "Bạn đang muốn thắng, hay muốn được hiểu?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Xung đột nào bạn đang né mà lòng vẫn nặng?",
+        "Cách nói nào giúp bạn vừa thẳng thắn vừa dịu dàng?"
       ]
     },
     "vector": {
@@ -236,28 +236,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Ghi nhận",
+        "Tự tin",
+        "Tiến bộ"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Cần được công nhận",
+        "Tự nghi",
+        "Thành công lặng lẽ"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Nỗ lực của bạn đang được nhìn thấy, ít nhất là bởi chính bạn. Lá bài mời bạn đón nhận lời khen và tự hào về bước tiến mình đã có được.",
+      "reversed": "Có thể bạn đang chờ người khác công nhận mới thấy mình làm tốt. Đảo ngược nhắc rằng một thành công lặng lẽ vẫn là thành công trọn vẹn."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn tự hào về bước tiến nào của mình gần đây?",
+        "Bạn có thể đón nhận lời khen mà không vội gạt đi không?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Sự công nhận của ai đang quan trọng với bạn quá mức?",
+        "Nếu không ai thấy, bạn vẫn đánh giá việc mình làm thế nào?"
       ]
     },
     "vector": {
@@ -281,28 +281,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Giữ lập trường",
+        "Bảo vệ",
+        "Kiên định"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Mệt vì phòng thủ",
+        "Nhượng bộ",
+        "Quá cảnh giác"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Bạn có thể đang phải đứng vững cho điều mình tin, kể cả khi bị thử thách. Lá bài gợi ý rằng bảo vệ giá trị của mình là điều chính đáng.",
+      "reversed": "Có thể bạn đã phòng thủ lâu đến mức thấy ai cũng là đối thủ. Đảo ngược mời bạn xem trận nào thật sự đáng giữ, trận nào có thể buông."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Giá trị nào bạn sẵn sàng đứng ra bảo vệ?",
+        "Điều gì giúp bạn vững khi bị phản đối?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn đang phòng thủ trước điều gì không còn đe dọa mình?",
+        "Trận nào bạn có thể nhẹ nhàng rời khỏi?"
       ]
     },
     "vector": {
@@ -326,28 +326,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Tăng tốc",
+        "Tin tức",
+        "Dòng chảy"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Trì hoãn",
+        "Vội vàng",
+        "Lệch nhịp"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Mọi thứ đang chuyển động nhanh, như những mũi tên đã rời dây cung. Lá bài gợi ý bạn đón dòng chảy này và để việc này nối tiếp việc kia.",
+      "reversed": "Nhịp có thể đang lệch: hoặc mọi thứ bị kẹt lại, hoặc bạn đang vội quá mức cần thiết. Đảo ngược mời bạn tìm lại tốc độ hợp với mình."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì đang chuyển động nhanh nhất trong đời bạn lúc này?",
+        "Bạn có thể để việc gì tự trôi mà không cần níu?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì đang bị kẹt lại, và vì sao?",
+        "Bạn đang vội vì cần, hay vì đã quen chạy?"
       ]
     },
     "vector": {
@@ -371,28 +371,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Bền bỉ",
+        "Gần đích",
+        "Ranh giới"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Kiệt sức",
+        "Đa nghi",
+        "Muốn bỏ cuộc"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Bạn đã đi một chặng dài và có thể đang mệt, nhưng vẫn đứng đó. Lá bài ghi nhận sự bền bỉ ấy và nhắc rằng đích đến có thể đã gần hơn bạn nghĩ.",
+      "reversed": "Sức của bạn có thể đã cạn đến mức mọi thứ trông như một mối đe dọa. Đảo ngược mời bạn nghỉ một nhịp, hoặc nhờ ai đó cùng gánh một phần."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì đã giúp bạn đi được đến đây?",
+        "Ranh giới nào đang bảo vệ sức lực của bạn?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn có thể nhờ ai cùng gánh một phần lúc này?",
+        "Nếu nghỉ một nhịp, bạn sợ điều gì sẽ xảy ra?"
       ]
     },
     "vector": {
@@ -416,28 +416,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Gánh nặng",
+        "Trách nhiệm",
+        "Cố gắng"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Buông bớt",
+        "Ủy thác",
+        "Quá tải"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Bạn đang mang nhiều hơn mức một người nên mang một lúc. Lá bài không trách sự cố gắng ấy, chỉ mời bạn nhìn xem phần nào thật sự là của mình.",
+      "reversed": "Có thể đã đến lúc đặt bớt gánh xuống. Đảo ngược gợi ý rằng buông bớt hay nhờ giúp đỡ không phải là thất bại, mà là cách để đi được xa hơn."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Trách nhiệm nào bạn đang mang thay cho người khác?",
+        "Nếu chỉ giữ lại ba việc, bạn giữ những việc nào?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn có thể đặt xuống điều gì ngay trong tuần này?",
+        "Ai có thể chia sẻ gánh nặng này với bạn?"
       ]
     },
     "vector": {
@@ -461,28 +461,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Tò mò",
+        "Khám phá",
+        "Tin vui"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Thiếu định hướng",
+        "Nhanh nguội",
+        "Ngại bắt đầu"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Một năng lượng tò mò và ham khám phá đang ghé qua. Lá bài mời bạn thử điều mới như một người học việc, không cần giỏi ngay từ đầu.",
+      "reversed": "Có thể bạn hứng thú với nhiều thứ nhưng nhanh nguội, hoặc ngại bắt đầu vì sợ vụng. Đảo ngược nhắc rằng vụng về là một phần tự nhiên của việc học."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn tò mò muốn thử điều gì lâu rồi chưa làm?",
+        "Nếu được làm người mới, bạn muốn học gì?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì khiến bạn ngại bắt đầu?",
+        "Niềm hứng thú nào của bạn cần được nuôi lâu hơn?"
       ]
     },
     "vector": {
@@ -506,28 +506,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Phiêu lưu",
+        "Nhiệt huyết",
+        "Hành động nhanh"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Bốc đồng",
+        "Thiếu kiên nhẫn",
+        "Bỏ dở"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Bạn có thể đang tràn đầy nhiệt huyết và muốn lao ngay vào hành động. Lá bài gợi ý năng lượng này quý giá, miễn là bạn nhớ mình đang chạy về đâu.",
+      "reversed": "Sự háo hức có thể đang biến thành bốc đồng hoặc khiến bạn bỏ dở giữa chừng. Đảo ngược mời bạn giữ lửa nhưng thêm vào một chút kiên nhẫn."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn đang háo hức lao vào điều gì?",
+        "Điều gì giúp bạn giữ hướng khi đang hăng hái?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Việc nào bạn bắt đầu rồi bỏ dở gần đây?",
+        "Bạn có thể chậm lại ở đâu mà không mất lửa?"
       ]
     },
     "vector": {
@@ -551,28 +551,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Tự tin",
+        "Ấm áp",
+        "Lôi cuốn"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "So sánh",
+        "Kiệt lửa",
+        "Tự thu mình"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Đây là năng lượng của một người tự tin, ấm áp và biết mình là ai. Lá bài mời bạn cứ tỏa sáng theo cách của mình mà không cần xin phép ai.",
+      "reversed": "Ngọn lửa bên trong có thể đang yếu đi, hoặc bạn đang so sánh mình với người khác quá nhiều. Đảo ngược nhắc bạn quay về điều khiến mình thấy sống động."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Khi nào bạn thấy mình tỏa sáng tự nhiên nhất?",
+        "Bạn có thể mang sự ấm áp của mình đến ai hôm nay?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn đang so sánh mình với ai, và điều đó làm bạn thấy thế nào?",
+        "Điều gì từng khiến bạn thấy rực rỡ?"
       ]
     },
     "vector": {
@@ -596,28 +596,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Tầm nhìn",
+        "Dẫn dắt",
+        "Táo bạo"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Độc đoán",
+        "Nóng nảy",
+        "Kỳ vọng quá cao"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Lá bài này nói về khả năng biến tầm nhìn thành hành động và truyền cảm hứng cho người khác. Có thể bạn đang ở vị trí dẫn dắt nhiều hơn bạn nghĩ.",
+      "reversed": "Tầm nhìn lớn có thể đang khiến bạn nóng vội hoặc áp đặt lên người khác. Đảo ngược mời bạn lắng nghe nhiều hơn trước khi dẫn đường."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Tầm nhìn nào bạn muốn người khác cùng thấy?",
+        "Bạn dẫn dắt tốt nhất trong hoàn cảnh nào?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Kỳ vọng nào bạn đang đặt lên người khác quá cao?",
+        "Ai là người bạn cần lắng nghe trước khi quyết định?"
       ]
     },
     "vector": {
