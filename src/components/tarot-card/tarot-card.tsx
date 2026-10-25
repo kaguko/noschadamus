@@ -1,86 +1,27 @@
 'use client';
 
 import clsx from 'clsx';
-import { Coins, Flame, Sparkles, Sword, Wine, type LucideIcon } from 'lucide-react';
-import Image from 'next/image';
 import { useLayoutEffect, useRef, useState } from 'react';
-import artManifest from './card-art-manifest.json';
+import {
+  CARD_SIZES,
+  CardBack,
+  CardFront,
+  cardAlt,
+  cardHeight,
+  FACE_CLASS,
+  FallbackFace,
+  type CardSize,
+  type TarotCardFace,
+} from './card-face';
 
-/** docs/04 mục 7.8 */
-export const CARD_SIZES = {
-  xs: 56,
-  sm: 88,
-  md: 104,
-  lg: 160,
-  xl: 220,
-  '2xl': 280,
-} as const;
-export type CardSize = keyof typeof CARD_SIZES;
-export const cardHeight = (w: number) => Math.round((w * 12) / 7);
+export { CARD_SIZES, cardHeight, toRoman, type CardSize, type TarotCardFace } from './card-face';
 
-export interface TarotCardFace {
-  cardId: string;
-  name: string;
-  number: number;
-  arcana: 'major' | 'minor';
-  suit: string | null;
-  reversed: boolean;
-}
-
-const HAS_ART = new Set<string>(artManifest as string[]);
-const SUIT_ICON: Record<string, LucideIcon> = {
-  wands: Flame,
-  cups: Wine,
-  swords: Sword,
-  pentacles: Coins,
-};
 const FLIP_MS = 700;
 const EMPHASIZED = 'cubic-bezier(0.2, 0.8, 0.2, 1)';
-
-export function toRoman(n: number): string {
-  if (n === 0) return '0';
-  const table: [number, string][] = [
-    [10, 'X'],
-    [9, 'IX'],
-    [5, 'V'],
-    [4, 'IV'],
-    [1, 'I'],
-  ];
-  let out = '';
-  for (const [v, s] of table) {
-    while (n >= v) {
-      out += s;
-      n -= v;
-    }
-  }
-  return out;
-}
 
 function prefersReducedMotion() {
   return (
     typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  );
-}
-
-/** Mặt dự phòng khi chưa có ảnh: số + biểu tượng + tên (docs/04 mục 7.8). */
-function FallbackFace({ card }: { card: TarotCardFace }) {
-  const Icon = card.arcana === 'major' ? Sparkles : (SUIT_ICON[card.suit ?? ''] ?? Sparkles);
-  const numeral = card.arcana === 'major' ? toRoman(card.number) : String(card.number);
-  return (
-    <div
-      className={clsx(
-        'flex h-full w-full flex-col items-center justify-between bg-gradient-to-b from-bg2 to-bg1 py-[9cqw] text-ink1',
-        card.reversed && 'rotate-180',
-      )}
-    >
-      <span className="font-display text-[13cqw] leading-none font-semibold text-accent-text">
-        {numeral}
-      </span>
-      <Icon aria-hidden className="size-[40cqw] text-ink2" strokeWidth={1.25} />
-      <span className="px-[6cqw] text-center text-[8.5cqw] leading-tight font-semibold tracking-[0.08em] uppercase">
-        {card.name}
-      </span>
-    </div>
   );
 }
 
@@ -145,8 +86,7 @@ export function TarotCard({
     return () => anim.cancel();
   }, [faceUp, animateFlip, onFlipEnd]);
 
-  const hasArt = card && HAS_ART.has(card.cardId) && !artFailed;
-  const alt = card ? `${card.name}${card.reversed ? reversedAltSuffix : ''}` : '';
+  const alt = card ? cardAlt(card, reversedAltSuffix) : '';
 
   return (
     <div
@@ -162,36 +102,27 @@ export function TarotCard({
         className="relative h-full w-full [transform-style:preserve-3d]"
         style={{ transform: faceUp ? 'rotateY(180deg)' : 'rotateY(0deg)' }}
       >
-        {/* Mặt sau */}
-        <div
-          className="absolute inset-0 overflow-hidden rounded-[6cqw] shadow-[var(--shadow-card)] [backface-visibility:hidden]"
-          aria-hidden={faceUp}
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element -- SVG tĩnh nhỏ, không cần tối ưu ảnh */}
-          <img src="/card-back.svg" alt="" className="h-full w-full" draggable={false} />
+        <div className={FACE_CLASS} aria-hidden={faceUp}>
+          <CardBack />
         </div>
-        {/* Mặt trước */}
         <div
           ref={front}
-          className="absolute inset-0 overflow-hidden rounded-[6cqw] border border-white/14 shadow-[var(--shadow-card)] [backface-visibility:hidden] [transform:rotateY(180deg)]"
+          className={clsx(FACE_CLASS, 'border border-white/14 [transform:rotateY(180deg)]')}
           aria-hidden={!faceUp}
         >
           {card &&
-            (hasArt ? (
-              <Image
-                src={`/cards/${card.cardId}.webp`}
-                alt={alt}
-                fill
-                sizes={`${w}px`}
-                priority={priority}
-                className={clsx('object-cover', card.reversed && 'rotate-180')}
-                onError={() => setArtFailed(true)}
-                draggable={false}
-              />
-            ) : (
+            (artFailed ? (
               <div role="img" aria-label={alt} className="h-full w-full">
                 <FallbackFace card={card} />
               </div>
+            ) : (
+              <CardFront
+                card={card}
+                width={w}
+                alt={alt}
+                priority={priority}
+                onArtError={() => setArtFailed(true)}
+              />
             ))}
           {sheen && <span aria-hidden className="nd-sheen pointer-events-none absolute inset-0" />}
         </div>

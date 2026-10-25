@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from 'next';
-import { Footer, Header } from '@/components/layout/site-chrome';
+import { Footer } from '@/components/layout/footer';
+import { Header } from '@/components/layout/site-chrome';
 import { Starfield } from '@/components/layout/starfield';
 import { themeInitScript } from '@/components/layout/theme';
-import { ToastProvider } from '@/components/ui/toast';
 import { t } from '@/shared/i18n';
-import { beVietnam, fraunces } from './fonts';
+import { beVietnam, fraunces, frauncesItalic } from './fonts';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="vi"
       data-theme="dark"
-      className={`${fraunces.variable} ${beVietnam.variable}`}
+      className={`${fraunces.variable} ${frauncesItalic.variable} ${beVietnam.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -39,13 +39,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <div className="nd-glow" aria-hidden="true" />
         <Starfield />
-        <ToastProvider label={t('common.toast_region')}>
-          <Header />
-          <main id="main" className="flex-1">
-            {children}
-          </main>
-          <Footer />
-        </ToastProvider>
+        <Header />
+        <main id="main" className="flex-1">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

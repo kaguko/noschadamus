@@ -60,7 +60,7 @@ Chữ nhỏ (< 18px) **không** đặt trên màu trục; màu trục chỉ cho 
 
 | Vai trò | Font | Ghi chú |
 |---|---|---|
-| Hiển thị (tiêu đề, tên lá, tiêu đề archetype) | **Fraunces** | `font-variation-settings: "SOFT" 60, "opsz" auto`; weight 500-600; italic chỉ cho wordmark và trích dẫn câu hỏi |
+| Hiển thị (tiêu đề, tên lá, tiêu đề archetype) | **Fraunces** | Bản **tĩnh** weight 500/600, subset latin + vietnamese (bỏ trục SOFT/opsz và latin-ext vì bản variable nặng ~650 KB, làm LCP di động 6,7s; đo ở T20). Italic 500 tách riêng, không preload, chỉ cho wordmark |
 | Nội dung và giao diện | **Be Vietnam Pro** | weight 400/500/600; hỗ trợ đầy đủ dấu tiếng Việt |
 | Số liệu | Be Vietnam Pro | `font-variant-numeric: tabular-nums` |
 

@@ -59,7 +59,8 @@
       "body": "Xuất ảnh cho story, bài đăng hay xem trước liên kết. Ảnh không bao giờ chứa điều bạn viết riêng.",
       "story": "Story",
       "post": "Bài đăng",
-      "link": "Xem trước liên kết"
+      "link": "Xem trước liên kết",
+      "gallery_label": "Mẫu ảnh chia sẻ, cuộn ngang để xem thêm"
     },
     "faq": {
       "eyebrow": "CÂU HỎI THƯỜNG GẶP",

@@ -1,7 +1,7 @@
 'use client';
 
 import clsx from 'clsx';
-import { History, Info } from 'lucide-react';
+import { History } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
@@ -16,7 +16,7 @@ export function Wordmark({ className }: { className?: string }) {
     <span className={clsx('inline-flex items-center gap-2', className)}>
       {/* eslint-disable-next-line @next/next/no-img-element -- SVG tĩnh 18px */}
       <img src="/icons/mark.svg" alt="" width={18} height={18} className="size-[18px]" />
-      <span className="font-display text-[19px] font-medium italic tracking-[-0.01em] text-ink1">
+      <span className="font-[family-name:var(--font-fraunces-italic),var(--font-display)] text-[19px] font-medium italic tracking-[-0.01em] text-ink1">
         {t('common.brand')}
       </span>
     </span>
@@ -81,74 +81,6 @@ export function Header() {
         </nav>
       </div>
     </header>
-  );
-}
-
-/** docs/04 mục 7.16 */
-export function Disclaimer({ className }: { className?: string }) {
-  return (
-    <p className={clsx('t-small flex gap-2 text-ink3', className)}>
-      <Info aria-hidden className="mt-0.5 size-4 shrink-0" />
-      <span>{t('footer.disclaimer')}</span>
-    </p>
-  );
-}
-
-const COOKIE_NOTE_KEY = 'nd:cookie-note-seen';
-
-/** Hiện dòng thông báo cookie ở lần ghé đầu (docs/05 mục 10). */
-function CookieNote() {
-  const [show, setShow] = useState(false);
-  useEffect(() => {
-    let seen = false;
-    try {
-      seen = localStorage.getItem(COOKIE_NOTE_KEY) === '1';
-      localStorage.setItem(COOKIE_NOTE_KEY, '1');
-    } catch {
-      // bộ nhớ bị chặn: vẫn hiện
-    }
-    if (!seen) {
-      const id = window.setTimeout(() => setShow(true), 0);
-      return () => window.clearTimeout(id);
-    }
-  }, []);
-  return show ? <p className="t-small mt-3 text-ink3">{t('footer.cookie_note')}</p> : null;
-}
-
-/** docs/04 mục 7.15 */
-export function Footer() {
-  const pathname = usePathname();
-  if (pathname?.startsWith('/draw')) return null;
-  return (
-    <footer className="mt-24 border-t border-line bg-bg1 py-10">
-      <div className="container-page space-y-5">
-        <nav aria-label={t('footer.about')} className="flex flex-wrap gap-x-6 gap-y-2">
-          {(
-            [
-              ['/about', 'footer.about'],
-              ['/privacy', 'footer.privacy'],
-              ['/terms', 'footer.terms'],
-            ] as const
-          ).map(([href, key]) => (
-            <Link
-              key={href}
-              href={href}
-              className="text-[15px] font-medium text-ink2 hover:text-ink1"
-            >
-              {t(key)}
-            </Link>
-          ))}
-        </nav>
-        <Disclaimer className="measure" />
-        <div>
-          <p className="t-small text-ink3">{t('footer.art_credit')}</p>
-          <p className="t-small text-ink3">
-            {t('footer.copyright', { year: process.env.NEXT_PUBLIC_BUILD_YEAR ?? '' })}
-          </p>
-          <CookieNote />
-        </div>
-      </div>
-    </footer>
   );
 }
 

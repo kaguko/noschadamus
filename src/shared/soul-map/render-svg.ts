@@ -1,9 +1,10 @@
 /** Chuỗi SVG Soul Map với màu literal (docs/06 mục 5): dùng cho ảnh chia sẻ và test. */
-import { AXIS_COLOR } from '@/shared/kernel/axes';
+import { AXIS_COLOR, type AxisId } from '@/shared/kernel/axes';
 import { CX, CY, LABEL_SIZE, R, VIEW } from './geometry';
 import { buildSoulMapScene, type SoulMapSceneInput } from './scene';
 
-export type SoulMapPalette = 'dark' | 'light' | 'share';
+/** `css` dùng biến CSS (theo theme) cho SVG nhúng trong trang; còn lại là màu literal cho ảnh. */
+export type SoulMapPalette = 'dark' | 'light' | 'share' | 'css';
 
 export const PALETTES: Record<
   SoulMapPalette,
@@ -12,6 +13,13 @@ export const PALETTES: Record<
   dark: { line: '#2E3252', text1: '#F3EEE3', text2: '#B9B5C9', text3: '#8A87A0', bg0: '#0E0F1A' },
   share: { line: '#2E3252', text1: '#F3EEE3', text2: '#B9B5C9', text3: '#8A87A0', bg0: '#0E0F1A' },
   light: { line: '#DCD2BE', text1: '#1C1B2E', text2: '#4A4862', text3: '#6B6882', bg0: '#F7F2E8' },
+  css: {
+    line: 'var(--line)',
+    text1: 'var(--text-1)',
+    text2: 'var(--text-2)',
+    text3: 'var(--text-3)',
+    bg0: 'var(--bg-0)',
+  },
 };
 
 export interface SoulMapRenderInput extends SoulMapSceneInput {
@@ -28,7 +36,8 @@ const n = (x: number) => x.toFixed(2);
 export function renderSoulMapSvg(input: SoulMapRenderInput): string {
   const p = PALETTES[input.palette];
   const s = buildSoulMapScene(input);
-  const accent = AXIS_COLOR[s.accentAxis];
+  const axisColor = (a: AxisId) => (input.palette === 'css' ? `var(--axis-${a})` : AXIS_COLOR[a]);
+  const accent = axisColor(s.accentAxis);
   const gid = `${input.idPrefix}-fill`;
   const out: string[] = [];
   out.push(
@@ -61,7 +70,7 @@ export function renderSoulMapSvg(input: SoulMapRenderInput): string {
     `<path d="${s.main}" fill="url(#${gid})" stroke="${accent}" stroke-width="2.25" stroke-linejoin="round"/>`,
   );
   for (const v of s.vertices) {
-    const c = AXIS_COLOR[v.axis];
+    const c = axisColor(v.axis);
     if (v.kind === 'dominant') {
       out.push(
         `<circle cx="${n(v.x)}" cy="${n(v.y)}" r="12" fill="none" stroke="${c}" stroke-opacity="0.45" stroke-width="1.5"/>`,
