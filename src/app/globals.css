@@ -294,3 +294,86 @@ body::before {
     animation: none;
   }
 }
+
+/* Chuyển động component: docs/04 mục 7 */
+.nd-overlay[data-state='open'] {
+  animation: nd-fade-in var(--dur-slow) var(--ease-emphasized);
+}
+.nd-overlay[data-state='closed'] {
+  animation: nd-fade-out var(--dur-base) var(--ease-standard);
+}
+.nd-sheet[data-state='open'] {
+  animation: nd-rise-in var(--dur-slow) var(--ease-emphasized);
+}
+.nd-sheet[data-state='closed'] {
+  animation: nd-fade-out var(--dur-base) var(--ease-standard);
+}
+.nd-sheet {
+  transition: transform var(--dur-base) var(--ease-standard);
+}
+.nd-toast[data-state='open'] {
+  animation: nd-rise-in var(--dur-slow) var(--ease-emphasized);
+}
+.nd-toast[data-state='closed'] {
+  animation: nd-fade-out var(--dur-base) var(--ease-standard);
+}
+.nd-toast[data-swipe='move'] {
+  transform: translateY(var(--radix-toast-swipe-move-y));
+}
+.nd-accordion[data-state='open'] {
+  animation: nd-accordion-open var(--dur-slow) var(--ease-standard);
+}
+.nd-accordion[data-state='closed'] {
+  animation: nd-accordion-close var(--dur-slow) var(--ease-standard);
+}
+.nd-skeleton {
+  background-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in oklab, var(--text-1) 6%, transparent) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: nd-shimmer 1.6s linear infinite;
+}
+
+@keyframes nd-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes nd-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes nd-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+@keyframes nd-accordion-open {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+@keyframes nd-accordion-close {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+@keyframes nd-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
