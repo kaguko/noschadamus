@@ -75,7 +75,7 @@ Vector: `energy .8356, emotion .5489, connection .3556, grounding .2822, mind .4
 | 5 | Hình chính | Đường cong tổng hợp. Tô `radialGradient` (tâm `(200,200)`, `r = 128`): `0%` accent α .50 → `100%` accent α .10. Nét 2.25, màu `accent`, `stroke-linejoin: round`. |
 | 6 | Đỉnh | Mỗi trục một chấm bán kính 4.5, tô màu **của trục đó**. `dominant`: bán kính 7 + vòng bao bán kính 12, nét 1.5, màu trục, α .45. `quiet`: rỗng (tô `--bg-0`, nét 2 màu trục). |
 | 7 | Tâm | Chấm bán kính 2.5, `--text-1`, α .5. |
-| 8 | Nhãn | Tên trục (Be Vietnam Pro 12/16, 600 nếu `dominant`, 500 còn lại), màu `--text-1` (dominant), `--text-2` (thường), `--text-3` (quiet). Vị trí theo `labelFor(k)`. Cách `dy`: `baseline auto` → `y − 4`; `hanging` → `y + 4`. |
+| 8 | Nhãn | Tên trục (Be Vietnam Pro, cỡ **15 đơn vị viewBox** để chữ thật ≥ 12px khi hình rộng ≥ 320px; đã chỉnh ở T18, 600 nếu `dominant`, 500 còn lại), màu `--text-1` (dominant), `--text-2` (thường), `--text-3` (quiet). Vị trí theo `labelFor(k)`. Cách `dy`: `baseline auto` → `y − 4`; `hanging` → `y + 4`. |
 
 `accent` = màu trục của `dominant` (`--axis-<dominant>`).
 Tên trục dùng nhãn tiếng Việt ở file 01 mục 1.
