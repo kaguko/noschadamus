@@ -12,8 +12,8 @@ const all = () =>
 const banned = load('data/text/banned-terms.vi.json') as string[];
 
 describe('validateCards', () => {
-  it('dữ liệu hiện tại hợp lệ ở chế độ cho phép [TODO]', () => {
-    expect(validateCards(all(), { allowTodo: true, bannedTerms: banned })).toEqual([]);
+  it('dữ liệu hiện tại hợp lệ ở chế độ nghiêm ngặt', () => {
+    expect(validateCards(all(), { allowTodo: false, bannedTerms: banned })).toEqual([]);
   });
 
   it('có 78 id mong đợi', () => {
@@ -42,9 +42,12 @@ describe('validateCards', () => {
     expect(msgs.some((m) => m.includes('kết thúc bằng "?"'))).toBe(true);
   });
 
-  it('chế độ nghiêm ngặt từ chối [TODO]', () => {
-    const issues = validateCards(all(), { allowTodo: false, bannedTerms: banned });
-    expect(issues.some((i) => i.message === 'còn nội dung [TODO]')).toBe(true);
+  it('chế độ nghiêm ngặt từ chối [TODO], chế độ dev thì cho qua', () => {
+    const cards = all().map((c) => structuredClone(c)) as { meaning: { upright: string } }[];
+    cards[0]!.meaning.upright = '[TODO]';
+    const strict = validateCards(cards, { allowTodo: false, bannedTerms: banned });
+    expect(strict.some((i) => i.message === 'còn nội dung [TODO]')).toBe(true);
+    expect(validateCards(cards, { allowTodo: true, bannedTerms: banned })).toEqual([]);
   });
 
   it('jaccard', () => {

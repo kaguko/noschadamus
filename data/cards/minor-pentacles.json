@@ -11,28 +11,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Cơ hội thực tế",
+        "Hạt giống",
+        "Ổn định"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Bỏ lỡ",
+        "Kế hoạch lỏng",
+        "Chưa chín"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Một cơ hội cụ thể, có thể chạm tay vào, đang xuất hiện. Lá bài mời bạn gieo hạt giống này vào mảnh đất thực tế và chăm nó từng ngày.",
+      "reversed": "Có thể cơ hội đã đến nhưng kế hoạch còn lỏng, hoặc thời điểm chưa chín. Đảo ngược gợi ý bạn chuẩn bị phần nền trước khi bắt đầu xây."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Cơ hội cụ thể nào đang ở trước mặt bạn?",
+        "Hạt giống nào bạn muốn gieo trong tháng này?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Phần nền nào cần được chuẩn bị kỹ hơn?",
+        "Bạn có đang bỏ qua một cơ hội nhỏ vì chờ điều lớn hơn?"
       ]
     },
     "vector": {
@@ -56,28 +56,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Xoay xở",
+        "Linh hoạt",
+        "Cân đối"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Quá tải",
+        "Rối lịch",
+        "Đánh rơi"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Bạn đang tung hứng nhiều việc cùng lúc và vẫn giữ được nhịp. Lá bài ghi nhận sự linh hoạt ấy và mời bạn để ý đến sức lực của chính mình.",
+      "reversed": "Có thể bạn đang ôm quá nhiều quả bóng và bắt đầu đánh rơi vài quả. Đảo ngược gợi ý bạn sắp xếp lại thứ tự ưu tiên cho nhẹ bớt."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn đang cân đối những việc nào cùng lúc?",
+        "Điều gì giúp bạn giữ nhịp khi bận rộn?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Việc nào có thể tạm đặt xuống?",
+        "Nếu sắp xếp lại ưu tiên, điều gì đứng đầu?"
       ]
     },
     "vector": {
@@ -101,28 +101,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Hợp tác",
+        "Tay nghề",
+        "Xây dựng"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Lệch phối hợp",
+        "Làm một mình",
+        "Thiếu ghi nhận"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Lá bài nói về những điều được xây nên nhờ nhiều đôi tay và tay nghề. Có thể bạn đang ở trong một nhóm mà mỗi người góp một phần quý giá.",
+      "reversed": "Có thể sự phối hợp đang lệch, hoặc bạn đang cố làm mọi thứ một mình. Đảo ngược mời bạn hỏi xem ai có thể cùng xây với mình."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn đang góp tay nghề gì vào một việc chung?",
+        "Ai là người bạn làm việc cùng thấy ăn ý nhất?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Việc nào bạn đang ôm một mình mà có thể chia sẻ?",
+        "Đóng góp của ai cần được ghi nhận nhiều hơn?"
       ]
     },
     "vector": {
@@ -146,28 +146,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Giữ gìn",
+        "An toàn",
+        "Tiết kiệm"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Bám chặt",
+        "Sợ mất",
+        "Mở tay"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Bạn có thể đang giữ chặt những gì mình có để cảm thấy an toàn. Lá bài thừa nhận nhu cầu ấy và hỏi khẽ: giữ chặt quá có khiến bạn khó nhận thêm điều mới không?",
+      "reversed": "Có thể bạn đang bắt đầu nới tay, hoặc ngược lại, sợ mất đến mức không dám dùng. Đảo ngược mời bạn tìm sự cân bằng giữa giữ và cho."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì giúp bạn thấy an toàn?",
+        "Bạn đang giữ chặt điều gì nhất lúc này?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Nếu nới tay một chút, bạn sợ điều gì sẽ xảy ra?",
+        "Bạn muốn dùng những gì mình có cho điều gì ý nghĩa?"
       ]
     },
     "vector": {
@@ -191,28 +191,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Thiếu thốn",
+        "Lạc lõng",
+        "Khó khăn"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Tìm được giúp đỡ",
+        "Hồi phục",
+        "Ánh đèn"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Lá bài thừa nhận cảm giác thiếu thốn hoặc bị bỏ lại bên ngoài. Nó nhắc rằng đôi khi sự giúp đỡ ở gần hơn ta nghĩ, chỉ cần ngẩng lên nhìn.",
+      "reversed": "Giai đoạn khó khăn có thể đang dần qua, hoặc bạn đã tìm thấy nơi để nương tựa. Đảo ngược gợi ý bạn đón nhận sự giúp đỡ mà không ngần ngại."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn đang cảm thấy thiếu điều gì nhất?",
+        "Sự giúp đỡ nào đang ở gần mà bạn chưa nhận ra?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Ai hoặc điều gì đã nâng đỡ bạn gần đây?",
+        "Bạn có thể đón nhận sự giúp đỡ nào mà không thấy ngại?"
       ]
     },
     "vector": {
@@ -236,28 +236,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Cho và nhận",
+        "Hào phóng",
+        "Chia sẻ"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Lệch cán cân",
+        "Nợ ân tình",
+        "Cho có điều kiện"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Đây là lá bài của sự cho và nhận, khi những gì dư dả được chảy đến nơi cần. Bạn có thể đang ở vị trí trao đi hoặc đón nhận, và cả hai đều quý.",
+      "reversed": "Cán cân cho và nhận có thể đang lệch, hoặc sự giúp đỡ đi kèm điều kiện. Đảo ngược mời bạn nhìn xem mối trao đổi nào còn lành mạnh."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn có thể chia sẻ điều gì với người đang cần?",
+        "Gần đây bạn đã nhận được sự hào phóng nào?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Mối quan hệ nào đang lệch về phía cho hoặc nhận?",
+        "Sự giúp đỡ nào khiến bạn thấy nặng nợ?"
       ]
     },
     "vector": {
@@ -281,28 +281,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Kiên nhẫn",
+        "Đánh giá",
+        "Chờ mùa"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Sốt ruột",
+        "Đặt sức sai chỗ",
+        "Nản"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Bạn đã gieo và chăm, giờ là lúc đứng lại nhìn xem khu vườn đang lớn ra sao. Lá bài mời bạn kiên nhẫn và đánh giá công sức của mình một cách công bằng.",
+      "reversed": "Có thể bạn đang sốt ruột vì kết quả chưa như mong đợi. Đảo ngược gợi ý bạn xem công sức của mình có đang được đặt đúng chỗ không."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Điều bạn đang vun đắp đã lớn lên thế nào?",
+        "Bạn muốn tiếp tục đầu tư sức vào đâu?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Kết quả nào bạn đang chờ quá sốt ruột?",
+        "Công sức nào có thể cần chuyển sang hướng khác?"
       ]
     },
     "vector": {
@@ -326,28 +326,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Rèn luyện",
+        "Tỉ mỉ",
+        "Tập trung"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Làm cho xong",
+        "Cầu toàn",
+        "Nhàm chán"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Lá bài nói về sự rèn luyện đều đặn và niềm vui khi làm một việc thật tỉ mỉ. Mỗi lần lặp lại là một lần tay nghề của bạn sắc hơn.",
+      "reversed": "Có thể bạn đang làm cho xong, hoặc ngược lại, cầu toàn đến mức kiệt sức. Đảo ngược mời bạn tìm lại niềm vui trong chính việc mình làm."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Kỹ năng nào bạn đang rèn luyện mỗi ngày?",
+        "Việc nào khiến bạn quên cả thời gian khi làm?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Việc nào bạn đang làm cho xong mà không còn hứng?",
+        "Ở đâu bạn có thể bớt cầu toàn một chút?"
       ]
     },
     "vector": {
@@ -371,28 +371,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Tự chủ",
+        "Thành quả",
+        "Tận hưởng"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Phụ thuộc",
+        "Làm quá sức",
+        "Cô đơn"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Đây là lá bài của sự tự chủ và thành quả từ công sức của chính bạn. Nó mời bạn tận hưởng những gì mình đã xây mà không cần ai xác nhận.",
+      "reversed": "Có thể bạn đang có nhiều mà vẫn thấy chông chênh, hoặc đang làm quá sức để giữ nó. Đảo ngược gợi ý bạn xem sự độc lập ấy có đang hóa cô đơn không."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Thành quả nào của chính bạn khiến bạn tự hào?",
+        "Bạn muốn tận hưởng điều gì mình đã gây dựng?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn đang làm quá sức để giữ điều gì?",
+        "Sự độc lập của bạn có cần thêm một chút kết nối không?"
       ]
     },
     "vector": {
@@ -416,28 +416,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Bền vững",
+        "Di sản",
+        "Gia đình"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Bất ổn",
+        "Tranh chấp",
+        "Áp lực kỳ vọng"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Lá bài nói về những điều bền vững, được xây qua thời gian và có thể trao lại. Đó có thể là truyền thống, nền tảng chung, hay cảm giác an toàn cho người bạn thương.",
+      "reversed": "Có thể nền móng chung đang có vết nứt, hoặc bạn đang mang áp lực kỳ vọng từ gia đình. Đảo ngược mời bạn nghĩ về điều gì thật sự đáng để trao lại."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn muốn xây điều gì bền lâu cho mình và người thân?",
+        "Giá trị nào bạn muốn truyền lại?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Kỳ vọng nào từ gia đình đang đè lên bạn?",
+        "Nền móng nào cần được củng cố lại?"
       ]
     },
     "vector": {
@@ -461,28 +461,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Học điều mới",
+        "Chăm chỉ",
+        "Kế hoạch nhỏ"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Trì hoãn",
+        "Thiếu tập trung",
+        "Học dở dang"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Một tinh thần ham học và chăm chỉ đang hiện diện. Lá bài mời bạn bắt đầu một kế hoạch nhỏ, thực tế, và đi từng bước một cách đều đặn.",
+      "reversed": "Có thể bạn đang trì hoãn việc học hoặc bỏ dở giữa chừng. Đảo ngược gợi ý bạn chọn một bước nhỏ đến mức không thể nào từ chối."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn muốn học kỹ năng thực tế nào?",
+        "Kế hoạch nhỏ nào bạn có thể bắt đầu từ hôm nay?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì khiến bạn trì hoãn việc học?",
+        "Bước nhỏ nhất bạn có thể làm ngay là gì?"
       ]
     },
     "vector": {
@@ -506,28 +506,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Kiên trì",
+        "Đáng tin",
+        "Từng bước"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Trì trệ",
+        "Cứng nhắc",
+        "Quá thận trọng"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Đây là năng lượng của người đi chậm mà chắc, làm đến nơi đến chốn. Lá bài mời bạn tin vào sức mạnh lặng lẽ của sự đều đặn mỗi ngày.",
+      "reversed": "Sự cẩn thận có thể đang biến thành trì trệ, khiến bạn đi mãi một lối quen. Đảo ngược gợi ý thêm một chút linh hoạt vào nhịp của mình."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Thói quen đều đặn nào đang đưa bạn tiến về phía trước?",
+        "Việc nào bạn muốn làm đến nơi đến chốn?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Ở đâu bạn đang thận trọng quá mức cần thiết?",
+        "Điều nhỏ nào bạn có thể làm khác đi trong tuần này?"
       ]
     },
     "vector": {
@@ -551,28 +551,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Chăm sóc",
+        "Thực tế",
+        "Ấm cúng"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Lo toan quá mức",
+        "Quên mình",
+        "Mất cân bằng"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Lá bài nói về một người biết chăm lo cho cuộc sống thường ngày và cho những người quanh mình. Sự ấm cúng bạn tạo ra là một món quà thật.",
+      "reversed": "Có thể bạn đang lo toan cho mọi người mà quên mất chính mình. Đảo ngược mời bạn dành một phần sự chăm sóc ấy cho bản thân."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Bạn đang chăm sóc ai, và điều đó làm bạn thấy thế nào?",
+        "Không gian nào của bạn cần thêm chút ấm cúng?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Lần gần nhất bạn lo cho chính mình là khi nào?",
+        "Việc nào bạn có thể để người khác lo thay?"
       ]
     },
     "vector": {
@@ -596,28 +596,28 @@
     },
     "keywords": {
       "upright": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Vững vàng",
+        "Thịnh vượng",
+        "Trách nhiệm"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]",
-        "[TODO]"
+        "Cố chấp",
+        "Nặng vật chất",
+        "Kiểm soát"
       ]
     },
     "meaning": {
-      "upright": "[TODO]",
-      "reversed": "[TODO]"
+      "upright": "Đây là năng lượng của người đã xây được nền móng vững và biết dùng nó để nâng đỡ người khác. Lá bài mời bạn ghi nhận sự ổn định mình đã tạo ra.",
+      "reversed": "Có thể sự an toàn vật chất đang chiếm quá nhiều chỗ, hoặc bạn đang cố kiểm soát mọi thứ. Đảo ngược mời bạn nhớ lại điều gì thật sự quý."
     },
     "prompts": {
       "upright": [
-        "[TODO]",
-        "[TODO]"
+        "Nền móng nào bạn tự hào đã xây được?",
+        "Bạn có thể dùng sự ổn định của mình để nâng đỡ ai?"
       ],
       "reversed": [
-        "[TODO]",
-        "[TODO]"
+        "Điều gì bạn đang đánh đổi để giữ sự an toàn?",
+        "Điều gì quý với bạn hơn cả vật chất?"
       ]
     },
     "vector": {
