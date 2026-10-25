@@ -86,7 +86,7 @@ export class CreateReading {
 // ---------------------------------------------------------------- GetReadingForOwner
 
 export class GetReadingForOwner {
-  constructor(private readonly deps: Pick<ReadingDeps, 'readings'>) {}
+  constructor(private readonly deps: Pick<ReadingDeps, 'readings' | 'clock'>) {}
 
   /** Không phải chủ cũng trả NOT_FOUND, không phân biệt (R9). */
   async execute(input: {
@@ -95,18 +95,22 @@ export class GetReadingForOwner {
   }): Promise<Result<ReadingView, 'NOT_FOUND'>> {
     if (!owns(input.owner, input.readingId)) return err('NOT_FOUND');
     const r = await this.deps.readings.findById(input.readingId);
-    return r ? ok(toReadingView(r, { includeIntention: true })) : err('NOT_FOUND');
+    if (!r) return err('NOT_FOUND');
+    await this.deps.readings.markViewed(r.id, this.deps.clock.now());
+    return ok(toReadingView(r, { includeIntention: true }));
   }
 }
 
 // ---------------------------------------------------------------- GetSharedReading
 
 export class GetSharedReading {
-  constructor(private readonly deps: Pick<ReadingDeps, 'readings'>) {}
+  constructor(private readonly deps: Pick<ReadingDeps, 'readings' | 'clock'>) {}
 
   async execute(input: { token: ShareToken }): Promise<Result<ReadingView, 'NOT_FOUND'>> {
     const r = await this.deps.readings.findByShareToken(input.token);
-    return r ? ok(toReadingView(r, { includeIntention: false })) : err('NOT_FOUND');
+    if (!r) return err('NOT_FOUND');
+    await this.deps.readings.markViewed(r.id, this.deps.clock.now());
+    return ok(toReadingView(r, { includeIntention: false }));
   }
 }
 

@@ -49,3 +49,4 @@ next-env.d.ts
 /test-results
 /assets/card-art-src
 /.shot.mjs
+/src/generated

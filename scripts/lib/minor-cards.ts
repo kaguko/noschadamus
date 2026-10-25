@@ -6,10 +6,31 @@ import type { MinorRank, Suit } from '../../src/contexts/tarot/domain/card';
  * Vector cơ sở đã tinh chỉnh (Cửa kiểm 1) để mỗi trục nổi bật ở khoảng 14-20%.
  */
 export const SUIT_BASE: Readonly<Record<Suit, AxisVector>> = {
-  wands: { energy: 0.85, emotion: 0.45, connection: 0.38, grounding: 0.44, mind: 0.46, change: 0.7 },
+  wands: {
+    energy: 0.85,
+    emotion: 0.45,
+    connection: 0.38,
+    grounding: 0.44,
+    mind: 0.46,
+    change: 0.7,
+  },
   cups: { energy: 0.4, emotion: 0.88, connection: 0.82, grounding: 0.45, mind: 0.38, change: 0.4 },
-  swords: { energy: 0.55, emotion: 0.3, connection: 0.22, grounding: 0.38, mind: 0.76, change: 0.6 },
-  pentacles: { energy: 0.4, emotion: 0.4, connection: 0.6, grounding: 0.7, mind: 0.5, change: 0.25 },
+  swords: {
+    energy: 0.55,
+    emotion: 0.3,
+    connection: 0.22,
+    grounding: 0.38,
+    mind: 0.76,
+    change: 0.6,
+  },
+  pentacles: {
+    energy: 0.4,
+    emotion: 0.4,
+    connection: 0.6,
+    grounding: 0.7,
+    mind: 0.5,
+    change: 0.25,
+  },
 };
 
 export const RANK_K: Readonly<Record<MinorRank, number>> = {

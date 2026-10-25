@@ -1,0 +1,21 @@
+# Postgres cho dev và test: npm run db:up
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: noschadamus
+      POSTGRES_PASSWORD: noschadamus
+      POSTGRES_DB: noschadamus
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./docker/init-test-db.sql:/docker-entrypoint-initdb.d/init-test-db.sql:ro
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U noschadamus']
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+volumes:
+  pgdata:

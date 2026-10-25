@@ -16,6 +16,8 @@ export interface ReadingRepository {
   findByShareToken(t: ShareToken): Promise<Reading | null>;
   updateShare(id: ReadingId, share: Reading['share']): Promise<void>;
   findManyByIds(ids: readonly ReadingId[], limit: number): Promise<Reading[]>;
+  /** Gia hạn thời gian lưu giữ (docs/03 mục 5). Không lỗi nếu id không tồn tại. */
+  markViewed(id: ReadingId, now: Date): Promise<void>;
   deleteExpired(now: Date): Promise<number>;
 }
 

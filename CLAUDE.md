@@ -19,7 +19,12 @@ Dự án: **noschadamus**, web tarot "đọc lạ" (rút bài → bản đồ li
 ## Lệnh (sau khi hoàn tất T00)
 - `npm run dev` · `npm run build` · `npm run lint` · `npm run typecheck`
 - `npm run test` (Vitest) · `npm run test:e2e` (Playwright)
-- `npm run db:migrate` · `npm run db:seed` · `npm run cards:validate`
+- `npm run db:up` (Postgres qua Docker) · `npm run db:migrate` · `npm run db:test:prepare` (áp migration vào DB test)
+- `npm run cards:validate -- --strict` · `npm run cards:review` · `npm run demo -- --seed 7`
+
+## Ghi chú kỹ thuật
+- Prisma 7: cấu hình ở `prisma.config.ts`, client sinh vào `src/generated/prisma` (không commit, tạo bởi `postinstall`), kết nối qua `@prisma/adapter-pg`. Prisma ghim 7.10.1 (tag `latest` trên npm đang là bản RC).
+- Test hợp đồng Postgres tự chạy khi có `TEST_DATABASE_URL` (đọc từ `.env`).
 
 ## Quy trình làm việc
 Một task một lần, theo `docs/07-implementation-tasks.md`. Mỗi task: code + test + lint/typecheck xanh + đối chiếu tiêu chí nghiệm thu + một commit.

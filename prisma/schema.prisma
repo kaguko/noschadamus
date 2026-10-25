@@ -1,0 +1,52 @@
+// docs/03-architecture-api-data.md mục 5. Chỉ dùng trong infrastructure/.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Reading {
+  /// "rd_" + 16 ký tự base58
+  id             String    @id
+  createdAt      DateTime  @default(now())
+  schemaVersion  Int       @default(1)
+  locale         String    @default("vi")
+  spreadId       String
+  allowReversed  Boolean
+  title          String
+  /// DrawnCard[] (bản chụp)
+  cards          Json
+  soulMap        Json
+  interpretation Json
+  /// Chỉ khác null khi người dùng đồng ý lưu
+  intention      String?
+  shareToken     String?   @unique
+  sharedAt       DateTime?
+  lastViewedAt   DateTime  @default(now())
+
+  @@index([createdAt])
+  @@index([lastViewedAt])
+}
+
+model AnalyticsEvent {
+  id          BigInt   @id @default(autoincrement())
+  name        String
+  occurredAt  DateTime @default(now())
+  /// sha256(muối theo ngày + ip + ua), xoay mỗi ngày
+  visitorHash String
+  props       Json     @default("{}")
+
+  @@index([name, occurredAt])
+}
+
+model RateLimitBucket {
+  key         String
+  windowStart DateTime
+  count       Int
+
+  @@id([key, windowStart])
+}

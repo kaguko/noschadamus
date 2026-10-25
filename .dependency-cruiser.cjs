@@ -71,7 +71,7 @@ module.exports = {
   ],
   options: {
     doNotFollow: { path: 'node_modules' },
-    exclude: { path: '\\.test\\.tsx?$' },
+    exclude: { path: ['\\.test\\.tsx?$', '^src/generated/'] },
     tsPreCompilationDeps: true,
     tsConfig: { fileName: 'tsconfig.json' },
     enhancedResolveOptions: {
