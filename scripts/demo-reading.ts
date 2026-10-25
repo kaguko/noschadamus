@@ -4,7 +4,8 @@
  *   npm run demo -- --spread three --seed 1 --count 20
  *   npm run demo -- --stats 5000        thống kê phân bố trục nổi bật/thưa và tiêu đề
  */
-import { AXIS_LABEL_VI, AXIS_ORDER, type AxisId } from '../src/shared/kernel/axes';
+import { displaySoulMap } from '../src/contexts/reading/domain/soul-map';
+import { AXIS_LABEL_VI, AXIS_ORDER, type AxisId, type AxisVector } from '../src/shared/kernel/axes';
 import { buildReadingHarness } from '../src/test-support/reading-harness';
 
 function arg(name: string, fallback: string): string {
@@ -37,11 +38,23 @@ async function printOne(seed: number, spreadId: 'single' | 'three') {
     out.push(`  ❝ ${c.prompt} ❞`);
   }
   out.push('');
-  out.push('Bản đồ linh hồn:');
+  const d = displaySoulMap(m);
+  out.push(
+    `Bản đồ linh hồn${m.balanced ? ' (cân bằng)' : ''}: giá trị thật | hình vẽ (kéo giãn ×${d.stretch})`,
+  );
   for (const a of AXIS_ORDER) {
-    const tag = a === m.dominant ? '  ← nổi bật' : a === m.quiet ? '  ← thưa' : '';
+    const tag =
+      a === m.dominant
+        ? m.balanced
+          ? '  ← hơi nổi'
+          : '  ← nổi bật'
+        : a === m.quiet
+          ? m.balanced
+            ? '  ← hơi thưa'
+            : '  ← thưa'
+          : '';
     out.push(
-      `  ${AXIS_LABEL_VI[a].padEnd(11)} ${bar(m.vector[a])} ${String(Math.round(m.vector[a] * 100)).padStart(3)}${tag}`,
+      `  ${AXIS_LABEL_VI[a].padEnd(11)} ${String(Math.round(m.vector[a] * 100)).padStart(3)} | ${bar(d.vector[a])}${tag}`,
     );
   }
   out.push('');
@@ -52,15 +65,28 @@ async function printOne(seed: number, spreadId: 'single' | 'three') {
 }
 
 async function spreadRange(n: number, spreadId: 'single' | 'three') {
-  const ranges: number[] = [];
-  for (let seed = 1; seed <= n; seed++) {
-    const v = (await readingFor(seed, spreadId)).soulMap.vector;
+  const raw: number[] = [];
+  const shown: number[] = [];
+  let balanced = 0;
+  const rangeOf = (v: AxisVector) => {
     const xs = AXIS_ORDER.map((a) => v[a]);
-    ranges.push(Math.max(...xs) - Math.min(...xs));
+    return Math.max(...xs) - Math.min(...xs);
+  };
+  for (let seed = 1; seed <= n; seed++) {
+    const m = (await readingFor(seed, spreadId)).soulMap;
+    raw.push(rangeOf(m.vector));
+    shown.push(rangeOf(displaySoulMap(m).vector));
+    if (m.balanced) balanced++;
   }
-  ranges.sort((a, b) => a - b);
-  const q = (p: number) => Math.round(ranges[Math.floor(p * (ranges.length - 1))]! * 100);
-  return `trung vị ${q(0.5)}, p10 ${q(0.1)}, p90 ${q(0.9)} (điểm, thang 0-100)`;
+  const fmt = (xs: number[]) => {
+    xs.sort((a, b) => a - b);
+    const q = (p: number) => Math.round(xs[Math.floor(p * (xs.length - 1))]! * 100);
+    return `trung vị ${q(0.5)}, p10 ${q(0.1)}, p90 ${q(0.9)}`;
+  };
+  return (
+    `thật: ${fmt(raw)} | hình vẽ: ${fmt(shown)} | ` +
+    `cân bằng ${((balanced / n) * 100).toFixed(1)}%`
+  );
 }
 
 async function stats(n: number) {

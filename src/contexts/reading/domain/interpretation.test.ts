@@ -8,12 +8,13 @@ import type { SoulMap } from './soul-map';
 const v = (x: number): AxisVector =>
   Object.fromEntries(AXIS_ORDER.map((a) => [a, x])) as unknown as AxisVector;
 
-const map = (dominant: AxisId, second: AxisId, quiet: AxisId): SoulMap => ({
+const map = (dominant: AxisId, second: AxisId, quiet: AxisId, balanced = false): SoulMap => ({
   vector: v(0.5),
   dominant,
   second,
   quiet,
   perCard: [v(0.5)],
+  balanced,
 });
 
 const PROMPTS = [
@@ -40,6 +41,24 @@ describe('composeInterpretation', () => {
     expect(AXIS_TEXTS.quietPrompts.grounding).toContain(out.interpretation.closingPrompts[1]);
     expect(out.chosenCardPrompts).toHaveLength(3);
     out.chosenCardPrompts.forEach((p, i) => expect(PROMPTS[i]).toContain(p));
+  });
+
+  it('bản đồ cân bằng dùng câu mềm, điền tên trục viết thường', () => {
+    const out = composeInterpretation({
+      readingId: 'rd_flat',
+      spreadId: 'three',
+      cardPrompts: PROMPTS,
+      soulMap: map('grounding', 'mind', 'change', true),
+      texts: AXIS_TEXTS,
+    });
+    expect(out.interpretation.tagline).toBe(
+      'Hôm nay mọi thứ trong bạn khá cân bằng, chỉ hơi nghiêng về nền tảng.',
+    );
+    expect(out.interpretation.synthesis).toContain('hơi nghiêng về nền tảng');
+    expect(out.interpretation.synthesis).toContain('nhẹ đi một chút ở thay đổi');
+    expect(out.interpretation.synthesis).not.toContain('nổi bật nhất');
+    expect(out.interpretation.synthesis).not.toMatch(/[{}]/);
+    expect(out.interpretation.title).toBe('Rễ Cây Tỉnh Táo');
   });
 
   it('trải một lá thêm câu mở đầu', () => {
@@ -74,12 +93,16 @@ describe('composeInterpretation', () => {
       for (const s of AXIS_ORDER)
         for (const q of AXIS_ORDER) {
           if (d === s || d === q) continue;
-          for (const spreadId of ['single', 'three'] as const) {
+          for (const [spreadId, balanced] of [
+            ['single', false],
+            ['three', false],
+            ['three', true],
+          ] as const) {
             const out = composeInterpretation({
               readingId: `rd_${d}${s}${q}`,
               spreadId,
               cardPrompts: PROMPTS,
-              soulMap: map(d, s, q),
+              soulMap: map(d, s, q, balanced),
               texts: AXIS_TEXTS,
             });
             const all = [

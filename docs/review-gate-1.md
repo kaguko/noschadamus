@@ -69,9 +69,22 @@ Văn bản nguyên bản, qua mọi kiểm tra tự động, nhưng cần **ngư
 | Tên tiếng Anh lá phụ | "Two of Cups" thay vì "2 of Cups" | Cách gọi chuẩn |
 | Lá Ẩn Chính đã viết sẵn | 4 lá (không phải 5); lá thứ năm là Át Cốc | Đặc tả đếm gộp |
 
-## Quyết định (chủ dự án điền)
+## Quyết định (chủ dự án, 2026-10-25)
 
-- [ ] Phát hiện 1: chọn a / b / c: ______
-- [ ] Phát hiện 2: giữ nguyên / tinh chỉnh: ______
-- [ ] Phát hiện 3: đã đọc duyệt nội dung: ______
-- [ ] Cho phép sang Giai đoạn 2 (T12 trở đi)
+- [x] Phát hiện 1: **a + b**. Đã làm:
+  - `displaySoulMap` kéo giãn tương phản chỉ cho hình vẽ (docs/01 mục 3.2b). Độ chênh trung vị của hình ba lá tăng từ 30 lên 55; 10% phẳng nhất tăng từ 16 lên 40.
+  - `soulMap.balanced` (chênh < 15 điểm, khoảng 8% bản đọc ba lá) dùng tagline và câu tổng hợp mềm, chip "Hơi nổi"/"Hơi thưa".
+- [x] Phát hiện 2: **tinh chỉnh**. Đã đổi vector cơ sở bốn bộ lá phụ (docs/02 mục 4); 22 lá Ẩn Chính giữ nguyên nên các ví dụ vàng 1, 2 không đổi. Kết quả trên 5000 bản đọc ba lá:
+
+  | Trục | Nổi bật (trước → sau) |
+  |---|---|
+  | Năng lượng | 14,9% → 17,0% |
+  | Cảm xúc | 17,1% → 16,2% |
+  | Kết nối | 9,4% → 17,7% |
+  | Nền tảng | 21,6% → 13,5% |
+  | Lý trí | 20,5% → 19,2% |
+  | Thay đổi | 16,5% → 16,4% |
+
+  Một lá: mọi trục trong khoảng 14-20%. Lưu ý: tần suất **tiêu đề** vẫn lệch (0,3% đến 10,5%), vì tiêu đề ghép hai trục và các cặp trục đối nhau trên radar hiếm khi cùng cao. Đây là đặc tính tự nhiên, không phải lỗi.
+- [ ] Phát hiện 3: chủ dự án đang đọc duyệt nội dung lá bài. Mẫu mới ở `gate-1-samples.txt`.
+- [x] Cho phép sang Giai đoạn 2 (T12 trở đi).

@@ -12,6 +12,22 @@ export interface AxisTexts {
   readonly dominantPrompts: PerAxis<readonly [string, string]>;
   readonly quietPrompts: PerAxis<readonly [string, string]>;
   readonly singleSpreadPrefix: string;
+  /** Tên trục viết thường, dùng để điền vào câu mẫu. */
+  readonly axisNames: PerAxis<string>;
+  /** Dùng khi bản đồ cân bằng; có chỗ trống {dominant}. */
+  readonly balancedTagline: string;
+  /** Dùng khi bản đồ cân bằng; có chỗ trống {dominant}, {quiet}. */
+  readonly balancedSynthesis: string;
+}
+
+export function fillAxisTemplate(
+  template: string,
+  values: { dominant: AxisId; quiet: AxisId },
+  texts: AxisTexts,
+): string {
+  return template
+    .replaceAll('{dominant}', texts.axisNames[values.dominant])
+    .replaceAll('{quiet}', texts.axisNames[values.quiet]);
 }
 
 /** Tiêu đề archetype: NOUN[dominant] + MODIFIER[second] (docs/01 mục 3.3). */

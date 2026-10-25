@@ -7,10 +7,10 @@ describe('minorVector (docs/02 mục 4)', () => {
   it('cups-ace', () => {
     expect(minorVector('cups', 'ace')).toEqual({
       energy: 0.37,
-      emotion: 0.955,
-      connection: 0.825,
+      emotion: 0.994,
+      connection: 0.916,
       grounding: 0.435,
-      mind: 0.24,
+      mind: 0.344,
       change: 0.37,
     });
   });
@@ -18,9 +18,9 @@ describe('minorVector (docs/02 mục 4)', () => {
     expect(minorVector('swords', '5')).toEqual({
       energy: 0.57,
       emotion: 0.22,
-      connection: 0.15,
-      grounding: 0.22,
-      mind: 0.99,
+      connection: 0.108,
+      grounding: 0.332,
+      mind: 0.864,
       change: 0.64,
     });
   });
@@ -28,10 +28,10 @@ describe('minorVector (docs/02 mục 4)', () => {
     expect(minorVector('pentacles', 'king')).toEqual({
       energy: 0.4,
       emotion: 0.4,
-      connection: 0.55,
-      grounding: 0.95,
+      connection: 0.6,
+      grounding: 0.8,
       mind: 0.65,
-      change: 0.2,
+      change: 0.25,
     });
   });
   it('mọi lá phụ có vector trong [0,1]', () => {

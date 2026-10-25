@@ -91,5 +91,15 @@
       "Thay đổi nhỏ nào bạn tò mò muốn thử?"
     ]
   },
-  "singleSpreadPrefix": "Lá bài này gợi một hướng nhìn duy nhất cho hôm nay."
+  "singleSpreadPrefix": "Lá bài này gợi một hướng nhìn duy nhất cho hôm nay.",
+  "axisNames": {
+    "energy": "năng lượng",
+    "emotion": "cảm xúc",
+    "connection": "kết nối",
+    "grounding": "nền tảng",
+    "mind": "lý trí",
+    "change": "thay đổi"
+  },
+  "balancedTagline": "Hôm nay mọi thứ trong bạn khá cân bằng, chỉ hơi nghiêng về {dominant}.",
+  "balancedSynthesis": "Bản đồ hôm nay khá cân bằng, không trục nào lấn át hẳn: chỉ hơi nghiêng về {dominant} và nhẹ đi một chút ở {quiet}. Có lẽ đây là lúc để ý những chuyển động nhỏ thay vì đi tìm một điều lớn."
 }

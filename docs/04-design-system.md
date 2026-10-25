@@ -203,7 +203,7 @@ Dưới giữa (di động: cách đáy `16 + chiều cao action bar`), rộng t
 Hàng cao tối thiểu 56, vạch phân cách 1 px `--line`; tiêu đề h3 18; icon `plus` xoay 45° khi mở; nội dung mở theo `grid-template-rows 0fr → 1fr`, `--dur-slow`. Radix `Accordion`, một mục mở tại một thời điểm.
 
 ### 7.12. AxisMeter (hàng chú giải trục)
-Lưới: `[chấm 10] [tên 96] [thanh 1fr] [số 40]`. Thanh cao 6, bo 3, nền `--bg-3`, phần đầy màu trục, rộng theo `v*100%`. Số `0-100` (làm tròn `v*100`), tabular. Hàng `dominant` có chip "Nổi bật" cạnh tên; hàng `quiet` có chip "Thưa". Thanh chạy từ 0 đến giá trị cùng nhịp vẽ Soul Map (chậm hơn 200 ms).
+Lưới: `[chấm 10] [tên 96] [thanh 1fr] [số 40]`. Thanh cao 6, bo 3, nền `--bg-3`, phần đầy màu trục, rộng theo `v*100%`. Số `0-100` (làm tròn `v*100`), tabular. Hàng `dominant` có chip "Nổi bật" cạnh tên; hàng `quiet` có chip "Thưa" (bản đồ cân bằng: "Hơi nổi"/"Hơi thưa"). Thanh và số luôn dùng giá trị thật, không dùng vector hiển thị. Thanh chạy từ 0 đến giá trị cùng nhịp vẽ Soul Map (chậm hơn 200 ms).
 
 ### 7.13. Skeleton
 `--bg-2`, ánh sáng quét ngang 1,6 s vô hạn (tắt khi giảm chuyển động). Có khối riêng cho thẻ bài, Soul Map (hình tròn), đoạn văn (3 dòng, dòng cuối 60%).

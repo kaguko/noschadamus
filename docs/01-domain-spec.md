@@ -174,6 +174,7 @@ export interface SoulMap {
   second: AxisId;                    // cao thứ hai
   quiet: AxisId;                     // thấp nhất
   perCard: readonly AxisVector[];    // = DrawnCard.effectiveVector theo thứ tự vị trí
+  balanced: boolean;                 // V[dominant] − V[quiet] < 0.15 (mục 3.2b)
 }
 
 export interface Interpretation {
@@ -215,6 +216,20 @@ Sau đó:
 - `second` = trục lớn nhất còn lại (sau khi loại `dominant`); hòa → theo `AXIS_ORDER`.
 - `quiet` = trục nhỏ nhất; hòa → theo `AXIS_ORDER` (đứng trước thắng). Nếu `quiet` trùng `dominant` (mọi trục bằng nhau), chọn trục cuối cùng của `AXIS_ORDER` khác `dominant`.
 - Làm tròn 4 chữ số **sau** khi đã chọn `dominant/second/quiet` bằng giá trị chưa làm tròn.
+- `balanced = V[dominant] − V[quiet] < 0.15` (giá trị chưa làm tròn).
+
+### 3.2b. Vector hiển thị (chốt ở Cửa kiểm 1)
+
+Trung bình ba lá kéo các trục về giữa (chênh lệch trung vị chỉ ~30/100), nên **hình vẽ** dùng vector đã kéo giãn tương phản; **số hiển thị, chữ và dữ liệu lưu** vẫn dùng giá trị thật.
+
+```
+mean  = trung bình 6 trục của V
+range = max(V) − min(V)
+k     = clamp(0.55 / range, 1, 2.5)      (range = 0 → k = 2.5)
+V'_i  = clamp01(mean + (V_i − mean) · k) (áp cùng mean, k cho từng lớp perCard)
+```
+
+Hàm thuần `displaySoulMap(soulMap)` trong `reading/domain`, trả `{ vector, perCard, stretch }`; `ReadingView.soulMap.display` mang kết quả này. Ví dụ vàng 2 có `range ≈ 0.55` nên `k = 1` (hình không đổi).
 
 **Ví dụ vàng 1**: `The Star` ngược (`major-17`).
 Vector xuôi: `energy .40, emotion .80, mind .55, connection .70, change .55, grounding .50`; `m = 0.583333…`.
@@ -256,9 +271,9 @@ PRNG có hạt giống: `seedFromId(readingId)` = FNV-1a 32-bit của chuỗi id
 
 Các bước:
 1. `title` theo 3.3.
-2. `tagline = TAGLINE[dominant]` (bảng ở file 02).
+2. `tagline = TAGLINE[dominant]` (bảng ở file 02). Nếu `balanced`: `BALANCED_TAGLINE` với `{dominant}` thay bằng tên trục viết thường.
 3. Mỗi lá: `prompt` = `card.prompts[orientation][pick]` với `pick = prng() < 0.5 ? 0 : 1` (gọi PRNG đúng một lần mỗi lá, theo thứ tự vị trí).
-4. `synthesis = INSIGHT[dominant] + ' ' + INVITE[quiet]` (bảng ở file 02). Nếu `spreadId === 'single'`, thêm ở đầu: `"Lá bài này gợi một hướng nhìn duy nhất cho hôm nay. "`.
+4. `synthesis = INSIGHT[dominant] + ' ' + INVITE[quiet]` (bảng ở file 02); nếu `balanced` thì dùng `BALANCED_SYNTHESIS` (điền `{dominant}`, `{quiet}`). Nếu `spreadId === 'single'`, thêm ở đầu: `"Lá bài này gợi một hướng nhìn duy nhất cho hôm nay. "`.
 5. `closingPrompts = [DOMINANT_PROMPTS[dominant][k1], QUIET_PROMPTS[quiet][k2]]` với `k1, k2` là hai lần gọi PRNG tiếp theo (`prng() < 0.5 ? 0 : 1`).
 
 Thứ tự gọi PRNG cố định: các lá (theo vị trí) → `k1` → `k2`.

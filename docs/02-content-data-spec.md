@@ -108,10 +108,12 @@ Vector cơ sở theo bộ (đúng thứ tự `AXIS_ORDER`):
 
 | Bộ | energy | emotion | connection | grounding | mind | change |
 |---|---|---|---|---|---|---|
-| wands | .85 | .50 | .40 | .30 | .45 | .70 |
-| cups | .40 | .85 | .75 | .45 | .30 | .40 |
-| swords | .55 | .30 | .25 | .30 | .85 | .60 |
-| pentacles | .40 | .40 | .55 | .85 | .50 | .20 |
+| wands | .85 | .45 | .38 | .44 | .46 | .70 |
+| cups | .40 | .88 | .82 | .45 | .38 | .40 |
+| swords | .55 | .30 | .22 | .38 | .76 | .60 |
+| pentacles | .40 | .40 | .60 | .70 | .50 | .25 |
+
+Bảng này đã được tinh chỉnh ở Cửa kiểm 1 (2026-10-25) bằng mô phỏng, để mỗi trục là trục nổi bật trong khoảng 14-18% bản đọc ba lá và 14-20% bản đọc một lá. Nếu sửa bảng, chạy `npm run demo -- --stats 5000` và giữ mức cân bằng này.
 
 Hệ số cường độ `k` theo rank:
 
@@ -134,9 +136,9 @@ Ví dụ kiểm (bắt buộc có test):
 
 | Lá | energy | emotion | connection | grounding | mind | change |
 |---|---|---|---|---|---|---|
-| `cups-ace` | .370 | .955 | .825 | .435 | .240 | .370 |
-| `swords-5` | .570 | .220 | .150 | .220 | .990 | .640 |
-| `pentacles-king` | .400 | .400 | .550 | .950 | .650 | .200 |
+| `cups-ace` | .370 | .994 | .916 | .435 | .344 | .370 |
+| `swords-5` | .570 | .220 | .108 | .332 | .864 | .640 |
+| `pentacles-king` | .400 | .400 | .600 | .800 | .650 | .250 |
 
 ## 5. Văn bản mẫu đã chốt (5 lá)
 
@@ -278,6 +280,14 @@ Phạm vi kiểm: dữ liệu bài, bảng chữ theo trục, và mọi chuỗi 
 | change | Điều gì bạn giữ nguyên vì quen, không phải vì đúng? | Thay đổi nhỏ nào bạn tò mò muốn thử? |
 
 Câu mở đầu thêm cho trải một lá (`synthesis`): `Lá bài này gợi một hướng nhìn duy nhất cho hôm nay.`
+
+**Bản đồ cân bằng** (khi `balanced`, file 01 mục 3.2; thêm ở Cửa kiểm 1):
+
+| Khóa | Văn bản |
+|---|---|
+| `axisNames` | năng lượng · cảm xúc · kết nối · nền tảng · lý trí · thay đổi (viết thường, để điền vào câu) |
+| `balancedTagline` | Hôm nay mọi thứ trong bạn khá cân bằng, chỉ hơi nghiêng về {dominant}. |
+| `balancedSynthesis` | Bản đồ hôm nay khá cân bằng, không trục nào lấn át hẳn: chỉ hơi nghiêng về {dominant} và nhẹ đi một chút ở {quiet}. Có lẽ đây là lúc để ý những chuyển động nhỏ thay vì đi tìm một điều lớn. |
 
 ## 9. Hướng dẫn biên soạn 73 lá còn lại
 

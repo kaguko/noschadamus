@@ -63,6 +63,9 @@ Vector: `energy .8356, emotion .5489, connection .3556, grounding .2822, mind .4
 
 ## 2. Các lớp vẽ (thứ tự từ dưới lên)
 
+**Vector đầu vào cho hình**: luôn là `soulMap.display.vector` và `soulMap.display.perCard` (đã kéo giãn tương phản, file 01 mục 3.2b), không phải `soulMap.vector`. Nhãn số (nếu có) và AxisMeter dùng giá trị thật. Với Ví dụ vàng 2, hai vector trùng nhau nên test hình học bên trên không đổi.
+
+
 | # | Lớp | Mô tả |
 |---|---|---|
 | 1 | Vòng lưới | 5 vòng tròn bán kính `radiusFor(t)` với `t ∈ {0, .25, .5, .75, 1}`. Nét 1, màu `--line`, độ mờ .7; vòng `t=1` nét đứt `3 4`. |

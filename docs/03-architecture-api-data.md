@@ -243,7 +243,9 @@ z.object({
   "soulMap": {
     "vector": { "energy": 0.8356, "emotion": 0.5489, "connection": 0.3556, "grounding": 0.2822, "mind": 0.4122, "change": 0.8256 },
     "dominant": "energy", "second": "change", "quiet": "grounding",
-    "perCard": [ { "energy": 0.75, "emotion": 0.55, "connection": 0.45, "grounding": 0.15, "mind": 0.25, "change": 0.9 } ]
+    "perCard": [ { "energy": 0.75, "emotion": 0.55, "connection": 0.45, "grounding": 0.15, "mind": 0.25, "change": 0.9 } ],
+    "balanced": false,
+    "display": { "vector": { "…": "giống vector khi stretch = 1" }, "perCard": [ "…" ], "stretch": 1 }
   },
   "synthesis": "…",
   "closingPrompts": ["…", "…"],

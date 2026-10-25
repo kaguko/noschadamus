@@ -352,6 +352,8 @@ Container 1120, hai cột: **trái dính** (rộng 480): lá bài (`lg`) + Soul 
 | `reading.map.alt` | Bản đồ linh hồn dạng radar sáu trục. Trục nổi bật nhất: {dominant}. Trục thưa nhất: {quiet}. |
 | `reading.map.badge_dominant` | Nổi bật |
 | `reading.map.badge_quiet` | Thưa |
+| `reading.map.badge_dominant_soft` | Hơi nổi |
+| `reading.map.badge_quiet_soft` | Hơi thưa |
 | `reading.cards.eyebrow` | TỪNG LÁ BÀI NÓI GÌ |
 | `reading.synthesis.eyebrow` | ĐIỀU ĐÁNG NGẪM |
 | `reading.share` | Chia sẻ |
@@ -374,7 +376,7 @@ Metadata: `title = "{title} · noschadamus"`, `robots = noindex`.
 Xem file 06 để biết hình học. Bố cục quanh nó trong `Surface`:
 - Eyebrow `BẢN ĐỒ LINH HỒN` + (bên phải) IconButton `info` mở Popover: "Mỗi lá kéo bản đồ về những trục khác nhau. Hình dạng cho thấy điều gì nổi lên và điều gì thưa. Đây là công cụ suy ngẫm, không phải phép đo." (`reading.map.info`).
 - Soul Map: vuông, rộng = rộng Surface − 2×16, tối đa 420.
-- Dưới: 6 `AxisMeter`, sắp theo **giá trị giảm dần** (khác thứ tự vẽ), kèm chip Nổi bật/Thưa.
+- Dưới: 6 `AxisMeter`, sắp theo **giá trị giảm dần** (khác thứ tự vẽ), kèm chip Nổi bật/Thưa (khi `soulMap.balanced`: "Hơi nổi"/"Hơi thưa"). Thanh và số dùng giá trị thật `soulMap.vector`; chỉ hình radar dùng `soulMap.display`.
 - Dưới cùng: toggle văn bản `small`: "Xem các lớp từng lá" (Switch). Bật → hiện lớp đường mảnh theo từng lá (mặc định bật nếu ≤ 3 lá).
 
 ---

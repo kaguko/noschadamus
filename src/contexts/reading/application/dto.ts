@@ -1,5 +1,5 @@
 import type { AxisId, AxisVector } from '@/shared/kernel/axes';
-import type { Orientation, Reading, SpreadId } from '../domain';
+import { displaySoulMap, type Orientation, type Reading, type SpreadId } from '../domain';
 
 /** Hình dạng trả cho giao diện và API (docs/03 mục 7.2). */
 export interface ReadingCardView {
@@ -37,6 +37,14 @@ export interface ReadingView {
     readonly second: AxisId;
     readonly quiet: AxisId;
     readonly perCard: readonly AxisVector[];
+    /** Chênh lệch giữa các trục nhỏ: giao diện dùng nhãn "Hơi nổi"/"Hơi thưa". */
+    readonly balanced: boolean;
+    /** Vector CHỈ để vẽ (đã kéo giãn tương phản); số hiển thị dùng `vector`. */
+    readonly display: {
+      readonly vector: AxisVector;
+      readonly perCard: readonly AxisVector[];
+      readonly stretch: number;
+    };
   };
   readonly synthesis: string;
   readonly closingPrompts: readonly [string, string];
@@ -87,7 +95,7 @@ export function toReadingView(r: Reading, opts: { includeIntention: boolean }): 
       prompt: c.prompt,
       imageUrl: cardImageUrl(c.cardId),
     })),
-    soulMap: r.soulMap,
+    soulMap: { ...r.soulMap, display: displaySoulMap(r.soulMap) },
     synthesis: r.interpretation.synthesis,
     closingPrompts: r.interpretation.closingPrompts,
     intention: opts.includeIntention ? r.intention : null,

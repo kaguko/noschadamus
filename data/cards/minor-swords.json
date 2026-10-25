@@ -38,9 +38,9 @@
     "vector": {
       "energy": 0.565,
       "emotion": 0.24,
-      "connection": 0.175,
-      "grounding": 0.24,
-      "mind": 0.955,
+      "connection": 0.136,
+      "grounding": 0.344,
+      "mind": 0.838,
       "change": 0.63
     }
   },
@@ -83,9 +83,9 @@
     "vector": {
       "energy": 0.54,
       "emotion": 0.34,
-      "connection": 0.3,
-      "grounding": 0.34,
-      "mind": 0.78,
+      "connection": 0.276,
+      "grounding": 0.404,
+      "mind": 0.708,
       "change": 0.58
     }
   },
@@ -128,9 +128,9 @@
     "vector": {
       "energy": 0.55,
       "emotion": 0.3,
-      "connection": 0.25,
-      "grounding": 0.3,
-      "mind": 0.85,
+      "connection": 0.22,
+      "grounding": 0.38,
+      "mind": 0.76,
       "change": 0.6
     }
   },
@@ -173,9 +173,9 @@
     "vector": {
       "energy": 0.545,
       "emotion": 0.32,
-      "connection": 0.275,
-      "grounding": 0.32,
-      "mind": 0.815,
+      "connection": 0.248,
+      "grounding": 0.392,
+      "mind": 0.734,
       "change": 0.59
     }
   },
@@ -218,9 +218,9 @@
     "vector": {
       "energy": 0.57,
       "emotion": 0.22,
-      "connection": 0.15,
-      "grounding": 0.22,
-      "mind": 0.99,
+      "connection": 0.108,
+      "grounding": 0.332,
+      "mind": 0.864,
       "change": 0.64
     }
   },
@@ -263,9 +263,9 @@
     "vector": {
       "energy": 0.545,
       "emotion": 0.32,
-      "connection": 0.275,
-      "grounding": 0.32,
-      "mind": 0.815,
+      "connection": 0.248,
+      "grounding": 0.392,
+      "mind": 0.734,
       "change": 0.59
     }
   },
@@ -308,9 +308,9 @@
     "vector": {
       "energy": 0.555,
       "emotion": 0.28,
-      "connection": 0.225,
-      "grounding": 0.28,
-      "mind": 0.885,
+      "connection": 0.192,
+      "grounding": 0.368,
+      "mind": 0.786,
       "change": 0.61
     }
   },
@@ -353,9 +353,9 @@
     "vector": {
       "energy": 0.55,
       "emotion": 0.3,
-      "connection": 0.25,
-      "grounding": 0.3,
-      "mind": 0.85,
+      "connection": 0.22,
+      "grounding": 0.38,
+      "mind": 0.76,
       "change": 0.6
     }
   },
@@ -398,9 +398,9 @@
     "vector": {
       "energy": 0.56,
       "emotion": 0.26,
-      "connection": 0.2,
-      "grounding": 0.26,
-      "mind": 0.92,
+      "connection": 0.164,
+      "grounding": 0.356,
+      "mind": 0.812,
       "change": 0.62
     }
   },
@@ -443,9 +443,9 @@
     "vector": {
       "energy": 0.575,
       "emotion": 0.2,
-      "connection": 0.125,
-      "grounding": 0.2,
-      "mind": 1,
+      "connection": 0.08,
+      "grounding": 0.32,
+      "mind": 0.89,
       "change": 0.65
     }
   },
@@ -488,9 +488,9 @@
     "vector": {
       "energy": 0.55,
       "emotion": 0.3,
-      "connection": 0.25,
-      "grounding": 0.3,
-      "mind": 0.9,
+      "connection": 0.22,
+      "grounding": 0.38,
+      "mind": 0.81,
       "change": 0.75
     }
   },
@@ -533,9 +533,9 @@
     "vector": {
       "energy": 0.75,
       "emotion": 0.3,
-      "connection": 0.25,
-      "grounding": 0.3,
-      "mind": 0.85,
+      "connection": 0.22,
+      "grounding": 0.38,
+      "mind": 0.76,
       "change": 0.7
     }
   },
@@ -578,9 +578,9 @@
     "vector": {
       "energy": 0.55,
       "emotion": 0.45,
-      "connection": 0.35,
-      "grounding": 0.3,
-      "mind": 0.85,
+      "connection": 0.32,
+      "grounding": 0.38,
+      "mind": 0.76,
       "change": 0.6
     }
   },
@@ -623,9 +623,9 @@
     "vector": {
       "energy": 0.55,
       "emotion": 0.3,
-      "connection": 0.25,
-      "grounding": 0.4,
-      "mind": 1,
+      "connection": 0.22,
+      "grounding": 0.48,
+      "mind": 0.91,
       "change": 0.6
     }
   }

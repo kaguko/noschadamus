@@ -1,5 +1,5 @@
 import { fnv1a, mulberry32 } from '@/shared/kernel/prng';
-import { archetypeTitle, type AxisTexts } from './axis-texts';
+import { archetypeTitle, fillAxisTemplate, type AxisTexts } from './axis-texts';
 import type { SoulMap } from './soul-map';
 
 export interface Interpretation {
@@ -37,13 +37,19 @@ export function composeInterpretation(input: ComposeInput): ComposeOutput {
   const k1 = pick();
   const k2 = pick();
 
-  const core = `${texts.insights[soulMap.dominant]} ${texts.invites[soulMap.quiet]}`;
+  // Bản đồ cân bằng: dùng câu mềm, tránh nói "nổi bật nhất / khá thưa" khi chênh lệch nhỏ.
+  const core = soulMap.balanced
+    ? fillAxisTemplate(texts.balancedSynthesis, soulMap, texts)
+    : `${texts.insights[soulMap.dominant]} ${texts.invites[soulMap.quiet]}`;
   const synthesis = input.spreadId === 'single' ? `${texts.singleSpreadPrefix} ${core}` : core;
+  const tagline = soulMap.balanced
+    ? fillAxisTemplate(texts.balancedTagline, soulMap, texts)
+    : texts.taglines[soulMap.dominant];
 
   return {
     interpretation: {
       title: archetypeTitle(soulMap.dominant, soulMap.second, texts),
-      tagline: texts.taglines[soulMap.dominant],
+      tagline,
       synthesis,
       closingPrompts: [
         texts.dominantPrompts[soulMap.dominant][k1],
