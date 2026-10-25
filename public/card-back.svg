@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1200">
+  <defs>
+    <linearGradient id="bk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1D2038"/><stop offset="1" stop-color="#0E0F1A"/>
+    </linearGradient>
+    <mask id="cr">
+      <rect width="700" height="1200" fill="#000"/>
+      <circle cx="350" cy="600" r="110" fill="#fff"/>
+      <circle cx="392" cy="580" r="98" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="700" height="1200" rx="48" fill="url(#bk)"/>
+  <rect x="24" y="24" width="652" height="1152" rx="30" fill="none" stroke="#F2A65A" stroke-opacity=".5" stroke-width="2"/>
+  <rect x="44" y="44" width="612" height="1112" rx="20" fill="none" stroke="#F3EEE3" stroke-opacity=".10" stroke-width="1.5"/>
+  <g fill="none" stroke="#F3EEE3" stroke-opacity=".08" stroke-width="2">
+    <circle cx="350" cy="600" r="160"/><circle cx="350" cy="600" r="220"/>
+    <circle cx="350" cy="600" r="280"/><circle cx="350" cy="600" r="340"/>
+  </g>
+  <rect width="700" height="1200" fill="#F3EEE3" mask="url(#cr)"/>
+  <circle cx="350" cy="350" r="7" fill="#F2A65A"/>
+  <circle cx="566.5" cy="475" r="7" fill="#E58FB0"/>
+  <circle cx="566.5" cy="725" r="7" fill="#7FD6C2"/>
+  <circle cx="350" cy="850" r="7" fill="#C9B06B"/>
+  <circle cx="133.5" cy="725" r="7" fill="#8FB4FF"/>
+  <circle cx="133.5" cy="475" r="7" fill="#A79BFF"/>
+  <g fill="#F3EEE3" fill-opacity=".55">
+    <circle cx="96" cy="96" r="3"/><circle cx="604" cy="96" r="3"/>
+    <circle cx="96" cy="1104" r="3"/><circle cx="604" cy="1104" r="3"/>
+  </g>
+</svg>

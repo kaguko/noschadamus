@@ -3,6 +3,7 @@
 import { Download, Share2, Sparkles } from 'lucide-react';
 import { useState } from 'react';
 import { ThemeToggle } from '@/components/layout/theme-toggle';
+import { CardCaption, TarotCard, type TarotCardFace } from '@/components/tarot-card/tarot-card';
 import { Accordion } from '@/components/ui/accordion';
 import { Button, ButtonLink } from '@/components/ui/button';
 import { AxisChip, Chip, KeywordChip, OrientationChip } from '@/components/ui/chip';
@@ -32,6 +33,74 @@ function Section({ title, children }: { title: string; children: React.ReactNode
       <h2 className="t-h2">{title}</h2>
       {children}
     </section>
+  );
+}
+
+const DEMO_CARDS: TarotCardFace[] = [
+  {
+    cardId: 'major-00',
+    name: 'Chàng Khờ',
+    number: 0,
+    arcana: 'major',
+    suit: null,
+    reversed: false,
+  },
+  { cardId: 'major-16', name: 'Tòa Tháp', number: 16, arcana: 'major', suit: null, reversed: true },
+  { cardId: 'cups-ace', name: 'Át Cốc', number: 1, arcana: 'minor', suit: 'cups', reversed: false },
+];
+
+function CardsDemo() {
+  const [up, setUp] = useState(false);
+  const [flips, setFlips] = useState(0);
+  return (
+    <Section title="TarotCard">
+      <div className="flex flex-wrap items-end gap-3">
+        {(['xs', 'sm', 'md', 'lg'] as const).map((s) => (
+          <TarotCard key={s} size={s} faceUp={false} />
+        ))}
+      </div>
+      <div className="flex flex-wrap justify-center gap-4" data-testid="flip-row">
+        {DEMO_CARDS.map((c, i) => (
+          <div key={c.cardId} className="flex flex-col items-center gap-3">
+            <TarotCard
+              card={c}
+              size="md"
+              faceUp={up}
+              animateFlip
+              onFlipEnd={() => setFlips((n) => n + 1)}
+              priority={i === 0}
+            />
+            <CardCaption
+              position={['QUÁ KHỨ', 'HIỆN TẠI', 'HƯỚNG MỞ'][i]}
+              name={c.name}
+              orientation={
+                <OrientationChip reversed={c.reversed} label={c.reversed ? 'Ngược' : 'Xuôi'} />
+              }
+            />
+          </div>
+        ))}
+      </div>
+      <div className="flex items-center gap-3">
+        <Button onClick={() => setUp((v) => !v)}>{up ? 'Úp lại' : 'Lật bài'}</Button>
+        <span className="t-small text-ink3" data-testid="flip-count">
+          Đã lật xong: {flips}
+        </span>
+      </div>
+      <div className="flex flex-wrap gap-4">
+        <TarotCard card={DEMO_CARDS[0]} size="xl" faceUp />
+        <TarotCard
+          card={{
+            ...DEMO_CARDS[2]!,
+            cardId: 'swords-queen',
+            name: 'Hoàng Hậu Kiếm',
+            number: 13,
+            suit: 'swords',
+          }}
+          size="lg"
+          faceUp
+        />
+      </div>
+    </Section>
   );
 }
 
@@ -87,6 +156,8 @@ function Showcase() {
           </IconButton>
         </div>
       </Section>
+
+      <CardsDemo />
 
       <Section title="Chip">
         <div className="flex flex-wrap gap-2">

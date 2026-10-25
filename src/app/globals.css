@@ -377,3 +377,24 @@ body::before {
     background-position: -200% 0;
   }
 }
+
+/* Ánh sáng chạy chéo một lần sau khi lật bài (docs/04 mục 7.8) */
+.nd-sheen {
+  background: linear-gradient(
+    115deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 60%
+  );
+  background-size: 250% 100%;
+  animation: nd-sheen 600ms var(--ease-standard) forwards;
+}
+@keyframes nd-sheen {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -50% 0;
+    opacity: 0;
+  }
+}
