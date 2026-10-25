@@ -17,7 +17,8 @@
     "lint:arch": "depcruise src --config .dependency-cruiser.cjs",
     "cards:validate": "tsx scripts/validate-cards.ts",
     "cards:generate-minor": "tsx scripts/generate-minor-vectors.ts",
-    "demo": "tsx --tsconfig tsconfig.json scripts/demo-reading.ts"
+    "demo": "tsx --tsconfig tsconfig.json scripts/demo-reading.ts",
+    "cards:review": "tsx scripts/export-cards-review.ts"
   },
   "dependencies": {
     "next": "16.4.3",

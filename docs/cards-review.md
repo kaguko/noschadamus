@@ -1,6 +1,6 @@
 # Duyệt nội dung 78 lá
 
-Tự sinh từ `data/cards/*.json` để đọc duyệt. Muốn sửa, sửa trong file JSON rồi chạy `npm run cards:validate -- --strict`.
+Tự sinh từ `data/cards/*.json` bằng `npm run cards:review`. Muốn sửa, sửa trong file JSON rồi chạy `npm run cards:validate -- --strict` và xuất lại file này.
 
 Đánh dấu ⚠ là các lá nặng nên đọc kỹ.
 
@@ -969,7 +969,7 @@ Có thể bạn muốn đi tiếp nhưng vẫn mang theo nhiều hành lý cũ. 
 
 **Xuôi** (Chiến lược · Đi đường riêng · Kín đáo)
 
-Có thể bạn đang chọn một cách khéo léo hoặc kín đáo để đạt điều mình muốn. Lá bài mời bạn tự hỏi cách làm ấy có còn đúng với giá trị của mình không.
+Có thể bạn đang chọn một cách khéo léo hoặc kín đáo để đạt điều mình muốn. Điều đó không phải lúc nào cũng xấu, đôi khi đó là cách để bảo vệ chính mình. Dù vậy, cũng đáng để tự hỏi cách làm ấy có còn đúng với giá trị của bạn không.
 
 - Bạn đang giữ kín điều gì, và vì sao?
 - Cách bạn đang làm có hợp với con người bạn muốn trở thành không?
