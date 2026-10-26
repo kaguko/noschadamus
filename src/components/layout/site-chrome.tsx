@@ -3,7 +3,6 @@
 import clsx from 'clsx';
 import { History } from 'lucide-react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { ButtonLink } from '@/components/ui/button';
 import { iconButtonClass } from '@/components/ui/icon-button';
@@ -25,7 +24,6 @@ export function Wordmark({ className }: { className?: string }) {
 
 /** docs/04 mục 7.14 */
 export function Header() {
-  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -33,7 +31,6 @@ export function Header() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-  const onDraw = pathname?.startsWith('/draw');
 
   return (
     <header
@@ -70,14 +67,12 @@ export function Header() {
             <History />
           </Link>
           <ThemeToggle />
-          {!onDraw && (
-            // Bọc ngoài để `hidden` không xung đột với `inline-flex` của nút.
-            <span className="ml-1 hidden lg:block">
-              <ButtonLink href="/draw" size="sm">
-                {t('common.draw_cta')}
-              </ButtonLink>
-            </span>
-          )}
+          {/* Ẩn ở /draw bằng CSS (body:has([data-focus-page])), không cần usePathname. */}
+          <span className="nd-header-cta ml-1 hidden lg:block">
+            <ButtonLink href="/draw" size="sm">
+              {t('common.draw_cta')}
+            </ButtonLink>
+          </span>
         </nav>
       </div>
     </header>

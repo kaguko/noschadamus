@@ -39,8 +39,14 @@ export function setOwnerCookie(
 export async function enforceRateLimit(req: Request, c: Container, ...rules: RateLimitRule[]) {
   const subject = rateLimitSubject(req, c.env.ANALYTICS_SECRET);
   const now = c.infra.clock.now();
+  // Chỉ để chạy e2e song song (mọi yêu cầu cùng một IP); production để mặc định 1.
+  const multiplier = Math.max(1, Number(process.env.RATE_LIMIT_MULTIPLIER ?? 1) || 1);
   for (const rule of rules) {
-    const r = await c.infra.rateLimiter.consume(rule, subject, now);
+    const r = await c.infra.rateLimiter.consume(
+      { ...rule, limit: rule.limit * multiplier },
+      subject,
+      now,
+    );
     if (!r.allowed) {
       throw new ApiError('RATE_LIMITED', undefined, { 'Retry-After': String(r.retryAfterSec) });
     }

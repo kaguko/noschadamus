@@ -230,7 +230,7 @@ Trạng thái con: `shuffle` → `fan` → `confirm`.
 **(c) confirm/submitting** (bấm "Lật bài")
 1. Gọi `POST /api/readings` với `{ spreadId, allowReversed, pickedSlots }`, chỉ thêm `intention` và `storeIntention: true` khi người dùng bật lưu ý niệm (chốt ở T22: không lưu thì ý niệm không rời khỏi trình duyệt).
 2. Trong lúc chờ (tối thiểu **1400 ms**, để không giật): các lá trong slot nổi lên và phát sáng nhịp; dòng chữ giữa `h2` đổi theo chuỗi: "Đang xếp các vì sao…" (0 ms) → "Đang đọc bản đồ của bạn…" (900 ms).
-3. Thành công: lưu `sessionStorage['nd:reveal:{id}'] = '1'`, `router.push('/reading/{id}')`.
+3. Thành công: `router.push('/reading/{id}?reveal=1')`.
 4. Lỗi: quay về trạng thái fan (giữ các lá đã chọn), hiện Toast lỗi và nút "Thử lại". Lỗi `RATE_LIMITED`: "Bạn đã rút nhiều lần trong thời gian ngắn. Hãy nghỉ một lát rồi quay lại nhé." Lỗi chung: "Có điều gì đó trục trặc. Chưa có gì bị mất, bạn thử lại được không?"
 
 | Khóa | Nội dung |
@@ -309,7 +309,9 @@ Trạng thái con: `shuffle` → `fan` → `confirm`.
 ### 3.2. Bố cục desktop (≥1024)
 Container 1120, hai cột: **trái dính** (rộng 480): lá bài (`lg`) + Soul Map (420) + AxisMeter; **phải** (rộng 560): tiêu đề, tagline, ý niệm, "Từng lá bài nói gì", "Điều đáng ngẫm", nút (Chia sẻ / Rút lại ở cuối cột phải và một nhóm nút nhỏ cố định cạnh tiêu đề). Khe 64.
 
-### 3.3. Choreography lần đầu (chỉ khi `sessionStorage['nd:reveal:{id}']` có và không giảm chuyển động)
+### 3.3. Choreography lần đầu (chỉ khi URL có `?reveal=1` và không giảm chuyển động)
+
+Cờ nằm trên URL (không phải `sessionStorage`) để server render đúng trạng thái đầu (úp bài) mà không nháy; tham số bị bỏ khỏi URL bằng `history.replaceState` khi trình tự xong, nên F5 hay chia sẻ đường dẫn đều xem lại trạng thái cuối.
 
 Đồng hồ `t` tính từ lúc trang mount (sau khi ảnh lá bài tải xong hoặc 800 ms, cái nào trước):
 
@@ -325,7 +327,7 @@ Container 1120, hai cột: **trái dính** (rộng 480): lá bài (`lg`) + Soul 
 | 4200 | Phần còn lại hiện bình thường; ActionBar trượt lên; live: "Bản đồ linh hồn đã sẵn sàng" |
 
 - Nội dung văn bản có trong DOM ngay từ đầu (cho đọc màn hình/SEO không cần), chỉ `opacity: 0` tới thời điểm hiện (không `display:none`).
-- Bất kỳ lúc nào chạm màn hình hoặc nhấn phím: **rút ngắn** (nhảy thẳng tới trạng thái cuối trong 200 ms). Sau khi xong: xóa cờ `nd:reveal:{id}`.
+- Bất kỳ lúc nào chạm màn hình hoặc nhấn phím: **rút ngắn** (nhảy thẳng tới trạng thái cuối trong 200 ms). Sau khi xong: bỏ `?reveal=1` khỏi URL.
 - Lần xem sau (F5, mở từ lịch sử): trạng thái cuối ngay, không hoạt ảnh. Các khối bên dưới gấp hiện dần khi cuộn vào (mờ + dịch 12 px, `IntersectionObserver`, một lần).
 - Giảm chuyển động: trạng thái cuối ngay.
 

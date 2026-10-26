@@ -57,7 +57,7 @@ test('bỏ chọn: Space lần nữa hoặc chạm vào ô', async ({ page }) =>
   await expect(page.getByRole('option', { selected: true })).toHaveCount(0);
 });
 
-test('gửi thành công: chờ ≥1400ms, sang /reading/{id}, đặt cờ reveal, không gửi ý niệm khi không lưu', async ({
+test('gửi thành công: chờ ≥1400ms, sang /reading/{id}?reveal=1, không gửi ý niệm khi không lưu', async ({
   page,
 }) => {
   await toStep3(page, 'Ba lá', 'điều riêng tư');
@@ -73,10 +73,8 @@ test('gửi thành công: chờ ≥1400ms, sang /reading/{id}, đặt cờ revea
   expect(body.intention).toBeUndefined();
   expect(body.pickedSlots).toHaveLength(3);
   await expect(page.getByRole('heading', { name: 'Đang xếp các vì sao…' })).toBeVisible();
-  await page.waitForURL(/\/reading\/rd_[1-9A-HJ-NP-Za-km-z]{16}$/);
+  await page.waitForURL(/\/reading\/rd_[1-9A-HJ-NP-Za-km-z]{16}\?reveal=1$/);
   expect(Date.now() - started).toBeGreaterThanOrEqual(1400);
-  const id = page.url().split('/').pop()!;
-  expect(await page.evaluate((k) => sessionStorage.getItem(k), `nd:reveal:${id}`)).toBe('1');
   expect(await page.evaluate(() => sessionStorage.getItem('nd:draft'))).toBeNull();
 });
 

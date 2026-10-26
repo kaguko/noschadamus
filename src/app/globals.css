@@ -231,7 +231,8 @@
 }
 
 /* Trang rút bài cần tập trung: ẩn footer mà không cần JS (docs/05 mục 2). */
-body:has([data-focus-page]) .nd-footer {
+body:has([data-focus-page]) .nd-footer,
+body:has([data-focus-page]) .nd-header-cta {
   display: none;
 }
 

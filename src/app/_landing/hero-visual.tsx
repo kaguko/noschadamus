@@ -14,7 +14,8 @@ export function HeroVisual({ map }: { map: ReadingView['soulMap'] }) {
   return (
     <div
       aria-hidden
-      className="relative mx-auto flex h-[340px] w-full max-w-[520px] min-w-0 items-center justify-center lg:h-[520px]"
+      // Soul Map xoay: khung bao vuông khi nghiêng rộng hơn màn 360px, cắt ngang để không cuộn ngang.
+      className="relative mx-auto flex h-[340px] w-full max-w-[520px] min-w-0 items-center justify-center overflow-x-clip lg:h-[520px]"
     >
       <div className="absolute size-[420px] max-w-full rounded-full bg-[radial-gradient(circle,color-mix(in_oklab,var(--accent)_25%,transparent),transparent_68%)]" />
       <StaticSoulMap

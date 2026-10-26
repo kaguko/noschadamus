@@ -227,15 +227,11 @@ export function StepPick({
           ?.error?.code;
         throw new Error(code ?? 'INTERNAL');
       }
-      const { id, path } = (await res.json()) as { id: string; path: string };
-      try {
-        sessionStorage.setItem(`nd:reveal:${id}`, '1');
-      } catch {
-        // không có bộ nhớ: trang kết quả hiện trạng thái cuối
-      }
+      const { path } = (await res.json()) as { id: string; path: string };
       onSubmitted();
       clearDraft();
-      router.push(path);
+      // ?reveal=1: trang kết quả chạy trình tự lật bài lần đầu rồi tự bỏ tham số này.
+      router.push(`${path}?reveal=1`);
     } catch (err) {
       window.clearTimeout(switchText);
       setPhase('fan');

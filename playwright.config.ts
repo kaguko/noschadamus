@@ -19,5 +19,7 @@ export default defineConfig({
         url: 'http://localhost:3000',
         timeout: 240_000,
         reuseExistingServer: true,
+        // e2e chạy song song từ cùng một IP: nới giới hạn tần suất.
+        env: { RATE_LIMIT_MULTIPLIER: '100' },
       },
 });

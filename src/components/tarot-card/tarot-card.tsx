@@ -14,7 +14,14 @@ import {
   type TarotCardFace,
 } from './card-face';
 
-export { CARD_SIZES, cardHeight, toRoman, type CardSize, type TarotCardFace } from './card-face';
+export {
+  CARD_SIZES,
+  cardHeight,
+  cardVisibleLabel,
+  toRoman,
+  type CardSize,
+  type TarotCardFace,
+} from './card-face';
 
 const FLIP_MS = 700;
 const EMPHASIZED = 'cubic-bezier(0.2, 0.8, 0.2, 1)';

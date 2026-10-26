@@ -52,12 +52,24 @@ export function toRoman(n: number): string {
   return out;
 }
 
+const faceNumeral = (card: TarotCardFace) =>
+  card.arcana === 'major' ? toRoman(card.number) : String(card.number);
+
+/**
+ * Chữ nhìn thấy trên mặt lá (số + tên nếu là mặt dự phòng). Nút bọc lá bài phải chứa chuỗi này
+ * trong tên truy cập (WCAG 2.5.3).
+ */
+export const cardVisibleLabel = (card: TarotCardFace) =>
+  HAS_ART.has(card.cardId) ? card.name : `${faceNumeral(card)} ${card.name}`;
+
 /** Mặt dự phòng khi chưa có ảnh: số + biểu tượng + tên. */
 export function FallbackFace({ card }: { card: TarotCardFace }) {
   const Icon = card.arcana === 'major' ? Sparkles : (SUIT_ICON[card.suit ?? ''] ?? Sparkles);
-  const numeral = card.arcana === 'major' ? toRoman(card.number) : String(card.number);
+  const numeral = faceNumeral(card);
   return (
     <div
+      // Chữ trên mặt dự phòng chỉ trang trí; tên đọc được nằm ở aria-label của khối ảnh bao ngoài.
+      aria-hidden
       className={clsx(
         'flex h-full w-full flex-col items-center justify-between bg-gradient-to-b from-bg2 to-bg1 py-[9cqw] text-ink1',
         card.reversed && 'rotate-180',
@@ -66,6 +78,8 @@ export function FallbackFace({ card }: { card: TarotCardFace }) {
       <span className="font-display text-[13cqw] leading-none font-semibold text-accent-text">
         {numeral}
       </span>
+      {/* Khoảng trắng để chữ ghép lại thành "8 Tám Gậy" khớp nhãn nút (flex không vẽ nó). */}
+      {' '}
       <Icon aria-hidden className="size-[40cqw] text-ink2" strokeWidth={1.25} />
       <span className="px-[6cqw] text-center text-[8.5cqw] leading-tight font-semibold tracking-[0.08em] uppercase">
         {card.name}
